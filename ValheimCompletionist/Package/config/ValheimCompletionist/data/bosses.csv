@@ -1,0 +1,8 @@
+id,displayName,biome,category,completionType,prefabName,globalKey
+boss.eikthyr,Eikthyr,Meadows,Bosses,BossDefeated,Eikthyr,defeated_eikthyr
+boss.elder,The Elder,BlackForest,Bosses,BossDefeated,gd_king,defeated_gdking
+boss.bonemass,Bonemass,Swamp,Bosses,BossDefeated,Bonemass,defeated_bonemass
+boss.moder,Moder,Mountain,Bosses,BossDefeated,Dragon,defeated_dragon
+boss.yagluth,Yagluth,Plains,Bosses,BossDefeated,GoblinKing,defeated_goblinking
+boss.queen,The Queen,Mistlands,Bosses,BossDefeated,SeekerQueen,defeated_queen
+boss.fader,Fader,Ashlands,Bosses,BossDefeated,Fader,defeated_fader
