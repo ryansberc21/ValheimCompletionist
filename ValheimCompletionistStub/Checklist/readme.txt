@@ -20,7 +20,6 @@ Bosses:
     → Check global key
     → mark complete
     
-
 Enemy Kills:
     Kill enemy
     → Compare enemy name against enemies.csv
