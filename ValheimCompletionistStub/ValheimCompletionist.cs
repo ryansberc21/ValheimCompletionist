@@ -18,7 +18,7 @@ namespace ValheimCompletionist
     {
         public const string PluginGUID = "com.ryansberc21.ValheimCompletionist";
         public const string PluginName = "ValheimCompletionist";
-        public const string PluginVersion = "0.0.1";
+        public const string PluginVersion = "0.1.1";
         
         public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 

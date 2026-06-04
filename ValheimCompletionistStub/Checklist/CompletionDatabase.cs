@@ -5,100 +5,51 @@ namespace ValheimCompletionist.Checklist
 {
     public static class CompletionDatabase
     {
+        public static List<ChecklistEntry> ItemEntries { get; private set; } = new List<ChecklistEntry>();
+        public static List<ChecklistEntry> EnemyEntries { get; private set; } = new List<ChecklistEntry>();
+
+        /// <summary>
+        /// Combined list of all checklist entries.
+        /// This includes items, enemies, bosses, etc.
+        /// </summary>
         public static List<ChecklistEntry> Entries { get; private set; } = new List<ChecklistEntry>();
 
         public static void Load()
         {
-            Entries = ChecklistCsvLoader.LoadFromCsv();
+            // Load item entries from the item CSV
+            ItemEntries = ChecklistCsvLoader.LoadItemsFromCsv();
+
+            // Load enemy entries from the enemy CSV
+            EnemyEntries = ChecklistCsvLoader.LoadEnemiesFromCsv();
+
+            // Combine everything into one master list
+            Entries = new List<ChecklistEntry>();
+            Entries.AddRange(ItemEntries);
+            Entries.AddRange(EnemyEntries);
 
             if (Entries.Count == 0)
             {
-                Jotunn.Logger.LogWarning("No checklist entries loaded from CSV. Loading fallback entries instead.");
-                LoadFallbackEntries();
+                Jotunn.Logger.LogWarning("No checklist entries loaded from CSV files. Please ensure that the \nItems.csv and Enemies.csv files are in the BepInEx\nconfig folder.");
             }
 
-            Jotunn.Logger.LogInfo($"CompletionDatabase loaded {Entries.Count} entries.");
-        }
-
-        private static void LoadFallbackEntries()
-        {
-            Entries = new List<ChecklistEntry>
-            {
-                new ChecklistEntry(
-                    id: "boss.eikthyr",
-                    displayName: "Eikthyr",
-                    biome: Biome.Meadows,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "Eikthyr",
-                    globalKey: "defeated_eikthyr"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.elder",
-                    displayName: "The Elder",
-                    biome: Biome.BlackForest,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "gd_king",
-                    globalKey: "defeated_gdking"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.bonemass",
-                    displayName: "Bonemass",
-                    biome: Biome.Swamp,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "Bonemass",
-                    globalKey: "defeated_bonemass"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.moder",
-                    displayName: "Moder",
-                    biome: Biome.Mountain,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "Dragon",
-                    globalKey: "defeated_dragon"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.yagluth",
-                    displayName: "Yagluth",
-                    biome: Biome.Plains,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "GoblinKing",
-                    globalKey: "defeated_goblinking"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.queen",
-                    displayName: "The Queen",
-                    biome: Biome.Mistlands,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "SeekerQueen",
-                    globalKey: "defeated_queen"
-                ),
-
-                new ChecklistEntry(
-                    id: "boss.fader",
-                    displayName: "Fader",
-                    biome: Biome.Ashlands,
-                    category: ChecklistCategory.Bosses,
-                    completionType: CompletionType.BossDefeated,
-                    prefabName: "Fader",
-                    globalKey: "defeated_fader"
-                )
-            };
+            Jotunn.Logger.LogInfo($"CompletionDatabase loaded {Entries.Count} total entries.");
+            Jotunn.Logger.LogInfo($"Loaded {ItemEntries.Count} item entries.");
+            Jotunn.Logger.LogInfo($"Loaded {EnemyEntries.Count} enemy entries.");
         }
 
         public static IEnumerable<ChecklistEntry> GetAll()
         {
             return Entries;
+        }
+
+        public static IEnumerable<ChecklistEntry> GetItems()
+        {
+            return ItemEntries;
+        }
+
+        public static IEnumerable<ChecklistEntry> GetEnemies()
+        {
+            return EnemyEntries;
         }
 
         public static IEnumerable<ChecklistEntry> GetByBiome(Biome biome)
@@ -173,6 +124,16 @@ namespace ValheimCompletionist.Checklist
         public static int CountByCategory(ChecklistCategory category)
         {
             return Entries.Count(entry => entry.Category == category);
+        }
+
+        public static int CountItems()
+        {
+            return ItemEntries.Count;
+        }
+
+        public static int CountEnemies()
+        {
+            return EnemyEntries.Count;
         }
     }
 }
