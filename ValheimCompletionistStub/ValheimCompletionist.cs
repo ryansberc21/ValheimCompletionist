@@ -13,80 +13,333 @@ namespace ValheimCompletionist
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [BepInDependency(Jotunn.Main.ModGuid)]
-    //[NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
     internal class ValheimCompletionist : BaseUnityPlugin
     {
         public const string PluginGUID = "com.ryansberc21.ValheimCompletionist";
         public const string PluginName = "ValheimCompletionist";
         public const string PluginVersion = "0.1.1";
-        
+
         public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 
-        // Object Instatiation
-        private GameObject bossPanel;
+        private GameObject checklistPanel;
+
         private ConfigEntry<KeyboardShortcut> toggleKey;
+        private ConfigEntry<bool> enableDebugExport;
 
-        private readonly List<BossInfo> bosses = new List<BossInfo>
-        {
-            new BossInfo("Eikthyr", "defeated_eikthyr"),
-            new BossInfo("The Elder", "defeated_gdking"),
-            new BossInfo("Bonemass", "defeated_bonemass"),
-            new BossInfo("Moder", "defeated_dragon"),
-            new BossInfo("Yagluth", "defeated_goblinking"),
-            new BossInfo("The Queen", "defeated_queen"),
-            new BossInfo("Fader", "defeated_fader")
-        };
+        private readonly List<BossRow> bossRows = new List<BossRow>();
 
+        private float itemScanTimer = 0f;
+        private float bossScanTimer = 0f;
+
+        private const float ItemScanInterval = 5f;
+        private const float BossScanInterval = 5f;
 
         private void Awake()
         {
-            Jotunn.Logger.LogInfo($"{PluginName} loaded");
+            Jotunn.Logger.LogInfo($"{PluginName} loading...");
+
+            BindConfig();
 
             CompletionDatabase.Load();
-
-            toggleKey = Config.Bind(
-                "General",
-                "Toggle Boss Checklist Key",
-                new KeyboardShortcut(KeyCode.F8),
-                "Key used to open and close the boss checklist menu."
-            );
-
-            foreach (BossInfo boss in bosses)
-            {
-                boss.ManualComplete = Config.Bind(
-                    "Boss Checklist",
-                    boss.Name,
-                    false,
-                    $"Manual completion state for {boss.Name}."
-                );
-            }
+            CompletionProgress.Load();
 
             if (!GUIManager.IsHeadless())
             {
-                GUIManager.OnCustomGUIAvailable += CreateBossChecklistGUI;
+                GUIManager.OnCustomGUIAvailable += CreateChecklistGUI;
             }
+
+            Jotunn.Logger.LogInfo($"{PluginName} loaded.");
         }
 
         private void OnDestroy()
         {
-            GUIManager.OnCustomGUIAvailable -= CreateBossChecklistGUI;
+            GUIManager.OnCustomGUIAvailable -= CreateChecklistGUI;
             GUIManager.BlockInput(false);
         }
 
         private void Update()
         {
+            HandleToggleInput();
+            HandleDebugInput();
+            HandlePeriodicItemScan();
+            HandlePeriodicBossScan();
+        }
+
+        private void BindConfig()
+        {
+            toggleKey = Config.Bind(
+                "General",
+                "Toggle Checklist Key",
+                new KeyboardShortcut(KeyCode.F8),
+                "Key used to open and close the completion checklist menu."
+            );
+
+            enableDebugExport = Config.Bind(
+                "Debug",
+                "Enable ObjectDB Export",
+                false,
+                "If true, pressing F10 exports ObjectDB item data to BepInEx/config/ValheimCompletionist/objectdb_items.csv."
+            );
+        }
+
+        private void HandleToggleInput()
+        {
             if (toggleKey.Value.IsDown())
             {
-                ToggleBossPanel();
+                ToggleChecklistPanel();
             }
-            
+        }
+
+        private void HandleDebugInput()
+        {
+            if (!enableDebugExport.Value)
+            {
+                return;
+            }
+
             if (Input.GetKeyDown(KeyCode.F10))
             {
                 ExportObjectDBItemsToCsv();
             }
         }
 
-            // DEBUG SECTIONS - REMOVE BEFORE RELEASE --------------------------
+        private void HandlePeriodicItemScan()
+        {
+            itemScanTimer += Time.deltaTime;
+
+            if (itemScanTimer < ItemScanInterval)
+            {
+                return;
+            }
+
+            itemScanTimer = 0f;
+
+            ItemCompletionTracker.ScanPlayerInventory();
+        }
+
+        private void HandlePeriodicBossScan()
+        {
+            bossScanTimer += Time.deltaTime;
+
+            if (bossScanTimer < BossScanInterval)
+            {
+                return;
+            }
+
+            bossScanTimer = 0f;
+
+            ScanBossGlobalKeys();
+        }
+
+        private void ScanBossGlobalKeys()
+        {
+            if (ZoneSystem.instance == null)
+            {
+                return;
+            }
+
+            foreach (ChecklistEntry bossEntry in CompletionDatabase.GetByCategory(ChecklistCategory.Bosses))
+            {
+                if (string.IsNullOrWhiteSpace(bossEntry.GlobalKey))
+                {
+                    continue;
+                }
+
+                if (ZoneSystem.instance.GetGlobalKey(bossEntry.GlobalKey))
+                {
+                    CompletionProgress.MarkCompleted(bossEntry.Id);
+                }
+            }
+
+            RefreshChecklist();
+        }
+
+        private void CreateChecklistGUI()
+        {
+            checklistPanel = null;
+            bossRows.Clear();
+
+            if (GUIManager.Instance == null || GUIManager.CustomGUIFront == null)
+            {
+                Jotunn.Logger.LogWarning("GUIManager is not ready.");
+                return;
+            }
+
+            checklistPanel = GUIManager.Instance.CreateWoodpanel(
+                parent: GUIManager.CustomGUIFront.transform,
+                anchorMin: new Vector2(0.5f, 0.5f),
+                anchorMax: new Vector2(0.5f, 0.5f),
+                position: new Vector2(0f, 0f),
+                width: 500f,
+                height: 600f,
+                draggable: true
+            );
+
+            checklistPanel.name = "ValheimCompletionist_ChecklistPanel";
+            checklistPanel.SetActive(false);
+
+            GUIManager.Instance.CreateText(
+                text: "Valheim Completionist",
+                parent: checklistPanel.transform,
+                anchorMin: new Vector2(0.5f, 1f),
+                anchorMax: new Vector2(0.5f, 1f),
+                position: new Vector2(0f, -45f),
+                font: GUIManager.Instance.AveriaSerifBold,
+                fontSize: 30,
+                color: GUIManager.Instance.ValheimOrange,
+                outline: true,
+                outlineColor: Color.black,
+                width: 440f,
+                height: 45f,
+                addContentSizeFitter: false
+            );
+
+            GUIManager.Instance.CreateText(
+                text: "Bosses are auto-detected from world global keys.",
+                parent: checklistPanel.transform,
+                anchorMin: new Vector2(0.5f, 1f),
+                anchorMax: new Vector2(0.5f, 1f),
+                position: new Vector2(0f, -85f),
+                font: GUIManager.Instance.AveriaSerif,
+                fontSize: 16,
+                color: Color.white,
+                outline: true,
+                outlineColor: Color.black,
+                width: 430f,
+                height: 30f,
+                addContentSizeFitter: false
+            );
+
+            CreateBossRows();
+
+            GameObject refreshButtonObject = GUIManager.Instance.CreateButton(
+                text: "Refresh",
+                parent: checklistPanel.transform,
+                anchorMin: new Vector2(0.5f, 0f),
+                anchorMax: new Vector2(0.5f, 0f),
+                position: new Vector2(-95f, 45f),
+                width: 150f,
+                height: 45f
+            );
+
+            refreshButtonObject.GetComponent<Button>().onClick.AddListener(RefreshChecklist);
+
+            GameObject closeButtonObject = GUIManager.Instance.CreateButton(
+                text: "Close",
+                parent: checklistPanel.transform,
+                anchorMin: new Vector2(0.5f, 0f),
+                anchorMax: new Vector2(0.5f, 0f),
+                position: new Vector2(95f, 45f),
+                width: 150f,
+                height: 45f
+            );
+
+            closeButtonObject.GetComponent<Button>().onClick.AddListener(ToggleChecklistPanel);
+
+            RefreshChecklist();
+        }
+
+        private void CreateBossRows()
+        {
+            float startY = -135f;
+            float rowSpacing = 48f;
+            int index = 0;
+
+            foreach (ChecklistEntry bossEntry in CompletionDatabase.GetByCategory(ChecklistCategory.Bosses))
+            {
+                float y = startY - index * rowSpacing;
+                index++;
+
+                GameObject toggleObject = GUIManager.Instance.CreateToggle(
+                    parent: checklistPanel.transform,
+                    width: 32f,
+                    height: 32f
+                );
+
+                RectTransform toggleRect = toggleObject.GetComponent<RectTransform>();
+                toggleRect.anchorMin = new Vector2(0.5f, 1f);
+                toggleRect.anchorMax = new Vector2(0.5f, 1f);
+                toggleRect.anchoredPosition = new Vector2(-175f, y);
+
+                Toggle toggle = toggleObject.GetComponent<Toggle>();
+
+                ChecklistEntry capturedEntry = bossEntry;
+
+                toggle.onValueChanged.AddListener(value =>
+                {
+                    if (value)
+                    {
+                        CompletionProgress.MarkCompleted(capturedEntry.Id);
+                    }
+                });
+
+                GUIManager.Instance.CreateText(
+                    text: bossEntry.DisplayName,
+                    parent: checklistPanel.transform,
+                    anchorMin: new Vector2(0.5f, 1f),
+                    anchorMax: new Vector2(0.5f, 1f),
+                    position: new Vector2(25f, y),
+                    font: GUIManager.Instance.AveriaSerifBold,
+                    fontSize: 22,
+                    color: Color.white,
+                    outline: true,
+                    outlineColor: Color.black,
+                    width: 330f,
+                    height: 35f,
+                    addContentSizeFitter: false
+                );
+
+                bossRows.Add(new BossRow(bossEntry, toggle));
+            }
+        }
+
+        private void ToggleChecklistPanel()
+        {
+            if (checklistPanel == null)
+            {
+                return;
+            }
+
+            bool newState = !checklistPanel.activeSelf;
+            checklistPanel.SetActive(newState);
+
+            if (newState)
+            {
+                ScanBossGlobalKeys();
+                ItemCompletionTracker.ScanPlayerInventory();
+                RefreshChecklist();
+            }
+
+            GUIManager.BlockInput(newState);
+        }
+
+        private void RefreshChecklist()
+        {
+            foreach (BossRow row in bossRows)
+            {
+                bool completed = CompletionProgress.IsCompleted(row.Entry.Id);
+
+                if (row.Toggle != null)
+                {
+                    row.Toggle.SetIsOnWithoutNotify(completed);
+                }
+            }
+        }
+
+        private class BossRow
+        {
+            public ChecklistEntry Entry { get; }
+            public Toggle Toggle { get; }
+
+            public BossRow(ChecklistEntry entry, Toggle toggle)
+            {
+                Entry = entry;
+                Toggle = toggle;
+            }
+        }
+
+        // DEBUG SECTION - REMOVE OR DISABLE BEFORE RELEASE --------------------
+
         private void ExportObjectDBItemsToCsv()
         {
             if (ObjectDB.instance == null)
@@ -158,194 +411,6 @@ namespace ValheimCompletionist
             return value;
         }
 
-           // END DEBUG SECTIONS - REMOVE BEFORE RELEASE --------------------------
-
-
-        private void CreateBossChecklistGUI()
-        {
-            bossPanel = null;
-
-            if (GUIManager.Instance == null || GUIManager.CustomGUIFront == null)
-            {
-                Jotunn.Logger.LogWarning("GUIManager is not ready.");
-                return;
-            }
-
-            bossPanel = GUIManager.Instance.CreateWoodpanel(
-                parent: GUIManager.CustomGUIFront.transform,
-                anchorMin: new Vector2(0.5f, 0.5f),
-                anchorMax: new Vector2(0.5f, 0.5f),
-                position: new Vector2(0f, 0f),
-                width: 460f,
-                height: 560f,
-                draggable: true
-            );
-
-            bossPanel.name = "ValheimCompletionist_BossChecklistPanel";
-            bossPanel.SetActive(false);
-
-            GUIManager.Instance.CreateText(
-                text: "Boss Checklist",
-                parent: bossPanel.transform,
-                anchorMin: new Vector2(0.5f, 1f),
-                anchorMax: new Vector2(0.5f, 1f),
-                position: new Vector2(0f, -45f),
-                font: GUIManager.Instance.AveriaSerifBold,
-                fontSize: 30,
-                color: GUIManager.Instance.ValheimOrange,
-                outline: true,
-                outlineColor: Color.black,
-                width: 400f,
-                height: 45f,
-                addContentSizeFitter: false
-            );
-
-            GUIManager.Instance.CreateText(
-                text: "Auto-detected from world boss keys when available.",
-                parent: bossPanel.transform,
-                anchorMin: new Vector2(0.5f, 1f),
-                anchorMax: new Vector2(0.5f, 1f),
-                position: new Vector2(0f, -85f),
-                font: GUIManager.Instance.AveriaSerif,
-                fontSize: 16,
-                color: Color.white,
-                outline: true,
-                outlineColor: Color.black,
-                width: 390f,
-                height: 30f,
-                addContentSizeFitter: false
-            );
-
-            float startY = -135f;
-            float rowSpacing = 48f;
-
-            for (int i = 0; i < bosses.Count; i++)
-            {
-                BossInfo boss = bosses[i];
-                float y = startY - i * rowSpacing;
-
-                GameObject toggleObject = GUIManager.Instance.CreateToggle(
-                    parent: bossPanel.transform,
-                    width: 32f,
-                    height: 32f
-                );
-
-                RectTransform toggleRect = toggleObject.GetComponent<RectTransform>();
-                toggleRect.anchorMin = new Vector2(0.5f, 1f);
-                toggleRect.anchorMax = new Vector2(0.5f, 1f);
-                toggleRect.anchoredPosition = new Vector2(-165f, y);
-
-                Toggle toggle = toggleObject.GetComponent<Toggle>();
-                boss.Toggle = toggle;
-
-                GUIManager.Instance.CreateText(
-                    text: boss.Name,
-                    parent: bossPanel.transform,
-                    anchorMin: new Vector2(0.5f, 1f),
-                    anchorMax: new Vector2(0.5f, 1f),
-                    position: new Vector2(20f, y),
-                    font: GUIManager.Instance.AveriaSerifBold,
-                    fontSize: 22,
-                    color: Color.white,
-                    outline: true,
-                    outlineColor: Color.black,
-                    width: 300f,
-                    height: 35f,
-                    addContentSizeFitter: false
-                );
-
-                toggle.onValueChanged.AddListener(value =>
-                {
-                    boss.ManualComplete.Value = value;
-                });
-            }
-
-            GameObject refreshButtonObject = GUIManager.Instance.CreateButton(
-                text: "Refresh",
-                parent: bossPanel.transform,
-                anchorMin: new Vector2(0.5f, 0f),
-                anchorMax: new Vector2(0.5f, 0f),
-                position: new Vector2(-95f, 45f),
-                width: 150f,
-                height: 45f
-            );
-
-            refreshButtonObject.GetComponent<Button>().onClick.AddListener(RefreshChecklist);
-
-            GameObject closeButtonObject = GUIManager.Instance.CreateButton(
-                text: "Close",
-                parent: bossPanel.transform,
-                anchorMin: new Vector2(0.5f, 0f),
-                anchorMax: new Vector2(0.5f, 0f),
-                position: new Vector2(95f, 45f),
-                width: 150f,
-                height: 45f
-            );
-
-            closeButtonObject.GetComponent<Button>().onClick.AddListener(ToggleBossPanel);
-
-            RefreshChecklist();
-        }
-
-        private class BossInfo
-        {
-            public string Name { get; }
-            public string GlobalKey { get; }
-            public Toggle Toggle { get; set; }
-            public ConfigEntry<bool> ManualComplete { get; set; }
-
-            public BossInfo(string name, string globalKey)
-            {
-                Name = name;
-                GlobalKey = globalKey;
-            }
-        }
-
-        private void ToggleBossPanel()
-        {
-            if (bossPanel == null)
-            {
-                return;
-            }
-
-            bool newState = !bossPanel.activeSelf;
-            bossPanel.SetActive(newState);
-
-            if (newState)
-            {
-                RefreshChecklist();
-            }
-
-            GUIManager.BlockInput(newState);
-        }
-
-        private void RefreshChecklist()
-        {
-            foreach (BossInfo boss in bosses)
-            {
-                bool defeatedInWorld = IsGlobalKeySet(boss.GlobalKey);
-                bool complete = defeatedInWorld || boss.ManualComplete.Value;
-
-                if (boss.Toggle != null)
-                {
-                    boss.Toggle.SetIsOnWithoutNotify(complete);
-                }
-
-                if (defeatedInWorld)
-                {
-                    boss.ManualComplete.Value = true;
-                }
-            }
-        }
-
-        private bool IsGlobalKeySet(string key)
-        {
-            if (ZoneSystem.instance == null)
-            {
-                return false;
-            }
-
-            return ZoneSystem.instance.GetGlobalKey(key);
-        }
+        // END DEBUG SECTION --------------------------------------------------
     }
 }

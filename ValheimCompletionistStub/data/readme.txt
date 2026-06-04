@@ -4,12 +4,14 @@ This folder contains the item and enemy data for the mod. Upon installation, thi
 
 items.csv - Contains the item data for the mod.
 enemies.csv - Contains the enemy data for the mod.
+bosses.csv - Contains the boss data for the mod.
 
 IMPORTANT:
-- BOTH files must be present in the config folder for the mod to work.
+- ALL files must be present in the config folder for the mod to work.
 - The files are comma-separated, with a header row.
 - Items are identified by their prefab name, which is the name of the object in the game.
 - Enemies are identified by their name token, which is the name of the object in the game.
+- Bosses are identified by their global key, which is the name of the object in the game.
 
 In case of missing or incomplete data in the CSV files, the CSV files can be manually adjusted.
 
