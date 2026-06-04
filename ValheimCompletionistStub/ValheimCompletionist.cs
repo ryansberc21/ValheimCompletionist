@@ -3,8 +3,11 @@ using BepInEx.Configuration;
 using Jotunn.Entities;
 using Jotunn.Managers;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using ValheimCompletionist.Checklist;
 
 namespace ValheimCompletionist
 {
@@ -38,6 +41,8 @@ namespace ValheimCompletionist
         private void Awake()
         {
             Jotunn.Logger.LogInfo($"{PluginName} loaded");
+
+            CompletionDatabase.Load();
 
             toggleKey = Config.Bind(
                 "General",
@@ -74,7 +79,87 @@ namespace ValheimCompletionist
             {
                 ToggleBossPanel();
             }
+            
+            if (Input.GetKeyDown(KeyCode.F10))
+            {
+                ExportObjectDBItemsToCsv();
+            }
         }
+
+            // DEBUG SECTIONS - REMOVE BEFORE RELEASE --------------------------
+        private void ExportObjectDBItemsToCsv()
+        {
+            if (ObjectDB.instance == null)
+            {
+                Jotunn.Logger.LogWarning("ObjectDB.instance is null. Enter a world first.");
+                return;
+            }
+
+            string folderPath = Path.Combine(Paths.ConfigPath, "ValheimCompletionist");
+            Directory.CreateDirectory(folderPath);
+
+            string filePath = Path.Combine(folderPath, "objectdb_items.csv");
+
+            StringBuilder csv = new StringBuilder();
+
+            csv.AppendLine("PrefabName,NameToken,ItemType,MaxStack,Weight");
+
+            foreach (GameObject itemPrefab in ObjectDB.instance.m_items)
+            {
+                if (itemPrefab == null)
+                {
+                    continue;
+                }
+
+                ItemDrop itemDrop = itemPrefab.GetComponent<ItemDrop>();
+
+                if (itemDrop == null)
+                {
+                    continue;
+                }
+
+                ItemDrop.ItemData.SharedData shared = itemDrop.m_itemData.m_shared;
+
+                bool likelyChecklistItem =
+                    shared.m_name.StartsWith("$item_") ||
+                    shared.m_itemType == ItemDrop.ItemData.ItemType.Fish;
+
+                if (!likelyChecklistItem)
+                {
+                    continue;
+                }
+
+                csv.AppendLine(
+                    $"{EscapeCsv(itemPrefab.name)}," +
+                    $"{EscapeCsv(shared.m_name)}," +
+                    $"{EscapeCsv(shared.m_itemType.ToString())}," +
+                    $"{shared.m_maxStackSize}," +
+                    $"{shared.m_weight}"
+                );
+            }
+
+            File.WriteAllText(filePath, csv.ToString());
+
+            Jotunn.Logger.LogInfo($"Exported ObjectDB items to: {filePath}");
+        }
+
+        private string EscapeCsv(string value)
+        {
+            if (value == null)
+            {
+                return "";
+            }
+
+            if (value.Contains(",") || value.Contains("\"") || value.Contains("\n"))
+            {
+                return $"\"{value.Replace("\"", "\"\"")}\"";
+            }
+
+            return value;
+        }
+
+           // END DEBUG SECTIONS - REMOVE BEFORE RELEASE --------------------------
+
 
         private void CreateBossChecklistGUI()
         {
