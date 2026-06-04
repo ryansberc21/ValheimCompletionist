@@ -38,6 +38,11 @@ Thunderstore dependencies:
 ]
 ```
 
+## Download
+
+ValheimCompletionist is available on Thunderstore:
+[Thunderstore - ValheimCompletionist](https://thunderstore.io/c/valheim/p/ryansberc21/ValheimCompletionist/)
+
 ## Installation
 
 ### Recommended: Thunderstore / r2modman
