@@ -9,7 +9,7 @@ namespace ValheimCompletionist.Checklist
     {
         Manual,
         BossDefeated,
-        EnemyDefeated,
+        EnemyKilled,
         ItemCollected,
         ItemInCompletionStorage,
         Crafted,

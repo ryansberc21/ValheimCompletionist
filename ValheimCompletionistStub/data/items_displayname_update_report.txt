@@ -1,0 +1,480 @@
+Rows processed: 680
+DisplayName values changed: 475
+Unresolved displayName mappings: 0
+
+Changed values:
+Acorn: Acorn -> Acorns
+ArmorBronzeChest: Armor Bronze Chest -> Bronze Plate Tunic
+ArmorBronzeLegs: Armor Bronze Legs -> Bronze Plate Leggings
+ArmorCarapaceChest: Armor Carapace Chest -> Carapace Breastplate
+ArmorCarapaceLegs: Armor Carapace Legs -> Carapace Greaves
+ArmorDress1: Armor Dress1 -> Plain Brown Dress
+ArmorDress10: Armor Dress10 -> Simple Undyed Dress
+ArmorDress2: Armor Dress2 -> Brown Dress with Shawl
+ArmorDress3: Armor Dress3 -> Brown Dress with Beads
+ArmorDress4: Armor Dress4 -> Plain Blue Dress
+ArmorDress5: Armor Dress5 -> Blue Dress with Shawl
+ArmorDress6: Armor Dress6 -> Blue Dress with Beads
+ArmorDress7: Armor Dress7 -> Plain Yellow Dress
+ArmorDress8: Armor Dress8 -> Yellow Dress with Shawl
+ArmorDress9: Armor Dress9 -> Yellow Dress with Beads
+ArmorFenringChest: Armor Fenring Chest -> Fenris Coat
+ArmorFenringLegs: Armor Fenring Legs -> Fenris Leggings
+ArmorFlametalChest: Armor Flametal Chest -> Flametal Breastplate
+ArmorFlametalLegs: Armor Flametal Legs -> Flametal Greaves
+ArmorHarvester1: Armor Harvester1 -> Harvest Tunic
+ArmorHarvester2: Armor Harvester2 -> Harvest Dress
+ArmorIronChest: Armor Iron Chest -> Iron Scale Mail
+ArmorIronLegs: Armor Iron Legs -> Iron Greaves
+ArmorLeatherChest: Armor Leather Chest -> Leather Tunic
+ArmorLeatherLegs: Armor Leather Legs -> Leather Trousers
+ArmorMageChest: Armor Mage Chest -> Eitr-weave Robe
+ArmorMageChest_Ashlands: Armor Mage Chest Ashlands -> Robes of Embla
+ArmorMageLegs: Armor Mage Legs -> Eitr-weave Trousers
+ArmorMageLegs_Ashlands: Armor Mage Legs Ashlands -> Trousers of Embla
+ArmorPaddedCuirass: Armor Padded Cuirass -> Padded Cuirass
+ArmorPaddedGreaves: Armor Padded Greaves -> Padded Greaves
+ArmorRagsChest: Armor Rags Chest -> Rag Tunic
+ArmorRagsLegs: Armor Rags Legs -> Rag Trousers
+ArmorRootChest: Armor Root Chest -> Root Harnesk
+ArmorRootLegs: Armor Root Legs -> Root Leggings
+ArmorTrollLeatherChest: Armor Troll Leather Chest -> Troll Leather Tunic
+ArmorTrollLeatherLegs: Armor Troll Leather Legs -> Troll Leather Trousers
+ArmorTunic1: Armor Tunic1 -> Plain Blue Tunic
+ArmorTunic10: Armor Tunic10 -> Simple Undyed Tunic
+ArmorTunic2: Armor Tunic2 -> Blue Tunic with Cape
+ArmorTunic3: Armor Tunic3 -> Blue Tunic with Beads
+ArmorTunic4: Armor Tunic4 -> Plain Red Tunic
+ArmorTunic5: Armor Tunic5 -> Red Tunic with Cape
+ArmorTunic6: Armor Tunic6 -> Red Tunic with Beads
+ArmorTunic7: Armor Tunic7 -> Plain Yellow Tunic
+ArmorTunic8: Armor Tunic8 -> Yellow Tunic with Cape
+ArmorTunic9: Armor Tunic9 -> Yellow Tunic with Beads
+ArmorWolfChest: Armor Wolf Chest -> Wolf Hide Chestpiece
+ArmorWolfLegs: Armor Wolf Legs -> Wolf Hide Trousers
+ArrowBronze: Arrow Bronze -> Bronzehead Arrow
+ArrowCarapace: Arrow Carapace -> Carapace Arrow
+ArrowCharred: Arrow Charred -> Charred Arrow
+ArrowFire: Arrow Fire -> Fire Arrow
+ArrowFlint: Arrow Flint -> Flinthead Arrow
+ArrowFrost: Arrow Frost -> Frost Arrow
+ArrowIron: Arrow Iron -> Ironhead Arrow
+ArrowNeedle: Arrow Needle -> Needle Arrow
+ArrowObsidian: Arrow Obsidian -> Obsidian Arrow
+ArrowPoison: Arrow Poison -> Poison Arrow
+ArrowSilver: Arrow Silver -> Silver Arrow
+ArrowWood: Arrow Wood -> Wood Arrow
+AskBladder: Ask Bladder -> Asksvin Bladder
+AskHide: Ask Hide -> Asksvin Hide
+AsksvinCarrionNeck: Asksvin Carrion Neck -> Asksvin Neck
+AsksvinCarrionPelvic: Asksvin Carrion Pelvic -> Asksvin Pelvis
+AsksvinCarrionRibcage: Asksvin Carrion Ribcage -> Asksvin Ribcage
+AsksvinCarrionSkull: Asksvin Carrion Skull -> Asksvin Skull
+AsksvinMeat: Asksvin Meat -> Asksvin Tail
+AtgeirBlackmetal: Atgeir Blackmetal -> Black Metal Atgeir
+AtgeirBronze: Atgeir Bronze -> Bronze Atgeir
+AtgeirHimminAfl: Atgeir Himmin Afl -> Himminafl
+AtgeirIron: Atgeir Iron -> Iron Atgeir
+AtgeirWood: Atgeir Wood -> Wooden Atgeir
+AxeBerzerkr: Axe Berzerkr -> Berserkir Axes
+AxeBerzerkrBlood: Axe Berzerkr Blood -> Bleeding Berserkir Axes
+AxeBerzerkrLightning: Axe Berzerkr Lightning -> Thundering Berserkir Axes
+AxeBerzerkrNature: Axe Berzerkr Nature -> Primal Berserkir Axes
+AxeBlackMetal: Axe Black Metal -> Black Metal Axe
+AxeBronze: Axe Bronze -> Bronze Axe
+AxeEarly: Axe Early -> Early Axes
+AxeFlint: Axe Flint -> Flint Axe
+AxeHead1: Axe Head1 -> Curious Axe Head
+AxeHead2: Axe Head2 -> Mysterious Axe Head
+AxeIron: Axe Iron -> Iron Axe
+AxeJotunBane: Axe Jotun Bane -> Jotun Bane
+AxeStone: Axe Stone -> Stone Axe
+AxeWood: Axe Wood -> Wooden Axe
+BarleyWine: Barley Wine -> Fire Resistance Barley Wine
+BarleyWineBase: Barley Wine Base -> Barley Wine Base: Fire Resistance
+BarrelRings: Barrel Rings -> Barrel Hoops
+BattleaxeBlackmetal: Battleaxe Blackmetal -> Black Metal Battleaxe
+BattleaxeCrystal: Battleaxe Crystal -> Crystal Battleaxe
+BattleaxeSkullSplittur: Battleaxe Skull Splittur -> Skull Splittur
+BattleaxeWood: Battleaxe Wood -> Wooden Battleaxe
+BeltStrength: Belt Strength -> Megingjord
+BjornHide: Bjorn Hide -> Bear Hide
+BjornMeat: Bjorn Meat -> Bear Meat
+BjornPaw: Bjorn Paw -> Bear Paw
+Blackwood: Blackwood -> Ashwood
+BlobVial: Blob Vial -> Corked Vial
+BoltBlackmetal: Bolt Blackmetal -> Black Metal Bolt
+BoltBone: Bolt Bone -> Bone Bolt
+BoltCarapace: Bolt Carapace -> Carapace Bolt
+BoltCharred: Bolt Charred -> Charred Bolt
+BoltIron: Bolt Iron -> Iron Bolt
+BombBile: Bomb Bile -> Bile Bomb
+BombBlob_Frost: Bomb Blob Frost -> Blob Bomb: Frost
+BombBlob_Lava: Bomb Blob Lava -> Blob Bomb: Lava
+BombBlob_Poison: Bomb Blob Poison -> Blob Bomb: Poison
+BombBlob_PoisonElite: Bomb Blob Poison Elite -> Blob Bomb: Elite Poison
+BombBlob_Tar: Bomb Blob Tar -> Blob Bomb: Tar
+BombLava: Bomb Lava -> Basalt Bomb
+BombOoze: Bomb Ooze -> Ooze Bomb
+BombSiege: Bomb Siege -> Explosive Payload
+BombSmoke: Bomb Smoke -> Smoke Bomb
+BoneMawSerpentMeat: Bone Maw Serpent Meat -> Bonemaw Meat
+BonemawSerpentScale: Bonemaw Serpent Scale -> Bonemaw Scale
+BonemawSerpentTooth: Bonemaw Serpent Tooth -> Bonemaw Tooth
+Bow: Bow -> Crude Bow
+BowAshlands: Bow Ashlands -> Ash Fang
+BowAshlandsBlood: Bow Ashlands Blood -> Blood Fang
+BowAshlandsRoot: Bow Ashlands Root -> Root Fang
+BowAshlandsStorm: Bow Ashlands Storm -> Storm Fang
+BowDraugrFang: Bow Draugr Fang -> Draugr Fang
+BowFineWood: Bow Fine Wood -> Finewood Bow
+BowHuntsman: Bow Huntsman -> Huntsman Bow
+BowSpineSnap: Bow Spine Snap -> Spinesnap
+BronzeScrap: Bronze Scrap -> Scrap Bronze
+BugMeat: Bug Meat -> Seeker Meat
+CapeAsh: Cape Ash -> Ashen Cape
+CapeAsksvin: Cape Asksvin -> Asksvin Cloak
+CapeDeerHide: Cape Deer Hide -> Deer Hide Cape
+CapeFeather: Cape Feather -> Feather Cape
+CapeLinen: Cape Linen -> Linen Cape
+CapeLox: Cape Lox -> Lox Cape
+CapeTrollHide: Cape Troll Hide -> Troll Hide Cape
+CapeWolf: Cape Wolf -> Wolf Fur Cape
+Catapult_ammo: Catapult ammo -> Grausten Payload
+Charredskull: Charredskull -> Charred Skull
+ChickenEgg: Chicken Egg -> Egg
+Cloudberry: Cloudberry -> Cloudberries
+CookedAsksvinMeat: Cooked Asksvin Meat -> Cooked Asksvin Tail
+CookedBjornMeat: Cooked Bjorn Meat -> Cooked Bear Meat
+CookedBoneMawSerpentMeat: Cooked Bone Maw Serpent Meat -> Cooked Bonemaw Meat
+CookedBugMeat: Cooked Bug Meat -> Cooked Seeker Meat
+CookedMeat: Cooked Meat -> Cooked Boar Meat
+CrossbowArbalest: Crossbow Arbalest -> Arbalest
+CrossbowRipper: Crossbow Ripper -> Ripper
+CrossbowRipperBlood: Crossbow Ripper Blood -> Wound Ripper
+CrossbowRipperLightning: Crossbow Ripper Lightning -> Storm Ripper
+CrossbowRipperNature: Crossbow Ripper Nature -> Root Ripper
+CryptKey: Crypt Key -> Swamp Key
+Demister: Demister -> Wisplight
+DvergrKey: Dvergr Key -> Sealbreaker
+DvergrKeyFragment: Dvergr Key Fragment -> Sealbreaker Fragment
+DvergrNeedle: Dvergr Needle -> Dvergr Extractor
+Eitr: Eitr -> Refined Eitr
+ElderBark: Elder Bark -> Ancient Bark
+FaderDrop: Fader Drop -> Fader Relic
+FeastAshlands: Feast Ashlands -> Ashlands Gourmet Bowl
+FeastAshlands_Material: Feast Ashlands Material -> Ashlands Gourmet Bowl
+FeastBlackforest: Feast Blackforest -> Black Forest Buffet Platter
+FeastBlackforest_Material: Feast Blackforest Material -> Black Forest Buffet Platter
+Feaster: Feaster -> Serving Tray
+FeastMeadows: Feast Meadows -> Whole Roasted Meadow Boar
+FeastMeadows_Material: Feast Meadows Material -> Whole Roasted Meadow Boar
+FeastMistlands: Feast Mistlands -> Mushrooms Galore  la Mistlands
+FeastMistlands_Material: Feast Mistlands Material -> Mushrooms Galore  la Mistlands
+FeastMountains: Feast Mountains -> Hearty Mountain Logger's Stew
+FeastMountains_Material: Feast Mountains Material -> Hearty Mountain Logger's Stew
+FeastOceans: Feast Oceans -> Sailor's Bounty
+FeastOceans_Material: Feast Oceans Material -> Sailor's Bounty
+FeastPlains: Feast Plains -> Plains Pie Picnic
+FeastPlains_Material: Feast Plains Material -> Plains Pie Picnic
+FeastSwamps: Feast Swamps -> Swamp Dweller's Delight
+FeastSwamps_Material: Feast Swamps Material -> Swamp Dweller's Delight
+Fiddleheadfern: Fiddleheadfern -> Fiddlehead
+FineWood: Fine Wood -> Finewood
+FireworksRocket_Blue: Fireworks Rocket Blue -> Blue Fireworks
+FireworksRocket_Cyan: Fireworks Rocket Cyan -> Cyan Fireworks
+FireworksRocket_Green: Fireworks Rocket Green -> Green Fireworks
+FireworksRocket_Purple: Fireworks Rocket Purple -> Purple Fireworks
+FireworksRocket_Red: Fireworks Rocket Red -> Red Fireworks
+FireworksRocket_White: Fireworks Rocket White -> Basic Fireworks
+FireworksRocket_Yellow: Fireworks Rocket Yellow -> Yellow Fireworks
+Fish1: Fish1 -> Perch
+Fish10: Fish10 -> Northern Salmon
+Fish11: Fish11 -> Magmafish
+Fish12: Fish12 -> Pufferfish
+Fish2: Fish2 -> Pike
+Fish3: Fish3 -> Tuna
+Fish4_cave: Fish4 cave -> Tetra
+Fish5: Fish5 -> Trollfish
+Fish6: Fish6 -> Giant Herring
+Fish7: Fish7 -> Grouper
+Fish8: Fish8 -> Coral Cod
+Fish9: Fish9 -> Anglerfish
+FishAndBread: Fish And Bread -> Fish 'n' Bread
+FishAndBreadUncooked: Fish And Bread Uncooked -> Uncooked Fish 'n' Bread
+FishAnglerRaw: Fish Angler Raw -> Raw Fish
+FishCooked: Fish Cooked -> Cooked Fish
+FishingBaitAshlands: Fishing Bait Ashlands -> Hot Fishing Bait
+FishingBaitCave: Fishing Bait Cave -> Cold Fishing Bait
+FishingBaitDeepNorth: Fishing Bait Deep North -> Frosty Fishing Bait
+FishingBaitForest: Fishing Bait Forest -> Mossy Fishing Bait
+FishingBaitMistlands: Fishing Bait Mistlands -> Misty Fishing Bait
+FishingBaitOcean: Fishing Bait Ocean -> Heavy Fishing Bait
+FishingBaitPlains: Fishing Bait Plains -> Stingy Fishing Bait
+FishingBaitSwamp: Fishing Bait Swamp -> Sticky Fishing Bait
+FishRaw: Fish Raw -> Raw Fish
+FistBjornClaw: Fist Bjorn Claw -> Paws of the Bear
+FistBjornUndeadClaw: Fist Bjorn Undead Claw -> Vilebone Maulclaws
+FistFenrirClaw: Fist Fenrir Claw -> Flesh Rippers
+FlametalNew: Flametal  -> Flametal
+GemstoneBlue: Gemstone Blue -> Iolite
+GemstoneGreen: Gemstone Green -> Jade
+GemstoneRed: Gemstone Red -> Bloodstone
+GiantBloodSack: Giant Blood Sack -> Blood Clot
+GoblinTotem: Goblin Totem -> Fuling Totem
+HelmetAshlandsMediumHood: Helmet Ashlands Medium Hood -> Hood of Ask
+HelmetBerserkerHood: Helmet Berserker Hood -> Headdress of the Bear
+HelmetBerserkerUndead: Helmet Berserker Undead -> Vilebone Visage
+HelmetBronze: Helmet Bronze -> Bronze Helmet
+HelmetCarapace: Helmet Carapace -> Carapace Helmet
+HelmetCelebration: Helmet Celebration -> Celebratory Cap
+HelmetDrake: Helmet Drake -> Drake Helmet
+HelmetDverger: Helmet Dverger -> Dverger Circlet
+HelmetFenring: Helmet Fenring -> Fenris Hood
+HelmetFishingHat: Helmet Fishing Hat -> Fishing Hat
+HelmetFlametal: Helmet Flametal -> Flametal Helmet
+HelmetHat1: Helmet Hat1 -> Blue Tied Headscarf
+HelmetHat10: Helmet Hat10 -> Simple Purple Cap
+HelmetHat2: Helmet Hat2 -> Green Twisted Headscarf
+HelmetHat3: Helmet Hat3 -> Brown Fur Cap
+HelmetHat4: Helmet Hat4 -> Extravagant Green Cap
+HelmetHat5: Helmet Hat5 -> Simple Red Cap
+HelmetHat6: Helmet Hat6 -> Yellow Tied Headscarf
+HelmetHat7: Helmet Hat7 -> Red Twisted Headscarf
+HelmetHat8: Helmet Hat8 -> Grey Fur Cap
+HelmetHat9: Helmet Hat9 -> Extravagant Orange Cap
+HelmetIron: Helmet Iron -> Iron Helmet
+HelmetLeather: Helmet Leather -> Leather Helmet
+HelmetMage: Helmet Mage -> Eitr-weave Hood
+HelmetMage_Ashlands: Helmet Mage Ashlands -> Hood of Embla
+HelmetMidsummerCrown: Helmet Midsummer Crown -> Midsummer Crown
+HelmetPadded: Helmet Padded -> Padded Helmet
+HelmetPointyHat: Helmet Pointy Hat -> Pointy Hat
+HelmetRoot: Helmet Root -> Root Mask
+HelmetStrawHat: Helmet Straw Hat -> Straw Hat
+HelmetSweatBand: Helmet Sweat Band -> Headband
+HelmetTrollLeather: Helmet Troll Leather -> Troll Leather Hood
+HelmetYule: Helmet Yule -> Yule Hat
+HildirKey_forestcrypt: Hildir Key forestcrypt -> Hildir's Brass Key
+HildirKey_mountaincave: Hildir Key mountaincave -> Hildir's Silver Key
+HildirKey_plainsfortress: Hildir Key plainsfortress -> Hildir's Bronze Key
+HoneyGlazedChickenUncooked: Honey Glazed Chicken Uncooked -> Uncooked Honey Glazed Chicken
+Ironpit: Ironpit -> Iron Pit
+IronScrap: Iron Scrap -> Scrap Iron
+JuteBlue: Jute Blue -> Blue Jute
+JuteRed: Jute Red -> Red Jute
+KnifeBlackMetal: Knife Black Metal -> Black Metal Knife
+KnifeButcher: Knife Butcher -> Butcher Knife
+KnifeChitin: Knife Chitin -> Abyssal Razor
+KnifeCopper: Knife Copper -> Copper Knife
+KnifeFlint: Knife Flint -> Flint Knife
+KnifeSilver: Knife Silver -> Silver Knife
+KnifeSkollAndHati: Knife Skoll And Hati -> Skoll and Hati
+KnifeWood: Knife Wood -> Wooden Knife
+Lantern: Lantern -> Dvergr Lantern
+Larva: Larva -> [item_larva]
+LoxPie: Lox Pie -> Lox Meat Pie
+LoxPieUncooked: Lox Pie Uncooked -> Unbaked Lox Pie
+MaceBronze: Mace Bronze -> Bronze Mace
+MaceEldner: Mace Eldner -> Flametal Mace
+MaceEldnerBlood: Mace Eldner Blood -> Bloodgeon
+MaceEldnerLightning: Mace Eldner Lightning -> Storm Star
+MaceEldnerNature: Mace Eldner Nature -> Klossen
+MaceIron: Mace Iron -> Iron Mace
+MaceNeedle: Mace Needle -> Porcupine
+MaceSilver: Mace Silver -> Frostner
+MaceWood: Mace Wood -> Wooden Mace
+MagicallyStuffedShroom: Magically Stuffed Shroom -> Stuffed Mushroom
+MagicallyStuffedShroomUncooked: Magically Stuffed Shroom Uncooked -> Uncooked Stuffed Mushroom
+MeadBaseBugRepellent: Mead Base Bug Repellent -> Mead Base: Anti-Sting
+MeadBaseBzerker: Mead Base Bzerker -> Mead base: Berserkir
+MeadBaseEitrLingering: Mead Base Eitr Lingering -> Mead Base: Lingering Eitr
+MeadBaseEitrMinor: Mead Base Eitr Minor -> Mead Base: Minor Eitr
+MeadBaseFrostResist: Mead Base Frost Resist -> Mead Base: Frost Resistance
+MeadBaseHasty: Mead Base Hasty -> Mead base: Ratatosk
+MeadBaseHealthLingering: Mead Base Health Lingering -> Mead Base: Lingering Health
+MeadBaseHealthMajor: Mead Base Health Major -> Mead Base: Major Healing
+MeadBaseHealthMedium: Mead Base Health Medium -> Mead Base: Medium Healing
+MeadBaseHealthMinor: Mead Base Health Minor -> Mead Base: Minor Healing
+MeadBaseLightFoot: Mead Base Light Foot -> Mead Base: Lightfoot
+MeadBasePoisonResist: Mead Base Poison Resist -> Mead Base: Poison Resistance
+MeadBaseStaminaLingering: Mead Base Stamina Lingering -> Mead Base: Lingering Stamina
+MeadBaseStaminaMedium: Mead Base Stamina Medium -> Mead Base: Medium Stamina
+MeadBaseStaminaMinor: Mead Base Stamina Minor -> Mead Base: Minor Stamina
+MeadBaseStrength: Mead Base Strength -> Mead Base: Troll Endurance
+MeadBaseSwimmer: Mead Base Swimmer -> Mead Base: Vananidir
+MeadBaseTamer: Mead Base Tamer -> Mead Base: Animal Whispers
+MeadBaseTasty: Mead Base Tasty -> Mead Base: Tasty
+MeadBugRepellent: Mead Bug Repellent -> Anti-Sting Concoction
+MeadBzerker: Mead Bzerker -> Berserkir Mead
+MeadEitrLingering: Mead Eitr Lingering -> Lingering Eitr Mead
+MeadEitrMinor: Mead Eitr Minor -> Minor Eitr Mead
+MeadFrostResist: Mead Frost Resist -> Frost Resistance Mead
+MeadHasty: Mead Hasty -> Tonic of Ratatosk
+MeadHealthLingering: Mead Health Lingering -> Lingering Healing Mead
+MeadHealthMajor: Mead Health Major -> Major Healing Mead
+MeadHealthMedium: Mead Health Medium -> Medium Healing Mead
+MeadHealthMinor: Mead Health Minor -> Minor Healing Mead
+MeadLightfoot: Mead Lightfoot -> Lightfoot Mead
+MeadPoisonResist: Mead Poison Resist -> Poison Resistance Mead
+MeadStaminaLingering: Mead Stamina Lingering -> Lingering Stamina Mead
+MeadStaminaMedium: Mead Stamina Medium -> Medium Stamina Mead
+MeadStaminaMinor: Mead Stamina Minor -> Minor Stamina Mead
+MeadStrength: Mead Strength -> Mead of Troll Endurance
+MeadSwimmer: Mead Swimmer -> Draught of Vananidir
+MeadTamer: Mead Tamer -> Brew of Animal Whispers
+MeadTasty: Mead Tasty -> Tasty Mead
+MeadTrollPheromones: Mead Troll Pheromones -> Love Potion
+MeatPlatterUncooked: Meat Platter Uncooked -> Uncooked Meat Platter
+MinceMeatSauce: Mince Meat Sauce -> Minced Meat Sauce
+MisthareSupremeUncooked: Misthare Supreme Uncooked -> Uncooked Misthare Supreme
+NeckTailGrilled: Neck Tail Grilled -> Grilled Neck Tail
+PickaxeAntler: Pickaxe Antler -> Antler Pickaxe
+PickaxeBlackMetal: Pickaxe Black Metal -> Black Metal Pickaxe
+PickaxeBronze: Pickaxe Bronze -> Bronze Pickaxe
+PickaxeIron: Pickaxe Iron -> Iron Pickaxe
+PiquantPieUncooked: Piquant Pie Uncooked -> Uncooked Piquant Pie
+Pot_Shard_Green: Pot Shard Green -> Pot Shard
+Pot_Shard_Red: Pot Shard Red -> [item_pot_shard_red]
+PowderedDragonEgg: Powdered Dragon Egg -> Powdered Dragon Eggshells
+Pukeberries: Pukeberries -> Bukeperries
+QueenDrop: Queen Drop -> Majestic Carapace
+QueensJam: Queens Jam -> Queen's Jam
+Raspberry: Raspberry -> Raspberries
+RawMeat: Raw Meat -> Boar Meat
+RoastedCrustPieUncooked: Roasted Crust Pie Uncooked -> Uncooked Roasted Crust Pie
+SaddleAsksvin: Saddle Asksvin -> Asksvin Saddle
+SaddleLox: Saddle Lox -> Lox Saddle
+SerpentMeatCooked: Serpent Meat Cooked -> Cooked Serpent Meat
+ShieldBanded: Shield Banded -> Banded Shield
+ShieldBlackmetal: Shield Blackmetal -> Black Metal Shield
+ShieldBlackmetalTower: Shield Blackmetal Tower -> Black Metal Tower Shield
+ShieldBoneTower: Shield Bone Tower -> Bone Tower Shield
+ShieldBronzeBuckler: Shield Bronze Buckler -> Bronze Buckler
+ShieldCarapace: Shield Carapace -> Carapace Shield
+ShieldCarapaceBuckler: Shield Carapace Buckler -> Carapace Buckler
+ShieldFlametal: Shield Flametal -> Flametal Shield
+ShieldFlametalTower: Shield Flametal Tower -> Flametal Tower Shield
+ShieldIronBuckler: Shield Iron Buckler -> Iron Buckler
+ShieldIronSquare: Shield Iron Square -> Iron Shield
+ShieldIronTower: Shield Iron Tower -> Iron Tower Shield
+ShieldSerpentscale: Shield Serpentscale -> Serpent Scale Shield
+ShieldSilver: Shield Silver -> Silver Shield
+ShieldWood: Shield Wood -> Wood Shield
+ShieldWoodTower: Shield Wood Tower -> Wood Tower Shield
+SledgeDemolisher: Sledge Demolisher -> Demolisher
+SledgeIron: Sledge Iron -> Iron Sledge
+SledgeStagbreaker: Sledge Stagbreaker -> Stagbreaker
+SledgeWood: Sledge Wood -> Wooden Sledge
+Softtissue: Softtissue -> Soft Tissue
+SpearBronze: Spear Bronze -> Bronze Spear
+SpearCarapace: Spear Carapace -> Carapace Spear
+SpearChitin: Spear Chitin -> Abyssal Harpoon
+SpearElderbark: Spear Elderbark -> Ancient Bark Spear
+SpearFlint: Spear Flint -> Flint Spear
+SpearSplitner: Spear Splitner -> Splitnir
+SpearSplitner_Blood: Spear Splitner Blood -> Splitnir the Bleeding
+SpearSplitner_Lightning: Spear Splitner Lightning -> Splitnir the Storming
+SpearSplitner_Nature: Spear Splitner Nature -> Splitnir the Primal
+SpearWolfFang: Spear Wolf Fang -> Fang Spear
+SpearWood: Spear Wood -> Wooden Spear
+StaffClusterbomb: Staff Clusterbomb -> Staff of Fracturing
+StaffFireball: Staff Fireball -> Staff of Embers
+StaffGreenRoots: Staff Green Roots -> Staff of the Wild
+StaffIceShards: Staff Ice Shards -> Staff of Frost
+StaffLightning: Staff Lightning -> Dundr
+StaffRedTroll: Staff Red Troll -> Trollstav
+StaffShield: Staff Shield -> Staff of Protection
+StaffSkeleton: Staff Skeleton -> Dead Raiser
+StoneRock: Stone Rock -> Rock
+SulfurStone: Sulfur Stone -> Sulfur
+SwordBlackmetal: Sword Blackmetal -> Black Metal Sword
+SwordBronze: Sword Bronze -> Bronze Sword
+SwordDyrnwyn: Sword Dyrnwyn -> Dyrnwyn
+SwordIron: Sword Iron -> Iron Sword
+SwordMistwalker: Sword Mistwalker -> Mistwalker
+SwordNiedhogg: Sword Niedhogg -> Nidhgg
+SwordNiedhoggBlood: Sword Niedhogg Blood -> Nidhgg the Bleeding
+SwordNiedhoggLightning: Sword Niedhogg Lightning -> Nidhgg the Thundering
+SwordNiedhoggNature: Sword Niedhogg Nature -> Nidhgg the Primal
+SwordSilver: Sword Silver -> Silver Sword
+SwordWood: Sword Wood -> Wooden Sword
+Tankard_dvergr: Tankard dvergr -> Dvergr Tankard
+SlayerBlood: Slayer Blood -> Brutal Slayer
+SlayerLightning: Slayer Lightning -> Scourging Slayer
+SlayerNature: Slayer Nature -> Primal Slayer
+GreatswordWood: Greatsword Wood -> Wooden Greatsword
+Thunderstone: Thunderstone -> Thunder Stone
+TorchMist: Torch Mist -> [item_torchmist]
+Bronze Pendent: Bronze Pendent -> Bronze Pendant
+TrophyAbomination: Trophy Abomination -> Abomination Trophy
+TrophyAsksvin: Trophy Asksvin -> Asksvin Trophy
+TrophyBjorn: Trophy Bjorn -> Bear Trophy
+TrophyBjornUndead: Trophy Bjorn Undead -> Vile Trophy
+TrophyBlob: Trophy Blob -> Blob Trophy
+TrophyBoar: Trophy Boar -> Boar Trophy
+TrophyBonemass: Trophy Bonemass -> Bonemass Trophy
+TrophyBonemawSerpent: Trophy Bonemaw Serpent -> Bonemaw Trophy
+TrophyCharredArcher: Trophy Charred Archer -> Marksman Trophy
+TrophyCharredMage: Trophy Charred Mage -> Warlock Trophy
+TrophyCharredMelee: Trophy Charred Melee -> Warrior Trophy
+TrophyCultist: Trophy Cultist -> Cultist Trophy
+TrophyCultist_Hildir: Trophy Cultist Hildir -> Geirrhafa Trophy
+TrophyDeathsquito: Trophy Deathsquito -> Deathsquito Trophy
+TrophyDeer: Trophy Deer -> Deer Trophy
+TrophyDragonQueen: Trophy Moder -> Moder Trophy
+TrophyDraugr: Trophy Draugr -> Draugr Trophy
+TrophyDraugrElite: Trophy Draugr Elite -> Draugr Elite Trophy
+TrophyDraugrFem: Trophy Draugr Fem -> Draugr Trophy
+TrophyDvergr: Trophy Dvergr -> Dvergr Trophy
+TrophyEikthyr: Trophy Eikthyr -> Eikthyr Trophy
+TrophyFader: Trophy Fader -> Fader Trophy
+TrophyFallenValkyrie: Trophy Fallen Valkyrie -> Fallen Valkyrie Trophy
+TrophyFenring: Trophy Fenring -> Fenring Trophy
+TrophyForestTroll: Trophy Forest Troll -> Troll Trophy
+TrophyFrostTroll: Trophy Frost Troll -> Troll Trophy
+TrophyGhost: Trophy Ghost -> Ghost Trophy
+TrophyGjall: Trophy Gjall -> Gjall Trophy
+TrophyGoblin: Trophy Goblin -> Fuling Trophy
+TrophyGoblinBrute: Trophy Goblin Brute -> Fuling Berserker Trophy
+TrophyGoblinBruteBrosBrute: Trophy Goblin Brute Bros Brute -> Thungr Trophy
+TrophyGoblinBruteBrosShaman: Trophy Goblin Brute Bros Shaman -> Zil Trophy
+TrophyGoblinKing: Trophy Goblin King -> Yagluth Trophy
+TrophyGoblinShaman: Trophy Goblin Shaman -> Fuling Shaman Trophy
+TrophyGreydwarf: Trophy Greydwarf -> Greydwarf Trophy
+TrophyGreydwarfBrute: Trophy Greydwarf Brute -> Greydwarf Brute Trophy
+TrophyGreydwarfShaman: Trophy Greydwarf Shaman -> Greydwarf Shaman Trophy
+TrophyGrowth: Trophy Growth -> Growth Trophy
+TrophyHare: Trophy Hare -> Hare Trophy
+TrophyHatchling: Trophy Hatchling -> Drake Trophy
+TrophyLeech: Trophy Leech -> Leech Trophy
+TrophyLox: Trophy Lox -> Lox Trophy
+TrophyMorgen: Trophy Morgen -> Morgen Trophy
+TrophyNeck: Trophy Neck -> Neck Trophy
+TrophySeeker: Trophy Seeker -> Seeker Trophy
+TrophySeekerBrute: Trophy Seeker Brute -> Seeker Soldier Trophy
+TrophySeekerQueen: Trophy Seeker Queen -> The Queen Trophy
+TrophySerpent: Trophy Serpent -> Serpent Trophy
+TrophySGolem: Trophy S Golem -> Stone Golem Trophy
+TrophySkeleton: Trophy Skeleton -> Skeleton Trophy
+TrophySkeletonHildir: Trophy Brenna -> Brenna Trophy
+TrophySkeletonPoison: Trophy Rancid Remains -> Rancid Remains Trophy
+TrophySurtling: Trophy Surtling -> Surtling Trophy
+TrophyTheElder: Trophy The Elder -> The Elder Trophy
+TrophyTick: Trophy Tick -> Tick Trophy
+TrophyUlv: Trophy Ulv -> Ulv Trophy
+TrophyVolture: Trophy Volture -> Volture Trophy
+TrophyWolf: Trophy Wolf -> Wolf Trophy
+TrophyWraith: Trophy Wraith -> Wraith Trophy
+TurretBolt: Turret Bolt -> Black Metal Missile
+TurretBoltBone: Turret Bolt Bone -> [item_turretboltbone]
+TurretBoltFlametal: Turret Bolt Flametal -> Flametal Missile
+TurretBoltWood: Turret Bolt Wood -> Wooden Missile
+UndeadBjornRibcage: Undead Bjorn Ribcage -> Vile Ribcage
+Frosted Sweetbread Uncooked: Frosted Sweetbread Uncooked -> Unbaked Sweetbread
+Vineberry: Vineberry -> Vineberry Cluster
+VineGreenSeeds: Vine Green Seeds -> Ivy Seeds
+WolfClaw: Wolf Claw -> Fenris Claw
+WolfHairBundle: Wolf Hair Bundle -> Fenris Hair
+WolfMeatSkewer: Wolf Meat Skewer -> Wolf Skewer
+YmirRemains: Ymir Remains -> Ymir Flesh

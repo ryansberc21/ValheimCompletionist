@@ -1,695 +1,681 @@
-PrefabName,NameToken,ItemType,MaxStack,Weight,Biome,ChecklistCategory,IncludeInChecklist
-Acorn,$item_oakseeds,Material,100,0.1,Global,Materials,TRUE
-Amber,$item_amber,Material,20,0.1,Global,Materials,TRUE
-AmberPearl,$item_amberpearl,Material,50,0.1,Global,Materials,TRUE
-AncientSeed,$item_ancientseed,Misc,50,1,BlackForest,Items,TRUE
-ArmorAshlandsMediumChest,$item_chest_medium_ashlands,Chest,1,5,Ashlands,Armor,TRUE
-ArmorAshlandsMediumlegs,$item_legs_medium_ashlands,Legs,1,5,Ashlands,Armor,TRUE
-ArmorBerserkerChest,$item_chest_berserker,Chest,1,5,BlackForest,Armor,TRUE
-ArmorBerserkerLegs,$item_legs_berserker,Legs,1,5,BlackForest,Armor,TRUE
-ArmorBerserkerUndeadChest,$item_chest_berserker_undead,Chest,1,5,BlackForest,Armor,TRUE
-ArmorBerserkerUndeadLegs,$item_legs_berserker_undead,Legs,1,5,BlackForest,Armor,TRUE
-ArmorBronzeChest,$item_chest_bronze,Chest,1,10,BlackForest,Armor,TRUE
-ArmorBronzeLegs,$item_legs_bronze,Legs,1,10,BlackForest,Armor,TRUE
-ArmorCarapaceChest,$item_chest_carapace,Chest,1,10,Mistlands,Armor,TRUE
-ArmorCarapaceLegs,$item_legs_carapace,Legs,1,10,Mistlands,Armor,TRUE
-ArmorDress1,$item_chest_dress1,Chest,1,10,Global,Armor,TRUE
-ArmorDress10,$item_chest_dress10,Chest,1,10,Global,Armor,TRUE
-ArmorDress2,$item_chest_dress2,Chest,1,10,Global,Armor,TRUE
-ArmorDress3,$item_chest_dress3,Chest,1,10,Global,Armor,TRUE
-ArmorDress4,$item_chest_dress4,Chest,1,10,Global,Armor,TRUE
-ArmorDress5,$item_chest_dress5,Chest,1,10,Global,Armor,TRUE
-ArmorDress6,$item_chest_dress6,Chest,1,10,Global,Armor,TRUE
-ArmorDress7,$item_chest_dress7,Chest,1,10,Global,Armor,TRUE
-ArmorDress8,$item_chest_dress8,Chest,1,10,Global,Armor,TRUE
-ArmorDress9,$item_chest_dress9,Chest,1,10,Global,Armor,TRUE
-ArmorFenringChest,$item_chest_fenris,Chest,1,10,Mountain,Armor,TRUE
-ArmorFenringLegs,$item_legs_fenris,Legs,1,10,Mountain,Armor,TRUE
-ArmorFlametalChest,$item_chest_flametal,Chest,1,10,Ashlands,Armor,TRUE
-ArmorFlametalLegs,$item_legs_flametal,Legs,1,10,Ashlands,Armor,TRUE
-ArmorHarvester1,$item_chest_harvester1,Chest,1,10,Global,Armor,TRUE
-ArmorHarvester2,$item_chest_harvester2,Chest,1,10,Global,Armor,TRUE
-ArmorIronChest,$item_chest_iron,Chest,1,15,Swamp,Armor,TRUE
-ArmorIronLegs,$item_legs_iron,Legs,1,15,Swamp,Armor,TRUE
-ArmorLeatherChest,$item_chest_leather,Chest,1,5,Meadows,Armor,TRUE
-ArmorLeatherLegs,$item_legs_leather,Legs,1,5,Meadows,Armor,TRUE
-ArmorMageChest,$item_chest_mage,Chest,1,5,Mistlands,Armor,TRUE
-ArmorMageChest_Ashlands,$item_chest_mage_ashlands,Chest,1,5,Ashlands,Armor,TRUE
-ArmorMageLegs,$item_legs_mage,Legs,1,5,Mistlands,Armor,TRUE
-ArmorMageLegs_Ashlands,$item_legs_mage_ashlands,Legs,1,5,Ashlands,Armor,TRUE
-ArmorPaddedCuirass,$item_chest_pcuirass,Chest,1,10,Plains,Armor,TRUE
-ArmorPaddedGreaves,$item_legs_pgreaves,Legs,1,10,Plains,Armor,TRUE
-ArmorRagsChest,$item_chest_rags,Chest,1,2,Global,Armor,TRUE
-ArmorRagsLegs,$item_legs_rags,Legs,1,2,Global,Armor,TRUE
-ArmorRootChest,$item_chest_root,Chest,1,10,Swamp,Armor,TRUE
-ArmorRootLegs,$item_legs_root,Legs,1,10,Swamp,Armor,TRUE
-ArmorTrollLeatherChest,$item_chest_trollleather,Chest,1,5,BlackForest,Armor,TRUE
-ArmorTrollLeatherLegs,$item_legs_trollleather,Legs,1,5,BlackForest,Armor,TRUE
-ArmorTunic1,$item_chest_tunic1,Chest,1,10,Global,Armor,TRUE
-ArmorTunic10,$item_chest_tunic10,Chest,1,10,Global,Armor,TRUE
-ArmorTunic2,$item_chest_tunic2,Chest,1,10,Global,Armor,TRUE
-ArmorTunic3,$item_chest_tunic3,Chest,1,10,Global,Armor,TRUE
-ArmorTunic4,$item_chest_tunic4,Chest,1,10,Global,Armor,TRUE
-ArmorTunic5,$item_chest_tunic5,Chest,1,10,Global,Armor,TRUE
-ArmorTunic6,$item_chest_tunic6,Chest,1,10,Global,Armor,TRUE
-ArmorTunic7,$item_chest_tunic7,Chest,1,10,Global,Armor,TRUE
-ArmorTunic8,$item_chest_tunic8,Chest,1,10,Global,Armor,TRUE
-ArmorTunic9,$item_chest_tunic9,Chest,1,10,Global,Armor,TRUE
-ArmorWolfChest,$item_chest_wolf,Chest,1,15,Global,Armor,TRUE
-ArmorWolfLegs,$item_legs_wolf,Legs,1,15,Global,Armor,TRUE
-ArrowBronze,$item_arrow_bronze,Ammo,100,0.1,BlackForest,Weapons,TRUE
-ArrowCarapace,$item_arrow_carapace,Ammo,100,0.1,Mistlands,Weapons,TRUE
-ArrowCharred,$item_arrow_charred,Ammo,100,0.1,Ashlands,Weapons,TRUE
-ArrowFire,$item_arrow_fire,Ammo,100,0.1,Meadows,Weapons,TRUE
-ArrowFlint,$item_arrow_flint,Ammo,100,0.1,Meadows,Weapons,TRUE
-ArrowFrost,$item_arrow_frost,Ammo,100,0.1,Mountain,Weapons,TRUE
-ArrowIron,$item_arrow_iron,Ammo,100,0.1,Swamp,Weapons,TRUE
-ArrowNeedle,$item_arrow_needle,Ammo,100,0.1,Plains,Weapons,TRUE
-ArrowObsidian,$item_arrow_obsidian,Ammo,100,0.1,Mountain,Weapons,TRUE
-ArrowPoison,$item_arrow_poison,Ammo,100,0.1,Mountain,Weapons,TRUE
-ArrowSilver,$item_arrow_silver,Ammo,100,0.1,Mountain,Weapons,TRUE
-ArrowWood,$item_arrow_wood,Ammo,100,0.1,Meadows,Weapons,TRUE
-AskBladder,$item_askbladder,Material,50,0.5,Ashlands,Materials,TRUE
-AskHide,$item_askhide,Material,50,1,Ashlands,Materials,TRUE
-AsksvinCarrionNeck,$item_asksvincarrionneck,Material,50,2,Ashlands,Materials,TRUE
-AsksvinCarrionPelvic,$item_asksvincarrionpelvic,Material,50,2,Ashlands,Materials,TRUE
-AsksvinCarrionRibcage,$item_asksvincarrionribcage,Material,50,5,Ashlands,Materials,TRUE
-AsksvinCarrionSkull,$item_asksvincarrionskull,Material,50,2,Ashlands,Materials,TRUE
-AsksvinEgg,$item_asksvin_egg,Misc,20,1,Ashlands,Items,TRUE
-AsksvinMeat,$item_asksvin_meat,Material,20,1,Ashlands,Materials,TRUE
-AtgeirBlackmetal,$item_atgeir_blackmetal,TwoHandedWeapon,1,2.5,Plains,Weapons,TRUE
-AtgeirBronze,$item_atgeir_bronze,TwoHandedWeapon,1,2.5,BlackForest,Weapons,TRUE
-AtgeirHimminAfl,$item_atgeir_himminafl,TwoHandedWeapon,1,2.5,Mistlands,Weapons,TRUE
-AtgeirIron,$item_atgeir_iron,TwoHandedWeapon,1,2.5,Swamp,Weapons,TRUE
-AtgeirWood,$item_atgeir_wood,TwoHandedWeapon,1,2.5,Meadows,Weapons,TRUE
-AxeBerzerkr,$item_axe_berzerkr,TwoHandedWeapon,1,2,Ashlands,Weapons,TRUE
-AxeBerzerkrBlood,$item_axe_berzerkr_blood,TwoHandedWeapon,1,2,Ashlands,Weapons,TRUE
-AxeBerzerkrLightning,$item_axe_berzerkr_lightning,TwoHandedWeapon,1,2,Ashlands,Weapons,TRUE
-AxeBerzerkrNature,$item_axe_berzerkr_nature,TwoHandedWeapon,1,2,Ashlands,Weapons,TRUE
-AxeBlackMetal,$item_axe_blackmetal,OneHandedWeapon,1,2,Plains,Weapons,TRUE
-AxeBronze,$item_axe_bronze,OneHandedWeapon,1,2,BlackForest,Weapons,TRUE
-AxeEarly,$item_axe_early,TwoHandedWeapon,1,2,Meadows,Weapons,TRUE
-AxeFlint,$item_axe_flint,OneHandedWeapon,1,1.5,Meadows,Weapons,TRUE
-AxeHead1,$item_axehead1,Material,10,2,Meadows,Materials,TRUE
-AxeHead2,$item_axehead2,Material,10,2,Meadows,Materials,TRUE
-AxeIron,$item_axe_iron,OneHandedWeapon,1,2,Swamp,Weapons,TRUE
-AxeJotunBane,$item_axe_jotunbane,OneHandedWeapon,1,2,Mistlands,Weapons,TRUE
-AxeStone,$item_axe_stone,OneHandedWeapon,1,1.5,Meadows,Weapons,TRUE
-AxeWood,$item_axe_wood,OneHandedWeapon,1,2,Meadows,Weapons,TRUE
-BarberKit,$item_barberkit,Misc,1,2,Global,Items,TRUE
-Barley,$item_barley,Material,100,0.2,Plains,Materials,TRUE
-BarleyFlour,$item_barleyflour,Misc,50,0.2,Plains,Items,TRUE
-BarleyWine,$item_barleywine,Consumable,10,1,Plains,Food,TRUE
-BarleyWineBase,$item_barleywinebase,Material,1,1,Plains,Materials,TRUE
-BarrelRings,$item_barrelrings,Misc,20,2,Global,Items,TRUE
-Battleaxe,$item_battleaxe,TwoHandedWeapon,1,2.5,Swamp,Weapons,TRUE
-BattleaxeBlackmetal,$item_battleaxe_blackmetal,TwoHandedWeapon,1,2.5,Plains,Weapons,TRUE
-BattleaxeCrystal,$item_battleaxe_crystal,TwoHandedWeapon,1,2.5,Mountain,Weapons,TRUE
-BattleaxeSkullSplittur,$item_battleaxe_skullsplittur,TwoHandedWeapon,1,2.5,Mistlands,Weapons,TRUE
-BattleaxeWood,$item_battleaxe_wood,TwoHandedWeapon,1,2.5,Meadows,Weapons,TRUE
-BeechSeeds,$item_beechseeds,Material,100,0.1,Meadows,Materials,TRUE
-Bell,$item_bell,Misc,9,0.5,Mistlands,Items,TRUE
-BellFragment,$item_bellfragment,Material,9,0.5,Ashlands,Materials,TRUE
-BeltStrength,$item_beltstrength,Utility,1,2,Global,Tools,TRUE
-Bilebag,$item_bilebag,Material,50,0.5,Mistlands,Materials,TRUE
-BirchSeeds,$item_birchseeds,Material,100,0.1,BlackForest,Materials,TRUE
-BjornHide,$item_bjornhide,Material,50,1,BlackForest,Materials,TRUE
-BjornMeat,$item_bjorn_meat,Material,20,1,BlackForest,Materials,TRUE
-BjornPaw,$item_bjornpaw,Material,50,0.5,BlackForest,Materials,TRUE
-BlackCore,$item_blackcore,Material,20,1,Mistlands,Materials,TRUE
-BlackMarble,$item_blackmarble,Material,50,2,Mistlands,Materials,TRUE
-BlackMetal,$item_blackmetal,Material,30,12,Plains,Materials,TRUE
-BlackMetalScrap,$item_blackmetalscrap,Material,30,10,Plains,Materials,TRUE
-BlackSoup,$item_blacksoup,Consumable,10,1,Swamp,Food,TRUE
-Blackwood,$item_blackwood,Material,50,2,Ashlands,Materials,TRUE
-BlobVial,$item_blobvial,Material,10,1,Swamp,Materials,TRUE
-Bloodbag,$item_bloodbag,Material,50,0.5,Swamp,Materials,TRUE
-BloodPudding,$item_bloodpudding,Consumable,10,1,Plains,Food,TRUE
-Blueberries,$item_blueberries,Consumable,50,0.1,BlackForest,Food,TRUE
-BoarJerky,$item_boarjerky,Consumable,20,0.5,Meadows,Food,TRUE
-BoltBlackmetal,$item_bolt_blackmetal,Ammo,100,0.1,Plains,Weapons,TRUE
-BoltBone,$item_bolt_bone,Ammo,100,0.1,Mistlands,Weapons,TRUE
-BoltCarapace,$item_bolt_carapace,Ammo,100,0.1,Mistlands,Weapons,TRUE
-BoltCharred,$item_bolt_charred,Ammo,100,0.1,Ashlands,Weapons,TRUE
-BoltIron,$item_bolt_iron,Ammo,100,0.1,Swamp,Weapons,TRUE
-BombBile,$item_bilebomb,OneHandedWeapon,50,0.3,Mistlands,Weapons,TRUE
-BombBlob_Frost,$item_bombblob_frost,OneHandedWeapon,50,0.3,Mountain,Weapons,TRUE
-BombBlob_Lava,$item_bombblob_lava,OneHandedWeapon,50,0.3,Ashlands,Weapons,TRUE
-BombBlob_Poison,$item_bombblob_poison,OneHandedWeapon,50,0.3,Swamp,Weapons,TRUE
-BombBlob_PoisonElite,$item_bombblob_poisonelite,OneHandedWeapon,50,0.3,Swamp,Weapons,TRUE
-BombBlob_Tar,$item_bombblob_tar,OneHandedWeapon,50,0.3,Plains,Weapons,TRUE
-BombLava,$item_lavabomb,OneHandedWeapon,50,0.3,Ashlands,Weapons,TRUE
-BombOoze,$item_oozebomb,OneHandedWeapon,50,0.3,Swamp,Weapons,TRUE
-BombSiege,$item_catapult_ammo,Material,50,0.3,Ashlands,Materials,TRUE
-BombSmoke,$item_smokebomb,OneHandedWeapon,50,0.3,Ashlands,Weapons,TRUE
-BoneFragments,$item_bonefragments,Material,50,0.5,Meadows,Materials,TRUE
-BoneMawSerpentMeat,$item_bonemawmeat,Material,50,10,Ashlands,Materials,TRUE
-BonemawSerpentScale,$item_bonemawscale,Material,50,2,Ashlands,Materials,TRUE
-BonemawSerpentTooth,$item_bonemawtooth,Material,50,2,Ashlands,Materials,TRUE
-Bow,$item_bow,Bow,1,1.5,Meadows,Weapons,TRUE
-BowAshlands,$item_bow_ashlands,Bow,1,1.5,Ashlands,Weapons,TRUE
-BowAshlandsBlood,$item_bow_ashlandsblood,Bow,1,1.5,Ashlands,Weapons,TRUE
-BowAshlandsRoot,$item_bow_ashlandsroot,Bow,1,1.5,Ashlands,Weapons,TRUE
-BowAshlandsStorm,$item_bow_ashlandsstorm,Bow,1,1.5,Ashlands,Weapons,TRUE
-BowDraugrFang,$item_bow_draugrfang,Bow,1,1.5,Swamp,Weapons,TRUE
-BowFineWood,$item_bow_finewood,Bow,1,1.5,Meadows,Weapons,TRUE
-BowHuntsman,$item_bow_huntsman,Bow,1,1.5,Swamp,Weapons,TRUE
-BowSpineSnap,$item_bow_snipesnap,Bow,1,1.5,Mistlands,Weapons,TRUE
-Bread,$item_bread,Consumable,20,0.5,Plains,Food,TRUE
-BreadDough,$item_breaddough,Material,20,0.5,Plains,Materials,TRUE
-Bronze,$item_bronze,Material,30,12,BlackForest,Materials,TRUE
-BronzeNails,$item_bronzenails,Material,100,0.5,BlackForest,Materials,TRUE
-BronzeScrap,$item_bronzescrap,Material,30,10,BlackForest,Materials,TRUE
-BugMeat,$item_bug_meat,Material,20,1,Mistlands,Materials,TRUE
-CandleWick,$item_candlewick,Material,50,0.3,Ashlands,Materials,TRUE
-CapeAsh,$item_cape_ash,Shoulder,1,4,Ashlands,Armor,TRUE
-CapeAsksvin,$item_cape_asksvin,Shoulder,1,4,Ashlands,Armor,TRUE
-CapeDeerHide,$item_cape_deerhide,Shoulder,1,4,Meadows,Armor,TRUE
-CapeFeather,$item_cape_feather,Shoulder,1,4,Mistlands,Armor,TRUE
-CapeLinen,$item_cape_linen,Shoulder,1,4,Plains,Armor,TRUE
-CapeLox,$item_cape_lox,Shoulder,1,4,Plains,Armor,TRUE
-CapeOdin,$item_cape_odin,Shoulder,1,4,Global,Armor,FALSE
-CapeTrollHide,$item_cape_trollhide,Shoulder,1,4,BlackForest,Armor,TRUE
-CapeWolf,$item_cape_wolf,Shoulder,1,4,Mountain,Armor,TRUE
-Carapace,$item_carapace,Material,50,2,Mistlands,Materials,TRUE
-Carrot,$item_carrot,Consumable,50,0.3,BlackForest,Food,TRUE
-CarrotSeeds,$item_carrotseeds,Material,100,0.1,BlackForest,Materials,TRUE
-CarrotSoup,$item_carrotsoup,Consumable,10,1,BlackForest,Food,TRUE
-Catapult_ammo,$item_catapult_training_ammo,Material,50,0.3,Ashlands,Materials,TRUE
-CelestialFeather,$item_celestialfeather,Material,50,0.5,Ashlands,Materials,TRUE
-CeramicPlate,$item_ceramicplate,Material,30,2,Ashlands,Materials,TRUE
-Chain,$item_chain,Material,50,2,Swamp,Materials,TRUE
-CharcoalResin,$item_charcoalresin,Material,50,0.3,Ashlands,Materials,TRUE
-CharredBone,$item_charredbone,Material,50,0.5,Ashlands,Materials,TRUE
-CharredCogwheel,$item_charredcogwheel,Material,10,5,Ashlands,Materials,TRUE
-Charredskull,$item_charredskull,Material,50,2,Ashlands,Materials,TRUE
-chest_hildir1,$item_chest_hildir1,Misc,1,200,Global,Items,FALSE
-chest_hildir2,$item_chest_hildir2,Misc,1,200,Global,Items,FALSE
-chest_hildir3,$item_chest_hildir3,Misc,1,200,Global,Items,FALSE
-ChickenEgg,$item_chicken_egg,Misc,20,1,Plains,Items,TRUE
-ChickenMeat,$item_chicken_meat,Material,20,1,Plains,Materials,TRUE
-Chitin,$item_chitin,Material,50,2,Ocean,Materials,TRUE
-Cloudberry,$item_cloudberries,Consumable,50,0.1,Plains,Food,TRUE
-Club,$item_club,OneHandedWeapon,1,2,Meadows,Weapons,TRUE
-Coal,$item_coal,Material,50,2,Global,Materials,TRUE
-Coins,$item_coins,Material,999,0.1,Global,Materials,TRUE
-CookedAsksvinMeat,$item_asksvin_meat_cooked,Consumable,20,1,Ashlands,Food,TRUE
-CookedBjornMeat,$item_bjorn_meat_cooked,Consumable,20,1,BlackForest,Food,TRUE
-CookedBoneMawSerpentMeat,$item_bonemawmeat_cooked,Consumable,50,10,Ashlands,Food,TRUE
-CookedBugMeat,$item_bug_meat_cooked,Consumable,20,1,Mistlands,Food,TRUE
-CookedChickenMeat,$item_chicken_meat_cooked,Consumable,20,1,Plains,Food,TRUE
-CookedDeerMeat,$item_deer_meat_cooked,Consumable,20,1,Meadows,Food,TRUE
-CookedEgg,$item_egg_cooked,Consumable,20,1,Mistlands,Food,TRUE
-CookedHareMeat,$item_hare_meat_cooked,Consumable,20,1,Mistlands,Food,TRUE
-CookedLoxMeat,$item_loxmeat_cooked,Consumable,20,2,Plains,Food,TRUE
-CookedMeat,$item_boar_meat_cooked,Consumable,20,1,Meadows,Food,TRUE
-CookedVoltureMeat,$item_volture_meat_cooked,Consumable,20,1,Ashlands,Food,TRUE
-CookedWolfMeat,$item_wolf_meat_cooked,Consumable,20,1,Mountain,Food,TRUE
-Copper,$item_copper,Material,30,12,BlackForest,Materials,TRUE
-CopperOre,$item_copperore,Material,30,10,BlackForest,Materials,TRUE
-CopperScrap,$item_copperscrap,Material,30,10,BlackForest,Materials,TRUE
-CrossbowArbalest,$item_crossbow_arbalest,Bow,1,1.5,Mistlands,Weapons,TRUE
-CrossbowRipper,$item_crossbow_ripper,Bow,1,1.5,Ashlands,Weapons,TRUE
-CrossbowRipperBlood,$item_crossbow_ripper_blood,Bow,1,1.5,Ashlands,Weapons,TRUE
-CrossbowRipperLightning,$item_crossbow_ripper_lightning,Bow,1,1.5,Ashlands,Weapons,TRUE
-CrossbowRipperNature,$item_crossbow_ripper_nature,Bow,1,1.5,Ashlands,Weapons,TRUE
-CryptKey,$item_cryptkey,Misc,1,0.1,Swamp,Items,TRUE
-Crystal,$item_crystal,Material,50,1,Mountain,Materials,TRUE
-Cultivator,$item_cultivator,Tool,1,2,BlackForest,Tools,TRUE
-CuredSquirrelHamstring,$item_curedsquirrelhamstring,Material,50,0.5,Global,Materials,TRUE
-Dandelion,$item_dandelion,Material,50,0.1,Meadows,Materials,TRUE
-DeerHide,$item_deerhide,Material,50,1,Meadows,Materials,TRUE
-DeerMeat,$item_deer_meat,Material,20,1,Meadows,Materials,TRUE
-DeerStew,$item_deerstew,Consumable,10,1,Meadows,Food,TRUE
-Demister,$item_demister,Utility,1,0.1,Mistlands,Tools,TRUE
-DragonEgg,$item_dragonegg,Misc,1,200,Mountain,Items,TRUE
-DragonTear,$item_dragontear,Misc,50,1,Mountain,Items,TRUE
-DvergerArbalest,$item_crossbow_arbalest,Utility,1,1.5,Mistlands,Tools,FALSE
-DvergrKey,$item_dvergrkey,Misc,1,0.5,Mistlands,Items,TRUE
-DvergrKeyFragment,$item_dvergrkeyfragment,Material,9,0.5,Mistlands,Materials,TRUE
-DvergrNeedle,$item_dvergrneedle,Material,10,5,Mistlands,Materials,TRUE
-DyrnwynBladeFragment,$item_Dyrnwyn_blade,Material,1,0.5,Meadows,Materials,TRUE
-DyrnwynHiltFragment,$item_Dyrnwyn_hilt,Material,1,0.5,Meadows,Materials,TRUE
-DyrnwynTipFragment,$item_Dyrnwyn_tip,Material,1,0.5,Meadows,Materials,TRUE
-Ectoplasm,$item_ectoplasm,Material,50,2,Global,Materials,TRUE
-Eitr,$item_eitr,Material,30,5,Mistlands,Materials,TRUE
-ElderBark,$item_elderbark,Material,50,2,Swamp,Materials,TRUE
-Entrails,$item_entrails,Material,50,0.5,Swamp,Materials,TRUE
-Eyescream,$item_eyescream,Consumable,10,0.5,Mountain,Food,TRUE
-FaderDrop,$item_fader_drop,Material,30,1,Ashlands,Materials,TRUE
-FeastAshlands,$item_feastashlands,Consumable,1,1,Ashlands,Food,TRUE
-FeastAshlands_Material,$item_feastashlands,Material,5,10,Ashlands,Materials,TRUE
-FeastBlackforest,$item_feastblackforest,Consumable,1,1,BlackForest,Food,TRUE
-FeastBlackforest_Material,$item_feastblackforest,Material,5,10,BlackForest,Materials,TRUE
-Feaster,$item_feaster,Tool,1,2,Global,Tools,TRUE
-FeastMeadows,$item_feastmeadows,Consumable,1,1,Meadows,Food,TRUE
-FeastMeadows_Material,$item_feastmeadows,Material,5,10,Meadows,Materials,TRUE
-FeastMistlands,$item_feastmistlands,Consumable,1,1,Mistlands,Food,TRUE
-FeastMistlands_Material,$item_feastmistlands,Material,5,10,Mistlands,Materials,TRUE
-FeastMountains,$item_feastmountains,Consumable,1,1,Mountain,Food,TRUE
-FeastMountains_Material,$item_feastmountains,Material,5,10,Mountain,Materials,TRUE
-FeastOceans,$item_feastoceans,Consumable,1,1,Ocean,Food,TRUE
-FeastOceans_Material,$item_feastoceans,Material,5,10,Ocean,Materials,TRUE
-FeastPlains,$item_feastplains,Consumable,1,1,Plains,Food,TRUE
-FeastPlains_Material,$item_feastplains,Material,5,10,Plains,Materials,TRUE
-FeastSwamps,$item_feastswamps,Consumable,1,1,Swamp,Food,TRUE
-FeastSwamps_Material,$item_feastswamps,Material,5,10,Swamp,Materials,TRUE
-Feathers,$item_feathers,Material,50,0.1,Global,Materials,TRUE
-Fiddleheadfern,$item_fiddleheadfern,Consumable,50,0.1,Mistlands,Food,TRUE
-FierySvinstew,$item_fierysvinstew,Consumable,10,1,Ashlands,Food,TRUE
-FineWood,$item_finewood,Material,50,2,Ashlands,Materials,TRUE
-FirCone,$item_fircone,Material,100,0.1,BlackForest,Materials,TRUE
-FireworksRocket_Blue,$item_fireworkrocket_blue,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_Cyan,$item_fireworkrocket_cyan,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_Green,$item_fireworkrocket_green,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_Purple,$item_fireworkrocket_purple,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_Red,$item_fireworkrocket_red,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_White,$item_fireworkrocket_white,Material,10,0.5,Global,Materials,TRUE
-FireworksRocket_Yellow,$item_fireworkrocket_yellow,Material,10,0.5,Global,Materials,TRUE
-Fish1,$animal_fish1,Fish,10,2,Ocean,Fishing,TRUE
-Fish10,$animal_fish10,Fish,10,2,Ocean,Fishing,TRUE
-Fish11,$animal_fish11,Fish,10,2,Ocean,Fishing,TRUE
-Fish12,$animal_fish12,Fish,10,2,Ocean,Fishing,TRUE
-Fish2,$animal_fish2,Fish,10,2,Ocean,Fishing,TRUE
-Fish3,$animal_fish3,Fish,10,2,Ocean,Fishing,TRUE
-Fish4_cave,$animal_fish4,Fish,10,2,Ocean,Fishing,TRUE
-Fish5,$animal_fish5,Fish,10,2,Ocean,Fishing,TRUE
-Fish6,$animal_fish6,Fish,10,2,Ocean,Fishing,TRUE
-Fish7,$animal_fish7,Fish,10,2,Ocean,Fishing,TRUE
-Fish8,$animal_fish8,Fish,10,2,Ocean,Fishing,TRUE
-Fish9,$animal_fish9,Fish,10,2,Ocean,Fishing,TRUE
-FishAndBread,$item_fishandbread,Consumable,10,1,Ocean,Food,TRUE
-FishAndBreadUncooked,$item_fishandbreaduncooked,Material,10,1,Ocean,Materials,TRUE
-FishAnglerRaw,$item_fish_raw,Material,20,0.5,Ocean,Materials,TRUE
-FishCooked,$item_fish_cooked,Consumable,20,0.5,Ocean,Food,TRUE
-FishingBait,$item_fishingbait,Ammo,100,0.1,Ocean,Weapons,TRUE
-FishingBaitAshlands,$item_fishingbait_ashlands,Ammo,100,0.1,Ashlands,Weapons,TRUE
-FishingBaitCave,$item_fishingbait_cave,Ammo,100,0.1,Mountain,Weapons,TRUE
-FishingBaitDeepNorth,$item_fishingbait_deepnorth,Ammo,100,0.1,Ocean,Weapons,TRUE
-FishingBaitForest,$item_fishingbait_forest,Ammo,100,0.1,Ocean,Weapons,TRUE
-FishingBaitMistlands,$item_fishingbait_mistlands,Ammo,100,0.1,Mistlands,Weapons,TRUE
-FishingBaitOcean,$item_fishingbait_ocean,Ammo,100,0.1,Ocean,Weapons,TRUE
-FishingBaitPlains,$item_fishingbait_plains,Ammo,100,0.1,Plains,Weapons,TRUE
-FishingBaitSwamp,$item_fishingbait_swamp,Ammo,100,0.1,Swamp,Weapons,TRUE
-FishingRod,$item_fishingrod,TwoHandedWeapon,1,1.5,Ocean,Weapons,TRUE
-FishRaw,$item_fish_raw,Material,20,0.5,Ocean,Materials,TRUE
-FishWraps,$item_fishwraps,Consumable,10,1,Ocean,Food,TRUE
-FistBjornClaw,$item_fistweapon_bjorn,TwoHandedWeapon,1,2,BlackForest,Weapons,TRUE
-FistBjornUndeadClaw,$item_fistweapon_bjorn_undead,TwoHandedWeapon,1,2,BlackForest,Weapons,TRUE
-FistFenrirClaw,$item_fistweapon_fenris,TwoHandedWeapon,1,2,Mountain,Weapons,TRUE
-Flametal,$item_flametal_old,Material,30,12,Ashlands,Materials,TRUE
-FlametalNew,$item_flametal,Material,30,12,Ashlands,Materials,TRUE
-FlametalOre,$item_flametalore_old,Material,30,12,Ashlands,Materials,TRUE
-FlametalOreNew,$item_flametalore,Material,30,10,Ashlands,Materials,TRUE
-Flax,$item_flax,Material,100,0.2,Plains,Materials,TRUE
-Flint,$item_flint,Material,30,2,Meadows,Materials,TRUE
-FragrantBundle,$item_fragrantbundle,Material,50,0.5,Meadows,Materials,TRUE
-FreezeGland,$item_freezegland,Material,50,0.5,Mountain,Materials,TRUE
-FreshSeaweed,$item_freshseaweed,Material,50,0.5,Global,Materials,TRUE
-GemstoneBlue,$item_gemstone_blue,Material,50,2,Meadows,Materials,TRUE
-GemstoneGreen,$item_gemstone_green,Material,50,2,Meadows,Materials,TRUE
-GemstoneRed,$item_gemstone_red,Material,50,2,Meadows,Materials,TRUE
-GiantBloodSack,$item_bloodclot,Material,50,0.5,Mistlands,Materials,TRUE
-GoblinTotem,$item_goblintotem,Misc,30,1,Plains,Items,TRUE
-Grausten,$item_grausten,Material,50,2,Ashlands,Materials,TRUE
-GreydwarfEye,$item_greydwarfeye,Material,50,0.2,BlackForest,Materials,TRUE
-Guck,$item_guck,Material,50,0.5,Swamp,Materials,TRUE
-Hammer,$item_hammer,Tool,1,2,Meadows,Tools,TRUE
-HardAntler,$item_hardantler,Material,50,2,Meadows,Materials,TRUE
-HareMeat,$item_hare_meat,Material,20,1,Mistlands,Materials,TRUE
-HelmetAshlandsMediumHood,$item_helmet_medium_ashlands,Helmet,1,1,Ashlands,Armor,TRUE
-HelmetBerserkerHood,$item_helmet_berserker,Helmet,1,1,BlackForest,Armor,TRUE
-HelmetBerserkerUndead,$item_helmet_berserker_undead,Helmet,1,1,BlackForest,Armor,TRUE
-HelmetBronze,$item_helmet_bronze,Helmet,1,3,BlackForest,Armor,TRUE
-HelmetCarapace,$item_helmet_carapace,Helmet,1,3,Mistlands,Armor,TRUE
-HelmetCelebration,$item_helmet_celebration,Helmet,1,3,Global,Armor,TRUE
-HelmetDrake,$item_helmet_drake,Helmet,1,3,Mountain,Armor,TRUE
-HelmetDverger,$item_helmet_dverger,Helmet,1,1,Global,Armor,TRUE
-HelmetFenring,$item_helmet_fenris,Helmet,1,1,Mountain,Armor,TRUE
-HelmetFishingHat,$item_helmet_fishinghat,Helmet,1,3,Ocean,Armor,TRUE
-HelmetFlametal,$item_helmet_flametal,Helmet,1,3,Ashlands,Armor,TRUE
-HelmetHat1,$item_helmet_hat1,Helmet,1,3,Global,Armor,TRUE
-HelmetHat10,$item_helmet_hat10,Helmet,1,3,Global,Armor,TRUE
-HelmetHat2,$item_helmet_hat2,Helmet,1,3,Global,Armor,TRUE
-HelmetHat3,$item_helmet_hat3,Helmet,1,3,Global,Armor,TRUE
-HelmetHat4,$item_helmet_hat4,Helmet,1,3,Global,Armor,TRUE
-HelmetHat5,$item_helmet_hat5,Helmet,1,3,Global,Armor,TRUE
-HelmetHat6,$item_helmet_hat6,Helmet,1,3,Global,Armor,TRUE
-HelmetHat7,$item_helmet_hat7,Helmet,1,3,Global,Armor,TRUE
-HelmetHat8,$item_helmet_hat8,Helmet,1,3,Global,Armor,TRUE
-HelmetHat9,$item_helmet_hat9,Helmet,1,3,Global,Armor,TRUE
-HelmetIron,$item_helmet_iron,Helmet,1,3,Swamp,Armor,TRUE
-HelmetLeather,$item_helmet_leather,Helmet,1,1,Meadows,Armor,TRUE
-HelmetMage,$item_helmet_mage,Helmet,1,1,Mistlands,Armor,TRUE
-HelmetMage_Ashlands,$item_helmet_mage_ashlands,Helmet,1,1,Ashlands,Armor,TRUE
-HelmetMidsummerCrown,$item_helmet_midsummercrown,Helmet,1,1,Global,Armor,TRUE
-HelmetOdin,$item_helmet_odin,Helmet,1,1,Global,Armor,FALSE
-HelmetPadded,$item_helmet_padded,Helmet,1,3,Plains,Armor,TRUE
-HelmetPointyHat,$item_helmet_witchhat,Helmet,1,3,Global,Armor,TRUE
-HelmetRoot,$item_helmet_root,Helmet,1,3,Swamp,Armor,TRUE
-HelmetStrawHat,$item_helmet_strawhat,Helmet,1,3,Global,Armor,TRUE
-HelmetSweatBand,$item_helmet_sweatband,Helmet,1,1,Global,Armor,TRUE
-HelmetTrollLeather,$item_helmet_trollleather,Helmet,1,1,BlackForest,Armor,TRUE
-HelmetYule,$item_helmet_yule,Helmet,1,1,Global,Armor,TRUE
-HildirKey_forestcrypt,$item_hildirkey1,Misc,1,0.1,BlackForest,Items,TRUE
-HildirKey_mountaincave,$item_hildirkey2,Misc,1,0.1,Mountain,Items,TRUE
-HildirKey_plainsfortress,$item_hildirkey3,Misc,1,0.1,Plains,Items,TRUE
-Hoe,$item_hoe,Tool,1,2,BlackForest,Tools,TRUE
-Honey,$item_honey,Consumable,50,0.2,Meadows,Food,TRUE
-HoneyGlazedChicken,$item_honeyglazedchicken,Consumable,10,1,Meadows,Food,TRUE
-HoneyGlazedChickenUncooked,$item_honeyglazedchickenuncooked,Material,10,1,Meadows,Materials,TRUE
-Iron,$item_iron,Material,30,12,Swamp,Materials,TRUE
-IronNails,$item_ironnails,Material,100,0.5,Swamp,Materials,TRUE
-IronOre,$item_ironore,Material,30,10,Swamp,Materials,TRUE
-Ironpit,$item_ironpit,Material,10,10,Swamp,Materials,TRUE
-IronScrap,$item_ironscrap,Material,30,10,Swamp,Materials,TRUE
-JuteBlue,$item_juteblue,Material,50,2,Mistlands,Materials,TRUE
-JuteRed,$item_jutered,Material,50,2,Mountain,Materials,TRUE
-KnifeBlackMetal,$item_knife_blackmetal,OneHandedWeapon,1,0.3,Plains,Weapons,TRUE
-KnifeButcher,$item_knife_butcher,OneHandedWeapon,1,0.3,Meadows,Weapons,TRUE
-KnifeChitin,$item_knife_chitin,OneHandedWeapon,1,0.3,BlackForest,Weapons,TRUE
-KnifeCopper,$item_knife_copper,OneHandedWeapon,1,0.3,BlackForest,Weapons,TRUE
-KnifeFlint,$item_knife_flint,OneHandedWeapon,1,0.3,Meadows,Weapons,TRUE
-KnifeSilver,$item_knife_silver,OneHandedWeapon,1,0.3,Mountain,Weapons,TRUE
-KnifeSkollAndHati,$item_knife_skollandhati,TwoHandedWeapon,1,0.3,Plains,Weapons,TRUE
-KnifeWood,$item_knife_wood,OneHandedWeapon,1,0.3,Meadows,Weapons,TRUE
-Lantern,$item_lantern,Torch,1,2,Mistlands,Tools,TRUE
-Larva,$item_larva,Material,20,1,Mistlands,Materials,TRUE
-LeatherScraps,$item_leatherscraps,Material,50,0.5,Meadows,Materials,TRUE
-LinenThread,$item_linenthread,Material,50,2,Plains,Materials,TRUE
-LoxMeat,$item_loxmeat,Material,20,2,Plains,Materials,TRUE
-LoxPelt,$item_loxpelt,Material,50,1,Plains,Materials,TRUE
-LoxPie,$item_loxpie,Consumable,10,1,Plains,Food,TRUE
-LoxPieUncooked,$item_loxpie_uncooked,Material,10,1,Plains,Materials,TRUE
-MaceBronze,$item_mace_bronze,OneHandedWeapon,1,2,BlackForest,Weapons,TRUE
-MaceEldner,$item_mace_eldner,OneHandedWeapon,1,2,Ashlands,Weapons,TRUE
-MaceEldnerBlood,$item_mace_eldner_blood,OneHandedWeapon,1,2,Ashlands,Weapons,TRUE
-MaceEldnerLightning,$item_mace_eldner_lightning,OneHandedWeapon,1,2,Ashlands,Weapons,TRUE
-MaceEldnerNature,$item_mace_eldner_nature,OneHandedWeapon,1,2,Ashlands,Weapons,TRUE
-MaceIron,$item_mace_iron,OneHandedWeapon,1,2,Swamp,Weapons,TRUE
-MaceNeedle,$item_mace_needle,OneHandedWeapon,1,2,Plains,Weapons,TRUE
-MaceSilver,$item_mace_silver,OneHandedWeapon,1,2,Mountain,Weapons,TRUE
-MaceWood,$item_mace_wood,OneHandedWeapon,1,2,Meadows,Weapons,TRUE
-MagicallyStuffedShroom,$item_magicallystuffedmushroom,Consumable,10,1,Meadows,Food,TRUE
-MagicallyStuffedShroomUncooked,$item_magicallystuffedmushroomuncooked,Material,10,1,Meadows,Materials,TRUE
-Mandible,$item_mandible,Material,50,0.5,Mistlands,Materials,TRUE
-MarinatedGreens,$item_marinatedgreens,Consumable,10,1,Mistlands,Food,TRUE
-MashedMeat,$item_mashedmeat,Consumable,10,1,Ashlands,Food,TRUE
-MeadBaseBugRepellent,$item_meadbasebugrepellent,Material,1,1,Plains,Materials,TRUE
-MeadBaseBzerker,$item_meadbasebzerker,Material,1,1,Plains,Materials,TRUE
-MeadBaseEitrLingering,$item_meadbaseeitr_lingering,Material,1,1,Mistlands,Materials,TRUE
-MeadBaseEitrMinor,$item_meadbaseeitr,Material,1,1,Mistlands,Materials,TRUE
-MeadBaseFrostResist,$item_meadbasefrostresist,Material,1,1,Mountain,Materials,TRUE
-MeadBaseHasty,$item_meadbasehasty,Material,1,1,Swamp,Materials,TRUE
-MeadBaseHealthLingering,$item_meadbasehealth_lingering,Material,1,1,Mistlands,Materials,TRUE
-MeadBaseHealthMajor,$item_meadbasehealth_major,Material,1,1,Mistlands,Materials,TRUE
-MeadBaseHealthMedium,$item_meadbasehealth_medium,Material,1,1,Swamp,Materials,TRUE
-MeadBaseHealthMinor,$item_meadbasehealth,Material,1,1,BlackForest,Materials,TRUE
-MeadBaseLightFoot,$item_meadbaselightfoot,Material,1,1,Mistlands,Materials,TRUE
-MeadBasePoisonResist,$item_meadbasepoisonresist,Material,1,1,Swamp,Materials,TRUE
-MeadBaseStaminaLingering,$item_meadbasestamina_lingering,Material,1,1,Mistlands,Materials,TRUE
-MeadBaseStaminaMedium,$item_meadbasestamina_medium,Material,1,1,Plains,Materials,TRUE
-MeadBaseStaminaMinor,$item_meadbasestamina,Material,1,1,BlackForest,Materials,TRUE
-MeadBaseStrength,$item_meadbasestrength,Material,1,1,Swamp,Materials,TRUE
-MeadBaseSwimmer,$item_meadbaseswimmer,Material,1,1,Swamp,Materials,TRUE
-MeadBaseTamer,$item_meadbasetamer,Material,1,1,Mountain,Materials,TRUE
-MeadBaseTasty,$item_meadbasetasty,Material,1,1,BlackForest,Materials,TRUE
-MeadBugRepellent,$item_mead_bugrepellent,Consumable,10,1,Plains,Food,TRUE
-MeadBzerker,$item_mead_bzerker,Consumable,10,1,Plains,Food,TRUE
-MeadEitrLingering,$item_mead_eitr_lingering,Consumable,10,1,Mistlands,Food,TRUE
-MeadEitrMinor,$item_mead_eitr_minor,Consumable,10,1,Mistlands,Food,TRUE
-MeadFrostResist,$item_mead_frostres,Consumable,10,1,Mountain,Food,TRUE
-MeadHasty,$item_mead_hasty,Consumable,10,1,Swamp,Food,TRUE
-MeadHealthLingering,$item_mead_hp_lingering,Consumable,10,1,Mistlands,Food,TRUE
-MeadHealthMajor,$item_mead_hp_major,Consumable,10,1,Mistlands,Food,TRUE
-MeadHealthMedium,$item_mead_hp_medium,Consumable,10,1,Swamp,Food,TRUE
-MeadHealthMinor,$item_mead_hp_minor,Consumable,10,1,BlackForest,Food,TRUE
-MeadLightfoot,$item_mead_lightfoot,Consumable,10,1,Mistlands,Food,TRUE
-MeadPoisonResist,$item_mead_poisonres,Consumable,10,1,Swamp,Food,TRUE
-MeadStaminaLingering,$item_mead_stamina_lingering,Consumable,10,1,Mistlands,Food,TRUE
-MeadStaminaMedium,$item_mead_stamina_medium,Consumable,10,1,Plains,Food,TRUE
-MeadStaminaMinor,$item_mead_stamina_minor,Consumable,10,1,BlackForest,Food,TRUE
-MeadStrength,$item_mead_strength,Consumable,10,1,Swamp,Food,TRUE
-MeadSwimmer,$item_mead_swimmer,Consumable,10,1,Swamp,Food,TRUE
-MeadTamer,$item_mead_tamer,Consumable,10,1,Mountain,Food,TRUE
-MeadTasty,$item_mead_tasty,Consumable,10,1,BlackForest,Food,TRUE
-MeadTrollPheromones,$item_mead_trollpheromones,Consumable,10,1,BlackForest,Food,TRUE
-MeatPlatter,$item_meatplatter,Consumable,10,1,Mistlands,Food,TRUE
-MeatPlatterUncooked,$item_meatplatteruncooked,Material,10,1,Mistlands,Materials,TRUE
-MechanicalSpring,$item_mechanicalspring,Material,10,5,Mistlands,Materials,TRUE
-MinceMeatSauce,$item_mincemeatsauce,Consumable,10,1,BlackForest,Food,TRUE
-MisthareSupreme,$item_mistharesupreme,Consumable,10,1,Mistlands,Food,TRUE
-MisthareSupremeUncooked,$item_mistharesupremeuncooked,Material,10,1,Mistlands,Materials,TRUE
-MoltenCore,$item_moltencore,Material,20,1,Ashlands,Materials,TRUE
-MorgenHeart,$item_morgenheart,Material,50,0.5,Ashlands,Materials,TRUE
-MorgenSinew,$item_morgensinew,Material,50,0.5,Ashlands,Materials,TRUE
-Mushroom,$item_mushroomcommon,Consumable,50,0.1,Meadows,Food,TRUE
-MushroomBlue,$item_mushroomblue,Consumable,50,0.1,Meadows,Food,TRUE
-MushroomBzerker,$item_mushroom_bzerker,Consumable,50,0.1,Meadows,Food,TRUE
-MushroomJotunPuffs,$item_jotunpuffs,Consumable,50,0.1,Mistlands,Food,TRUE
-MushroomMagecap,$item_magecap,Consumable,50,0.1,Mistlands,Food,TRUE
-MushroomOmelette,$item_mushroomomelette,Consumable,10,1,Meadows,Food,TRUE
-MushroomSmokePuff,$item_smokepuff,Consumable,50,0.1,Meadows,Food,TRUE
-MushroomYellow,$item_mushroomyellow,Consumable,50,0.1,Meadows,Food,TRUE
-NeckTail,$item_necktail,Material,50,0.5,Meadows,Materials,TRUE
-NeckTailGrilled,$item_necktailgrilled,Consumable,20,0.5,Meadows,Food,TRUE
-Needle,$item_needle,Material,50,0.5,Plains,Materials,TRUE
-Obsidian,$item_obsidian,Material,50,2,Mountain,Materials,TRUE
-Onion,$item_onion,Consumable,50,0.3,Mountain,Food,TRUE
-OnionSeeds,$item_onionseeds,Material,100,0.1,Mountain,Materials,TRUE
-OnionSoup,$item_onionsoup,Consumable,10,1,Mountain,Food,TRUE
-Ooze,$item_ooze,Material,50,0.5,Swamp,Materials,TRUE
-PickaxeAntler,$item_pickaxe_antler,TwoHandedWeapon,1,2,BlackForest,Weapons,TRUE
-PickaxeBlackMetal,$item_pickaxe_blackmetal,TwoHandedWeapon,1,2,Plains,Weapons,TRUE
-PickaxeBronze,$item_pickaxe_bronze,TwoHandedWeapon,1,2,BlackForest,Weapons,TRUE
-PickaxeIron,$item_pickaxe_iron,TwoHandedWeapon,1,2,Swamp,Weapons,TRUE
-PickaxeStone,$item_pickaxe_stone,TwoHandedWeapon,1,2,Meadows,Weapons,TRUE
-PineCone,$item_pinecone,Material,100,0.1,BlackForest,Materials,TRUE
-PiquantPie,$item_piquantpie,Consumable,10,1,Ashlands,Food,TRUE
-PiquantPieUncooked,$item_piquantpie_uncooked,Material,10,1,Ashlands,Materials,TRUE
-Pot_Shard_Green,$item_pot_shard_green,Material,50,2,Ashlands,Materials,TRUE
-Pot_Shard_Red,$item_pot_shard_red,Material,50,2,Ashlands,Materials,TRUE
-PowderedDragonEgg,$item_powdereddragonegg,Material,50,0.5,Mountain,Materials,TRUE
-ProustitePowder,$item_proustitepowder,Material,50,0.5,Ashlands,Materials,TRUE
-Pukeberries,$item_pukeberries,Consumable,50,0.1,BlackForest,Food,TRUE
-PungentPebbles,$item_pungentpebbles,Material,50,0.5,Global,Materials,TRUE
-QueenBee,$item_queenbee,Material,20,0.2,Meadows,Materials,TRUE
-QueenDrop,$item_seekerqueen_drop,Material,30,1,Mistlands,Materials,TRUE
-QueensJam,$item_queensjam,Consumable,10,1,BlackForest,Food,TRUE
-Raspberry,$item_raspberries,Consumable,50,0.1,Meadows,Food,TRUE
-RawMeat,$item_boar_meat,Material,20,1,Meadows,Materials,TRUE
-Resin,$item_resin,Material,50,0.3,Global,Materials,TRUE
-RoastedCrustPie,$item_roastedcrustpie,Consumable,10,1,Ashlands,Food,TRUE
-RoastedCrustPieUncooked,$item_roastedcrustpie_uncooked,Material,10,1,Ashlands,Materials,TRUE
-Root,$item_root,Material,50,0.3,Swamp,Materials,TRUE
-RottenMeat,$item_meat_rotten,Consumable,20,0.5,Global,Food,TRUE
-RoundLog,$item_roundlog,Material,50,2,BlackForest,Materials,TRUE
-RoyalJelly,$item_royaljelly,Consumable,50,0.1,Mistlands,Food,TRUE
-Ruby,$item_ruby,Material,20,0.1,Global,Materials,TRUE
-SaddleAsksvin,$item_saddleasksvin,Misc,1,10,Ashlands,Items,TRUE
-SaddleLox,$item_saddlelox,Misc,1,10,Plains,Items,TRUE
-Salad,$item_salad,Consumable,10,1,Mistlands,Food,TRUE
-Sap,$item_sap,Material,50,0.2,Mistlands,Materials,TRUE
-Sausages,$item_sausages,Consumable,20,0.5,Swamp,Food,TRUE
-ScaleHide,$item_scalehide,Material,50,0.5,Mistlands,Materials,TRUE
-ScorchingMedley,$item_scorchingmedley,Consumable,10,1,Ashlands,Food,TRUE
-Scythe,$item_scythe,TwoHandedWeapon,1,2,Mountain,Weapons,TRUE
-ScytheHandle,$item_scythehandle,Misc,20,2,Global,Items,TRUE
-SeekerAspic,$item_seekeraspic,Consumable,10,1,Mistlands,Food,TRUE
-SerpentMeat,$item_serpentmeat,Material,50,10,Ocean,Materials,TRUE
-SerpentMeatCooked,$item_serpentmeatcooked,Consumable,50,10,Ocean,Food,TRUE
-SerpentScale,$item_serpentscale,Material,50,2,Ocean,Materials,TRUE
-SerpentStew,$item_serpentstew,Consumable,10,1,Ocean,Food,TRUE
-SharpeningStone,$item_sharpeningstone,Material,20,6,Meadows,Materials,TRUE
-ShieldBanded,$item_shield_banded,Shield,1,5,Swamp,Weapons,TRUE
-ShieldBlackmetal,$item_shield_blackmetal,Shield,1,5,Plains,Weapons,TRUE
-ShieldBlackmetalTower,$item_shield_blackmetal_tower,Shield,1,5,Plains,Weapons,TRUE
-ShieldBoneTower,$item_shield_bonetower,Shield,1,4,BlackForest,Weapons,TRUE
-ShieldBronzeBuckler,$item_shield_bronzebuckler,Shield,1,3,BlackForest,Weapons,TRUE
-ShieldCarapace,$item_shield_carapace,Shield,1,5,Mistlands,Weapons,TRUE
-ShieldCarapaceBuckler,$item_shield_carapacebuckler,Shield,1,5,Mistlands,Weapons,TRUE
-ShieldCore,$item_shieldcore,Material,20,1,Mistlands,Materials,TRUE
-ShieldFlametal,$item_shield_flametal,Shield,1,5,Ashlands,Weapons,TRUE
-ShieldFlametalTower,$item_shield_flametal_tower,Shield,1,5,Ashlands,Weapons,TRUE
-ShieldIronBuckler,$item_shield_ironbuckler,Shield,1,4,Swamp,Weapons,TRUE
-ShieldIronSquare,$item_shield_iron_square,Shield,1,4,Swamp,Weapons,TRUE
-ShieldIronTower,$item_shield_iron_tower,Shield,1,4,Swamp,Weapons,TRUE
-ShieldKnight,$item_shield_knight,Shield,1,4,Global,Weapons,FALSE
-ShieldSerpentscale,$item_shield_serpentscale,Shield,1,5,Ocean,Weapons,TRUE
-ShieldSilver,$item_shield_silver,Shield,1,5,Mountain,Weapons,TRUE
-ShieldWood,$item_shield_wood,Shield,1,4,Meadows,Weapons,TRUE
-ShieldWoodTower,$item_shield_woodtower,Shield,1,4,Meadows,Weapons,TRUE
-Muckshake,$item_shocklatesmoothie,Consumable,10,1,Swamp,Food,TRUE
-Silver,$item_silver,Material,30,14,Mountain,Materials,TRUE
-SilverNecklace,$item_silvernecklace,Material,20,0.1,Mountain,Materials,TRUE
-SilverOre,$item_silverore,Material,30,14,Mountain,Materials,TRUE
-SizzlingBerryBroth,$item_sizzlingberrybroth,Consumable,10,1,Ashlands,Food,TRUE
-SledgeDemolisher,$item_sledge_demolisher,TwoHandedWeapon,1,4,Mistlands,Weapons,TRUE
-SledgeIron,$item_sledge_iron,TwoHandedWeapon,1,4,Swamp,Weapons,TRUE
-SledgeStagbreaker,$item_stagbreaker,TwoHandedWeapon,1,4,BlackForest,Weapons,TRUE
-SledgeWood,$item_sledge_wood,TwoHandedWeapon,1,4,Meadows,Weapons,TRUE
-Softtissue,$item_softtissue,Material,40,1,Mistlands,Materials,TRUE
-Sparkler,$item_sparkler,Torch,1,1,Global,Tools,TRUE
-SparklingShroomshake,$item_sparklingshroomshake,Consumable,10,1,Mistlands,Food,TRUE
-SpearBronze,$item_spear_bronze,OneHandedWeapon,1,1.5,BlackForest,Weapons,TRUE
-SpearCarapace,$item_spear_carapace,OneHandedWeapon,1,1.5,Mistlands,Weapons,TRUE
-SpearChitin,$item_spear_chitin,OneHandedWeapon,1,1.5,BlackForest,Weapons,TRUE
-SpearElderbark,$item_spear_ancientbark,OneHandedWeapon,1,1.5,Swamp,Weapons,TRUE
-SpearFlint,$item_spear_flint,OneHandedWeapon,1,1.5,Meadows,Weapons,TRUE
-SpearSplitner,$item_spear_splitner,OneHandedWeapon,1,1.5,Ashlands,Weapons,TRUE
-SpearSplitner_Blood,$item_spear_splitner_blood,OneHandedWeapon,1,1.5,Ashlands,Weapons,TRUE
-SpearSplitner_Lightning,$item_spear_splitner_lightning,OneHandedWeapon,1,1.5,Ashlands,Weapons,TRUE
-SpearSplitner_Nature,$item_spear_splitner_nature,OneHandedWeapon,1,1.5,Ashlands,Weapons,TRUE
-SpearWolfFang,$item_spear_wolffang,OneHandedWeapon,1,1.5,Mountain,Weapons,TRUE
-SpearWood,$item_spear_wood,OneHandedWeapon,1,1.5,Meadows,Weapons,TRUE
-SpiceAshlands,$item_spiceashlands,Material,100,0.1,Ashlands,Materials,TRUE
-SpiceForests,$item_spiceforests,Material,100,0.1,Mountain,Materials,TRUE
-SpiceMistlands,$item_spicemistlands,Material,100,0.1,Mistlands,Materials,TRUE
-SpiceMountains,$item_spicemountains,Material,100,0.1,Mountain,Materials,TRUE
-SpiceOceans,$item_spiceoceans,Material,100,0.1,Mountain,Materials,TRUE
-SpicePlains,$item_spiceplains,Material,100,0.1,Plains,Materials,TRUE
-SpicyMarmalade,$item_spicymarmalade,Consumable,10,1,Ashlands,Food,TRUE
-StaffClusterbomb,$item_staffclusterbomb,TwoHandedWeapon,1,0.3,Mistlands,Weapons,TRUE
-StaffFireball,$item_stafffireball,TwoHandedWeapon,1,0.3,Mistlands,Weapons,TRUE
-StaffGreenRoots,$item_staffgreenroots,TwoHandedWeapon,1,0.3,Swamp,Weapons,TRUE
-StaffIceShards,$item_stafficeshards,TwoHandedWeapon,1,0.3,Mistlands,Weapons,TRUE
-StaffLightning,$item_staff_lightning,TwoHandedWeapon,1,1.5,Mistlands,Weapons,TRUE
-StaffRedTroll,$item_staffredtroll,TwoHandedWeapon,1,0.3,Mistlands,Weapons,TRUE
-StaffShield,$item_staffshield,TwoHandedWeapon,1,0.3,Mistlands,Weapons,TRUE
-StaffSkeleton,$item_staffskeleton,TwoHandedWeaponLeft,1,0.3,Mistlands,Weapons,TRUE
-Stone,$item_stone,Material,50,2,Meadows,Materials,TRUE
-StoneRock,$item_stonerock,Material,50,2,Meadows,Materials,TRUE
-SulfurStone,$item_sulfurstone,Material,50,2,Ashlands,Materials,TRUE
-SurtlingCore,$item_surtlingcore,Material,10,5,BlackForest,Materials,TRUE
-SwordBlackmetal,$item_sword_blackmetal,OneHandedWeapon,1,0.8,Plains,Weapons,TRUE
-SwordBronze,$item_sword_bronze,OneHandedWeapon,1,0.8,BlackForest,Weapons,TRUE
-SwordDyrnwyn,$item_sword_dyrnwyn,OneHandedWeapon,1,0.8,Ashlands,Weapons,TRUE
-SwordIron,$item_sword_iron,OneHandedWeapon,1,0.8,Swamp,Weapons,TRUE
-SwordIronFire,$item_sword_fire,OneHandedWeapon,1,1,Swamp,Weapons,TRUE
-SwordMistwalker,$item_sword_mistwalker,OneHandedWeapon,1,0.8,Mistlands,Weapons,TRUE
-SwordNiedhogg,$item_sword_niedhogg,OneHandedWeapon,1,0.8,Ashlands,Weapons,TRUE
-SwordNiedhoggBlood,$item_sword_niedhogg_blood,OneHandedWeapon,1,0.8,Ashlands,Weapons,TRUE
-SwordNiedhoggLightning,$item_sword_niedhogg_lightning,OneHandedWeapon,1,0.8,Ashlands,Weapons,TRUE
-SwordNiedhoggNature,$item_sword_niedhogg_nature,OneHandedWeapon,1,0.8,Ashlands,Weapons,TRUE
-SwordSilver,$item_sword_silver,OneHandedWeapon,1,1,Mountain,Weapons,TRUE
-SwordWood,$item_sword_wood,OneHandedWeapon,1,0.8,Meadows,Weapons,TRUE
-Tankard,$item_tankard,OneHandedWeapon,1,1,Global,Weapons,TRUE
-Tankard_dvergr,$item_dvergrtankard,OneHandedWeapon,1,1,Mistlands,Weapons,TRUE
-TankardAnniversary,$item_tankard_anniversary,OneHandedWeapon,1,1,Global,Weapons,TRUE
-TankardOdin,$item_tankard_odin,OneHandedWeapon,1,1,Global,Weapons,FALSE
-Tar,$item_tar,Material,50,2,Plains,Materials,TRUE
-Thistle,$item_thistle,Material,50,0.1,Plains,Materials,TRUE
-Krom,$item_sword_krom,TwoHandedWeapon,1,4,Ashlands,Weapons,TRUE
-Slayer,$item_sword_slayer,TwoHandedWeapon,1,4,Ashlands,Weapons,TRUE
-SlayerBlood,$item_sword_slayer_blood,TwoHandedWeapon,1,4,Ashlands,Weapons,TRUE
-SlayerLightning,$item_sword_slayer_lightning,TwoHandedWeapon,1,4,Ashlands,Weapons,TRUE
-SlayerNature,$item_sword_slayer_nature,TwoHandedWeapon,1,4,Ashlands,Weapons,TRUE
-SwordWood,$item_sword_wood_2h,TwoHandedWeapon,1,4,Meadows,Weapons,TRUE
-Thunderstone,$item_thunderstone,Material,20,10,Global,Materials,TRUE
-Tin,$item_tin,Material,30,8,BlackForest,Materials,TRUE
-TinOre,$item_tinore,Material,30,8,BlackForest,Materials,TRUE
-Torch,$item_torch,Torch,1,1,Global,Tools,TRUE
-TorchMist,$item_torchmist,Torch,1,1,Mistlands,Tools,TRUE
-Bracelets of the Brave,$item_trinketblackdamagedealth,Trinket,1,2,Mistlands,Items,TRUE
-Evasion Mantle,$item_trinketblackdtamina,Trinket,1,2,Plains,Items,TRUE
-Heart of the Forest,$item_trinketbronzehealth,Trinket,1,2,BlackForest,Items,TRUE
-Bronze Pendent,$item_trinketbronzestamina,Trinket,1,2,BlackForest,Items,TRUE
-Pulsating Earrings,$item_trinketcarapaceeitr,Trinket,1,2,Mistlands,Items,TRUE
-Fins of Destiny,$item_trinketchitinswim,Trinket,1,2,BlackForest,Items,TRUE
-Jrmundling,$item_trinketflametaleitr,Trinket,1,2,Ashlands,Items,TRUE
-Brimstone,$item_trinketflametalstaminahealth,Trinket,1,2,Ashlands,Items,TRUE
-Iron Brooch,$item_trinketironhealth,Trinket,1,2,Swamp,Items,TRUE
-Nimble Anklet,$item_trinketironstamina,Trinket,1,2,Swamp,Items,TRUE
-Resounding Shackle,$item_trinketscalestaminadamage,Trinket,1,2,Mistlands,Items,TRUE
-Wolf Sight,$item_trinketsilverdamage,Trinket,1,2,Mistlands,Items,TRUE
-Crystal Heart,$item_trinketsilverresist,Trinket,1,2,Mountain,Items,TRUE
-TrollHide,$item_trollhide,Material,20,2,BlackForest,Materials,TRUE
-TrophyAbomination,$item_trophy_abomination,Trophy,20,4,Swamp,Trophies,TRUE
-TrophyAsksvin,$item_trophy_asksvin,Trophy,20,2,Ashlands,Trophies,TRUE
-TrophyBjorn,$item_trophy_bjorn,Trophy,20,2,BlackForest,Trophies,TRUE
-TrophyBjornUndead,$item_trophy_bjorn_undead,Trophy,20,2,BlackForest,Trophies,TRUE
-TrophyBlob,$item_trophy_blob,Trophy,20,1,Swamp,Trophies,TRUE
-TrophyBoar,$item_trophy_boar,Trophy,20,2,Meadows,Trophies,TRUE
-TrophyBonemass,$item_trophy_bonemass,Trophy,20,2,Swamp,Trophies,TRUE
-TrophyBonemawSerpent,$item_trophy_bonemaw,Trophy,20,25,Ashlands,Trophies,TRUE
-TrophyCharredArcher,$item_trophy_charredarcher,Trophy,20,0.5,Ashlands,Trophies,TRUE
-TrophyCharredMage,$item_trophy_charredmage,Trophy,20,0.5,Ashlands,Trophies,TRUE
-TrophyCharredMelee,$item_trophy_charredmelee,Trophy,20,0.5,Ashlands,Trophies,TRUE
-TrophyCultist,$item_trophy_cultist,Trophy,20,3,Mountain,Trophies,TRUE
-TrophyCultist_Hildir,$item_trophy_cultist_hildir,Trophy,20,3,Mountain,Trophies,TRUE
-TrophyDeathsquito,$item_trophy_deathsquito,Trophy,20,0.5,Plains,Trophies,TRUE
-TrophyDeer,$item_trophy_deer,Trophy,20,2,Meadows,Trophies,TRUE
-TrophyDragonQueen,$item_trophy_dragonqueen,Trophy,20,2,Mountain,Trophies,TRUE
-TrophyDraugr,$item_trophy_draugr,Trophy,20,1,Swamp,Trophies,TRUE
-TrophyDraugrElite,$item_trophy_draugrelite,Trophy,20,1,Swamp,Trophies,TRUE
-TrophyDraugrFem,$item_trophy_draugr,Trophy,20,1,Swamp,Trophies,TRUE
-TrophyDvergr,$item_trophy_dvergr,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophyEikthyr,$item_trophy_eikthyr,Trophy,20,2,Meadows,Trophies,TRUE
-TrophyFader,$item_trophy_fader,Trophy,20,2,Ashlands,Trophies,TRUE
-TrophyFallenValkyrie,$item_trophy_fallenvalkyrie,Trophy,20,0.5,Ashlands,Trophies,TRUE
-TrophyFenring,$item_trophy_fenring,Trophy,20,1.5,Mountain,Trophies,TRUE
-TrophyForestTroll,$item_trophy_troll,Trophy,20,4,BlackForest,Trophies,TRUE
-TrophyFrostTroll,$item_trophy_troll,Trophy,20,4,Mountain,Trophies,TRUE
-TrophyGhost,$item_trophy_ghost,Trophy,20,2,Global,Trophies,TRUE
-TrophyGjall,$item_trophy_gjall,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophyGoblin,$item_trophy_goblin,Trophy,20,1,Plains,Trophies,TRUE
-TrophyGoblinBrute,$item_trophy_goblinbrute,Trophy,20,2,Plains,Trophies,TRUE
-TrophyGoblinBruteBrosBrute,$item_trophy_brutebro,Trophy,20,2,Plains,Trophies,TRUE
-TrophyGoblinBruteBrosShaman,$item_trophy_shamanbro,Trophy,20,2,Plains,Trophies,TRUE
-TrophyGoblinKing,$item_trophy_goblinking,Trophy,20,1,Plains,Trophies,TRUE
-TrophyGoblinShaman,$item_trophy_goblinshaman,Trophy,20,0.5,Plains,Trophies,TRUE
-TrophyGreydwarf,$item_trophy_greydwarf,Trophy,20,1,BlackForest,Trophies,TRUE
-TrophyGreydwarfBrute,$item_trophy_greydwarfbrute,Trophy,20,1.5,BlackForest,Trophies,TRUE
-TrophyGreydwarfShaman,$item_trophy_greydwarfshaman,Trophy,20,1,BlackForest,Trophies,TRUE
-TrophyGrowth,$item_trophy_growth,Trophy,20,1,Plains,Trophies,TRUE
-TrophyHare,$item_trophy_hare,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophyHatchling,$item_trophy_hatchling,Trophy,20,2,Mountain,Trophies,TRUE
-TrophyLeech,$item_trophy_leech,Trophy,20,2,Swamp,Trophies,TRUE
-TrophyLox,$item_trophy_lox,Trophy,20,2,Plains,Trophies,TRUE
-TrophyMorgen,$item_trophy_morgen,Trophy,20,0.5,Ashlands,Trophies,TRUE
-TrophyNeck,$item_trophy_neck,Trophy,20,0.5,Meadows,Trophies,TRUE
-TrophySeeker,$item_trophy_seeker,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophySeekerBrute,$item_trophy_seeker_brute,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophySeekerQueen,$item_trophy_seekerqueen,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophySerpent,$item_trophy_serpent,Trophy,20,25,Ocean,Trophies,TRUE
-TrophySGolem,$item_trophy_sgolem,Trophy,20,2,Mountain,Trophies,TRUE
-TrophySkeleton,$item_trophy_skeleton,Trophy,20,0.5,BlackForest,Trophies,TRUE
-TrophySkeletonHildir,$item_trophy_skeleton_hildir,Trophy,20,0.5,BlackForest,Trophies,TRUE
-TrophySkeletonPoison,$item_trophy_skeletonpoison,Trophy,20,0.5,Swamp,Trophies,TRUE
-TrophySurtling,$item_trophy_surtling,Trophy,20,1,Swamp,Trophies,TRUE
-TrophyTheElder,$item_trophy_elder,Trophy,20,4,BlackForest,Trophies,TRUE
-TrophyTick,$item_trophy_tick,Trophy,20,2,Mistlands,Trophies,TRUE
-TrophyUlv,$item_trophy_ulv,Trophy,20,1.5,Mountain,Trophies,TRUE
-TrophyVolture,$item_trophy_volture,Trophy,20,2,Ashlands,Trophies,TRUE
-TrophyWolf,$item_trophy_wolf,Trophy,20,1.5,Mountain,Trophies,TRUE
-TrophyWraith,$item_trophy_wraith,Trophy,20,1,Swamp,Trophies,TRUE
-Turnip,$item_turnip,Material,50,0.3,Swamp,Materials,TRUE
-TurnipSeeds,$item_turnipseeds,Material,100,0.1,Swamp,Materials,TRUE
-TurnipStew,$item_turnipstew,Consumable,10,1,Swamp,Food,TRUE
-TurretBolt,$item_turretbolt,AmmoNonEquipable,100,0.5,Mistlands,Weapons,TRUE
-TurretBoltBone,$item_turretboltbone,AmmoNonEquipable,100,0.5,Mistlands,Weapons,TRUE
-TurretBoltFlametal,$item_turretbolt_flametal,AmmoNonEquipable,100,0.5,Ashlands,Weapons,TRUE
-TurretBoltWood,$item_turretboltwood,AmmoNonEquipable,100,0.5,Meadows,Weapons,TRUE
-UndeadBjornRibcage,$item_UndeadBjornRibcage,Material,50,5,BlackForest,Materials,TRUE
-Frosted Sweetbread,$item_vikingcupcake,Consumable,10,1,Plains,Food,TRUE
-Frosted Sweetbread Uncooked,$item_vikingcupcake_uncooked,Material,10,1,Plains,Materials,TRUE
-Vineberry,$item_vineberry,Consumable,50,0.1,Ashlands,Food,TRUE
-VineberrySeeds,$item_vineberryseeds,Material,100,0.1,Ashlands,Materials,TRUE
-VineGreenSeeds,$item_vinegreenseeds,Material,100,0.1,Ashlands,Materials,TRUE
-VoltureEgg,$item_voltureegg,Misc,20,1,Ashlands,Items,TRUE
-VoltureMeat,$item_volture_meat,Material,20,1,Ashlands,Materials,TRUE
-Wishbone,$item_wishbone,Utility,1,0.1,Swamp,Tools,TRUE
-Wisp,$item_wisp,Material,50,0.5,Mistlands,Materials,TRUE
-WitheredBone,$item_witheredbone,Material,30,1,Swamp,Materials,TRUE
-WolfClaw,$item_wolfclaw,Material,20,0.5,Mountain,Materials,TRUE
-WolfFang,$item_wolffang,Material,50,0.1,Mountain,Materials,TRUE
-WolfHairBundle,$item_wolfhairbundle,Material,50,1,Mountain,Materials,TRUE
-WolfJerky,$item_wolfjerky,Consumable,20,0.5,Mountain,Food,TRUE
-WolfMeat,$item_wolf_meat,Material,20,1,Mountain,Materials,TRUE
-WolfMeatSkewer,$item_wolf_skewer,Consumable,20,0.5,Mountain,Food,TRUE
-WolfPelt,$item_wolfpelt,Material,50,1,Mountain,Materials,TRUE
-Wood,$item_wood,Material,50,2,Meadows,Materials,TRUE
-YagluthDrop,$item_yagluththing,Misc,30,1,Plains,Items,TRUE
-YggdrasilPorridge,$item_yggdrasilporridge,Consumable,10,1,Mistlands,Food,TRUE
-YggdrasilWood,$item_yggdrasilwood,Material,50,2,Mistlands,Materials,TRUE
-YmirRemains,$item_ymirremains,Material,50,0.3,Global,Materials,TRUE
+id,displayName,biome,category,completionType,prefabName,globalKey
+item.acorn,Acorns,Global,Materials,ItemCollected,Acorn,
+item.amber,Amber,Global,Materials,ItemCollected,Amber,
+item.amberpearl,Amber Pearl,Global,Materials,ItemCollected,AmberPearl,
+item.ancientseed,Ancient Seed,BlackForest,Items,ItemCollected,AncientSeed,
+item.armorashlandsmediumchest,Breastplate of Ask,Ashlands,Armor,ItemCollected,ArmorAshlandsMediumChest,
+item.armorashlandsmediumlegs,Trousers of Ask,Ashlands,Armor,ItemCollected,ArmorAshlandsMediumlegs,
+item.armorberserkerchest,Patterns of the Bear,BlackForest,Armor,ItemCollected,ArmorBerserkerChest,
+item.armorberserkerlegs,Loincloth of the Bear,BlackForest,Armor,ItemCollected,ArmorBerserkerLegs,
+item.armorberserkerundeadchest,Vilebone Cage,BlackForest,Armor,ItemCollected,ArmorBerserkerUndeadChest,
+item.armorberserkerundeadlegs,Vilebone Drapes,BlackForest,Armor,ItemCollected,ArmorBerserkerUndeadLegs,
+item.armorbronzechest,Bronze Plate Tunic,BlackForest,Armor,ItemCollected,ArmorBronzeChest,
+item.armorbronzelegs,Bronze Plate Leggings,BlackForest,Armor,ItemCollected,ArmorBronzeLegs,
+item.armorcarapacechest,Carapace Breastplate,Mistlands,Armor,ItemCollected,ArmorCarapaceChest,
+item.armorcarapacelegs,Carapace Greaves,Mistlands,Armor,ItemCollected,ArmorCarapaceLegs,
+item.armordress1,Plain Brown Dress,Global,Armor,ItemCollected,ArmorDress1,
+item.armordress10,Simple Undyed Dress,Global,Armor,ItemCollected,ArmorDress10,
+item.armordress2,Brown Dress with Shawl,Global,Armor,ItemCollected,ArmorDress2,
+item.armordress3,Brown Dress with Beads,Global,Armor,ItemCollected,ArmorDress3,
+item.armordress4,Plain Blue Dress,Global,Armor,ItemCollected,ArmorDress4,
+item.armordress5,Blue Dress with Shawl,Global,Armor,ItemCollected,ArmorDress5,
+item.armordress6,Blue Dress with Beads,Global,Armor,ItemCollected,ArmorDress6,
+item.armordress7,Plain Yellow Dress,Global,Armor,ItemCollected,ArmorDress7,
+item.armordress8,Yellow Dress with Shawl,Global,Armor,ItemCollected,ArmorDress8,
+item.armordress9,Yellow Dress with Beads,Global,Armor,ItemCollected,ArmorDress9,
+item.armorfenringchest,Fenris Coat,Mountain,Armor,ItemCollected,ArmorFenringChest,
+item.armorfenringlegs,Fenris Leggings,Mountain,Armor,ItemCollected,ArmorFenringLegs,
+item.armorflametalchest,Flametal Breastplate,Ashlands,Armor,ItemCollected,ArmorFlametalChest,
+item.armorflametallegs,Flametal Greaves,Ashlands,Armor,ItemCollected,ArmorFlametalLegs,
+item.armorharvester1,Harvest Tunic,Global,Armor,ItemCollected,ArmorHarvester1,
+item.armorharvester2,Harvest Dress,Global,Armor,ItemCollected,ArmorHarvester2,
+item.armorironchest,Iron Scale Mail,Swamp,Armor,ItemCollected,ArmorIronChest,
+item.armorironlegs,Iron Greaves,Swamp,Armor,ItemCollected,ArmorIronLegs,
+item.armorleatherchest,Leather Tunic,Meadows,Armor,ItemCollected,ArmorLeatherChest,
+item.armorleatherlegs,Leather Trousers,Meadows,Armor,ItemCollected,ArmorLeatherLegs,
+item.armormagechest,Eitr-weave Robe,Mistlands,Armor,ItemCollected,ArmorMageChest,
+item.armormagechest_ashlands,Robes of Embla,Ashlands,Armor,ItemCollected,ArmorMageChest_Ashlands,
+item.armormagelegs,Eitr-weave Trousers,Mistlands,Armor,ItemCollected,ArmorMageLegs,
+item.armormagelegs_ashlands,Trousers of Embla,Ashlands,Armor,ItemCollected,ArmorMageLegs_Ashlands,
+item.armorpaddedcuirass,Padded Cuirass,Plains,Armor,ItemCollected,ArmorPaddedCuirass,
+item.armorpaddedgreaves,Padded Greaves,Plains,Armor,ItemCollected,ArmorPaddedGreaves,
+item.armorragschest,Rag Tunic,Meadows,Armor,ItemCollected,ArmorRagsChest,
+item.armorragslegs,Rag Trousers,Meadows,Armor,ItemCollected,ArmorRagsLegs,
+item.armorrootchest,Root Harnesk,Swamp,Armor,ItemCollected,ArmorRootChest,
+item.armorrootlegs,Root Leggings,Swamp,Armor,ItemCollected,ArmorRootLegs,
+item.armortrollleatherchest,Troll Leather Tunic,BlackForest,Armor,ItemCollected,ArmorTrollLeatherChest,
+item.armortrollleatherlegs,Troll Leather Trousers,BlackForest,Armor,ItemCollected,ArmorTrollLeatherLegs,
+item.armortunic1,Plain Blue Tunic,Global,Armor,ItemCollected,ArmorTunic1,
+item.armortunic10,Simple Undyed Tunic,Global,Armor,ItemCollected,ArmorTunic10,
+item.armortunic2,Blue Tunic with Cape,Global,Armor,ItemCollected,ArmorTunic2,
+item.armortunic3,Blue Tunic with Beads,Global,Armor,ItemCollected,ArmorTunic3,
+item.armortunic4,Plain Red Tunic,Global,Armor,ItemCollected,ArmorTunic4,
+item.armortunic5,Red Tunic with Cape,Global,Armor,ItemCollected,ArmorTunic5,
+item.armortunic6,Red Tunic with Beads,Global,Armor,ItemCollected,ArmorTunic6,
+item.armortunic7,Plain Yellow Tunic,Global,Armor,ItemCollected,ArmorTunic7,
+item.armortunic8,Yellow Tunic with Cape,Global,Armor,ItemCollected,ArmorTunic8,
+item.armortunic9,Yellow Tunic with Beads,Global,Armor,ItemCollected,ArmorTunic9,
+item.armorwolfchest,Wolf Hide Chestpiece,Mountain,Armor,ItemCollected,ArmorWolfChest,
+item.armorwolflegs,Wolf Hide Trousers,Mountain,Armor,ItemCollected,ArmorWolfLegs,
+item.arrowbronze,Bronzehead Arrow,BlackForest,Weapons,ItemCollected,ArrowBronze,
+item.arrowcarapace,Carapace Arrow,Mistlands,Weapons,ItemCollected,ArrowCarapace,
+item.arrowcharred,Charred Arrow,Ashlands,Weapons,ItemCollected,ArrowCharred,
+item.arrowfire,Fire Arrow,Meadows,Weapons,ItemCollected,ArrowFire,
+item.arrowflint,Flinthead Arrow,Meadows,Weapons,ItemCollected,ArrowFlint,
+item.arrowfrost,Frost Arrow,Mountain,Weapons,ItemCollected,ArrowFrost,
+item.arrowiron,Ironhead Arrow,Swamp,Weapons,ItemCollected,ArrowIron,
+item.arrowneedle,Needle Arrow,Plains,Weapons,ItemCollected,ArrowNeedle,
+item.arrowobsidian,Obsidian Arrow,Mountain,Weapons,ItemCollected,ArrowObsidian,
+item.arrowpoison,Poison Arrow,Mountain,Weapons,ItemCollected,ArrowPoison,
+item.arrowsilver,Silver Arrow,Mountain,Weapons,ItemCollected,ArrowSilver,
+item.arrowwood,Wood Arrow,Meadows,Weapons,ItemCollected,ArrowWood,
+item.askbladder,Asksvin Bladder,Ashlands,Materials,ItemCollected,AskBladder,
+item.askhide,Asksvin Hide,Ashlands,Materials,ItemCollected,AskHide,
+item.asksvincarrionneck,Asksvin Neck,Ashlands,Materials,ItemCollected,AsksvinCarrionNeck,
+item.asksvincarrionpelvic,Asksvin Pelvis,Ashlands,Materials,ItemCollected,AsksvinCarrionPelvic,
+item.asksvincarrionribcage,Asksvin Ribcage,Ashlands,Materials,ItemCollected,AsksvinCarrionRibcage,
+item.asksvincarrionskull,Asksvin Skull,Ashlands,Materials,ItemCollected,AsksvinCarrionSkull,
+item.asksvinegg,Asksvin Egg,Ashlands,Items,ItemCollected,AsksvinEgg,
+item.asksvinmeat,Asksvin Tail,Ashlands,Materials,ItemCollected,AsksvinMeat,
+item.atgeirblackmetal,Black Metal Atgeir,Plains,Weapons,ItemCollected,AtgeirBlackmetal,
+item.atgeirbronze,Bronze Atgeir,BlackForest,Weapons,ItemCollected,AtgeirBronze,
+item.atgeirhimminafl,Himminafl,Mistlands,Weapons,ItemCollected,AtgeirHimminAfl,
+item.atgeiriron,Iron Atgeir,Swamp,Weapons,ItemCollected,AtgeirIron,
+item.atgeirwood,Wooden Atgeir,Meadows,Weapons,ItemCollected,AtgeirWood,
+item.axeberzerkr,Berserkir Axes,Ashlands,Weapons,ItemCollected,AxeBerzerkr,
+item.axeberzerkrblood,Bleeding Berserkir Axes,Ashlands,Weapons,ItemCollected,AxeBerzerkrBlood,
+item.axeberzerkrlightning,Thundering Berserkir Axes,Ashlands,Weapons,ItemCollected,AxeBerzerkrLightning,
+item.axeberzerkrnature,Primal Berserkir Axes,Ashlands,Weapons,ItemCollected,AxeBerzerkrNature,
+item.axeblackmetal,Black Metal Axe,Plains,Weapons,ItemCollected,AxeBlackMetal,
+item.axebronze,Bronze Axe,BlackForest,Weapons,ItemCollected,AxeBronze,
+item.axeearly,Early Axes,Meadows,Weapons,ItemCollected,AxeEarly,
+item.axeflint,Flint Axe,Meadows,Weapons,ItemCollected,AxeFlint,
+item.axehead1,Curious Axe Head,Meadows,Materials,ItemCollected,AxeHead1,
+item.axehead2,Mysterious Axe Head,Meadows,Materials,ItemCollected,AxeHead2,
+item.axeiron,Iron Axe,Swamp,Weapons,ItemCollected,AxeIron,
+item.axejotunbane,Jotun Bane,Mistlands,Weapons,ItemCollected,AxeJotunBane,
+item.axestone,Stone Axe,Meadows,Weapons,ItemCollected,AxeStone,
+item.axewood,Wooden Axe,Meadows,Weapons,ItemCollected,AxeWood,
+item.barberkit,Barber Kit,Global,Items,ItemCollected,BarberKit,
+item.barley,Barley,Plains,Materials,ItemCollected,Barley,
+item.barleyflour,Barley Flour,Plains,Items,ItemCollected,BarleyFlour,
+item.barleywine,Fire Resistance Barley Wine,Plains,Food,ItemCollected,BarleyWine,
+item.barleywinebase,Barley Wine Base: Fire Resistance,Plains,Materials,ItemCollected,BarleyWineBase,
+item.barrelrings,Barrel Hoops,Global,Items,ItemCollected,BarrelRings,
+item.battleaxe,Battleaxe,Swamp,Weapons,ItemCollected,Battleaxe,
+item.battleaxeblackmetal,Black Metal Battleaxe,Plains,Weapons,ItemCollected,BattleaxeBlackmetal,
+item.battleaxecrystal,Crystal Battleaxe,Mountain,Weapons,ItemCollected,BattleaxeCrystal,
+item.battleaxeskullsplittur,Skull Splittur,Mistlands,Weapons,ItemCollected,BattleaxeSkullSplittur,
+item.battleaxewood,Wooden Battleaxe,Meadows,Weapons,ItemCollected,BattleaxeWood,
+item.beechseeds,Beech Seeds,Meadows,Materials,ItemCollected,BeechSeeds,
+item.bell,Bell,Mistlands,Items,ItemCollected,Bell,
+item.bellfragment,Bell Fragment,Ashlands,Materials,ItemCollected,BellFragment,
+item.beltstrength,Megingjord,Global,Tools,ItemCollected,BeltStrength,
+item.bilebag,Bilebag,Mistlands,Materials,ItemCollected,Bilebag,
+item.birchseeds,Birch Seeds,BlackForest,Materials,ItemCollected,BirchSeeds,
+item.bjornhide,Bear Hide,BlackForest,Materials,ItemCollected,BjornHide,
+item.bjornmeat,Bear Meat,BlackForest,Materials,ItemCollected,BjornMeat,
+item.bjornpaw,Bear Paw,BlackForest,Materials,ItemCollected,BjornPaw,
+item.blackcore,Black Core,Mistlands,Materials,ItemCollected,BlackCore,
+item.blackmarble,Black Marble,Mistlands,Materials,ItemCollected,BlackMarble,
+item.blackmetal,Black Metal,Plains,Materials,ItemCollected,BlackMetal,
+item.blackmetalscrap,Black Metal Scrap,Plains,Materials,ItemCollected,BlackMetalScrap,
+item.blacksoup,Black Soup,Swamp,Food,ItemCollected,BlackSoup,
+item.blackwood,Ashwood,Ashlands,Materials,ItemCollected,Blackwood,
+item.blobvial,Corked Vial,Swamp,Materials,ItemCollected,BlobVial,
+item.bloodbag,Bloodbag,Swamp,Materials,ItemCollected,Bloodbag,
+item.bloodpudding,Blood Pudding,Plains,Food,ItemCollected,BloodPudding,
+item.blueberries,Blueberries,BlackForest,Food,ItemCollected,Blueberries,
+item.boarjerky,Boar Jerky,Meadows,Food,ItemCollected,BoarJerky,
+item.boltblackmetal,Black Metal Bolt,Plains,Weapons,ItemCollected,BoltBlackmetal,
+item.boltbone,Bone Bolt,Mistlands,Weapons,ItemCollected,BoltBone,
+item.boltcarapace,Carapace Bolt,Mistlands,Weapons,ItemCollected,BoltCarapace,
+item.boltcharred,Charred Bolt,Ashlands,Weapons,ItemCollected,BoltCharred,
+item.boltiron,Iron Bolt,Swamp,Weapons,ItemCollected,BoltIron,
+item.bombbile,Bile Bomb,Mistlands,Weapons,ItemCollected,BombBile,
+item.bombblob_frost,Blob Bomb: Frost,Mountain,Weapons,ItemCollected,BombBlob_Frost,
+item.bombblob_lava,Blob Bomb: Lava,Ashlands,Weapons,ItemCollected,BombBlob_Lava,
+item.bombblob_poison,Blob Bomb: Poison,Swamp,Weapons,ItemCollected,BombBlob_Poison,
+item.bombblob_poisonelite,Blob Bomb: Elite Poison,Swamp,Weapons,ItemCollected,BombBlob_PoisonElite,
+item.bombblob_tar,Blob Bomb: Tar,Plains,Weapons,ItemCollected,BombBlob_Tar,
+item.bomblava,Basalt Bomb,Ashlands,Weapons,ItemCollected,BombLava,
+item.bombooze,Ooze Bomb,Swamp,Weapons,ItemCollected,BombOoze,
+item.bombsiege,Explosive Payload,Ashlands,Materials,ItemCollected,BombSiege,
+item.bombsmoke,Smoke Bomb,Ashlands,Weapons,ItemCollected,BombSmoke,
+item.bonefragments,Bone Fragments,Meadows,Materials,ItemCollected,BoneFragments,
+item.bonemawserpentmeat,Bonemaw Meat,Ashlands,Materials,ItemCollected,BoneMawSerpentMeat,
+item.bonemawserpentscale,Bonemaw Scale,Ashlands,Materials,ItemCollected,BonemawSerpentScale,
+item.bonemawserpenttooth,Bonemaw Tooth,Ashlands,Materials,ItemCollected,BonemawSerpentTooth,
+item.bow,Crude Bow,Meadows,Weapons,ItemCollected,Bow,
+item.bowashlands,Ash Fang,Ashlands,Weapons,ItemCollected,BowAshlands,
+item.bowashlandsblood,Blood Fang,Ashlands,Weapons,ItemCollected,BowAshlandsBlood,
+item.bowashlandsroot,Root Fang,Ashlands,Weapons,ItemCollected,BowAshlandsRoot,
+item.bowashlandsstorm,Storm Fang,Ashlands,Weapons,ItemCollected,BowAshlandsStorm,
+item.bowdraugrfang,Draugr Fang,Swamp,Weapons,ItemCollected,BowDraugrFang,
+item.bowfinewood,Finewood Bow,BlackForest,Weapons,ItemCollected,BowFineWood,
+item.bowhuntsman,Huntsman Bow,Swamp,Weapons,ItemCollected,BowHuntsman,
+item.bowspinesnap,Spinesnap,Mistlands,Weapons,ItemCollected,BowSpineSnap,
+item.bread,Bread,Plains,Food,ItemCollected,Bread,
+item.breaddough,Bread Dough,Plains,Materials,ItemCollected,BreadDough,
+item.bronze,Bronze,BlackForest,Materials,ItemCollected,Bronze,
+item.bronzenails,Bronze Nails,BlackForest,Materials,ItemCollected,BronzeNails,
+item.bronzescrap,Scrap Bronze,Mistlands,Materials,ItemCollected,BronzeScrap,
+item.bugmeat,Seeker Meat,Mistlands,Materials,ItemCollected,BugMeat,
+item.candlewick,Candle Wick,Ashlands,Materials,ItemCollected,CandleWick,
+item.capeash,Ashen Cape,Ashlands,Armor,ItemCollected,CapeAsh,
+item.capeasksvin,Asksvin Cloak,Ashlands,Armor,ItemCollected,CapeAsksvin,
+item.capedeerhide,Deer Hide Cape,Meadows,Armor,ItemCollected,CapeDeerHide,
+item.capefeather,Feather Cape,Mistlands,Armor,ItemCollected,CapeFeather,
+item.capelinen,Linen Cape,Plains,Armor,ItemCollected,CapeLinen,
+item.capelox,Lox Cape,Plains,Armor,ItemCollected,CapeLox,
+item.capetrollhide,Troll Hide Cape,BlackForest,Armor,ItemCollected,CapeTrollHide,
+item.capewolf,Wolf Fur Cape,Mountain,Armor,ItemCollected,CapeWolf,
+item.carapace,Carapace,Mistlands,Materials,ItemCollected,Carapace,
+item.carrot,Carrot,BlackForest,Food,ItemCollected,Carrot,
+item.carrotseeds,Carrot Seeds,BlackForest,Materials,ItemCollected,CarrotSeeds,
+item.carrotsoup,Carrot Soup,BlackForest,Food,ItemCollected,CarrotSoup,
+item.catapult_ammo,Grausten Payload,Ashlands,Materials,ItemCollected,Catapult_ammo,
+item.celestialfeather,Celestial Feather,Ashlands,Materials,ItemCollected,CelestialFeather,
+item.ceramicplate,Ceramic Plate,Ashlands,Materials,ItemCollected,CeramicPlate,
+item.chain,Chain,Swamp,Materials,ItemCollected,Chain,
+item.charcoalresin,Charcoal Resin,Ashlands,Materials,ItemCollected,CharcoalResin,
+item.charredbone,Charred Bone,Ashlands,Materials,ItemCollected,CharredBone,
+item.charredcogwheel,Charred Cogwheel,Ashlands,Materials,ItemCollected,CharredCogwheel,
+item.charredskull,Charred Skull,Ashlands,Materials,ItemCollected,Charredskull,
+item.chickenegg,Egg,Mistlands,Items,ItemCollected,ChickenEgg,
+item.chickenmeat,Chicken Meat,Mistlands,Materials,ItemCollected,ChickenMeat,
+item.chitin,Chitin,Ocean,Materials,ItemCollected,Chitin,
+item.cloudberry,Cloudberries,Plains,Food,ItemCollected,Cloudberry,
+item.club,Club,Meadows,Weapons,ItemCollected,Club,
+item.coal,Coal,Global,Materials,ItemCollected,Coal,
+item.coins,Coins,Global,Materials,ItemCollected,Coins,
+item.cookedasksvinmeat,Cooked Asksvin Tail,Ashlands,Food,ItemCollected,CookedAsksvinMeat,
+item.cookedbjornmeat,Cooked Bear Meat,BlackForest,Food,ItemCollected,CookedBjornMeat,
+item.cookedbonemawserpentmeat,Cooked Bonemaw Meat,Ashlands,Food,ItemCollected,CookedBoneMawSerpentMeat,
+item.cookedbugmeat,Cooked Seeker Meat,Mistlands,Food,ItemCollected,CookedBugMeat,
+item.cookedchickenmeat,Cooked Chicken Meat,Mistlands,Food,ItemCollected,CookedChickenMeat,
+item.cookeddeermeat,Cooked Deer Meat,Meadows,Food,ItemCollected,CookedDeerMeat,
+item.cookedegg,Cooked Egg,Mistlands,Food,ItemCollected,CookedEgg,
+item.cookedharemeat,Cooked Hare Meat,Mistlands,Food,ItemCollected,CookedHareMeat,
+item.cookedloxmeat,Cooked Lox Meat,Plains,Food,ItemCollected,CookedLoxMeat,
+item.cookedmeat,Cooked Boar Meat,Meadows,Food,ItemCollected,CookedMeat,
+item.cookedvolturemeat,Cooked Volture Meat,Ashlands,Food,ItemCollected,CookedVoltureMeat,
+item.cookedwolfmeat,Cooked Wolf Meat,Mountain,Food,ItemCollected,CookedWolfMeat,
+item.copper,Copper,BlackForest,Materials,ItemCollected,Copper,
+item.copperore,Copper Ore,BlackForest,Materials,ItemCollected,CopperOre,
+item.copperscrap,Copper Scrap,Mistlands,Materials,ItemCollected,CopperScrap,
+item.crossbowarbalest,Arbalest,Mistlands,Weapons,ItemCollected,CrossbowArbalest,
+item.crossbowripper,Ripper,Ashlands,Weapons,ItemCollected,CrossbowRipper,
+item.crossbowripperblood,Wound Ripper,Ashlands,Weapons,ItemCollected,CrossbowRipperBlood,
+item.crossbowripperlightning,Storm Ripper,Ashlands,Weapons,ItemCollected,CrossbowRipperLightning,
+item.crossbowrippernature,Root Ripper,Ashlands,Weapons,ItemCollected,CrossbowRipperNature,
+item.cryptkey,Swamp Key,Swamp,Items,ItemCollected,CryptKey,
+item.crystal,Crystal,Mountain,Materials,ItemCollected,Crystal,
+item.cultivator,Cultivator,BlackForest,Tools,ItemCollected,Cultivator,
+item.curedsquirrelhamstring,Cured Squirrel Hamstring,Global,Materials,ItemCollected,CuredSquirrelHamstring,
+item.dandelion,Dandelion,Meadows,Materials,ItemCollected,Dandelion,
+item.deerhide,Deer Hide,Meadows,Materials,ItemCollected,DeerHide,
+item.deermeat,Deer Meat,Meadows,Materials,ItemCollected,DeerMeat,
+item.deerstew,Deer Stew,Meadows,Food,ItemCollected,DeerStew,
+item.demister,Wisplight,Mistlands,Tools,ItemCollected,Demister,
+item.dragonegg,Dragon Egg,Mountain,Items,ItemCollected,DragonEgg,
+item.dragontear,Dragon Tear,Mountain,Items,ItemCollected,DragonTear,
+item.dvergrkey,Sealbreaker,Mistlands,Items,ItemCollected,DvergrKey,
+item.dvergrkeyfragment,Sealbreaker Fragment,Mistlands,Materials,ItemCollected,DvergrKeyFragment,
+item.dvergrneedle,Dvergr Extractor,Mistlands,Materials,ItemCollected,DvergrNeedle,
+item.dyrnwynbladefragment,Dyrnwyn Blade Fragment,Ashlands,Materials,ItemCollected,DyrnwynBladeFragment,
+item.dyrnwynhiltfragment,Dyrnwyn Hilt Fragment,Ashlands,Materials,ItemCollected,DyrnwynHiltFragment,
+item.dyrnwyntipfragment,Dyrnwyn Tip Fragment,Ashlands,Materials,ItemCollected,DyrnwynTipFragment,
+item.ectoplasm,Ectoplasm,Global,Materials,ItemCollected,Ectoplasm,
+item.eitr,Refined Eitr,Mistlands,Materials,ItemCollected,Eitr,
+item.elderbark,Ancient Bark,Swamp,Materials,ItemCollected,ElderBark,
+item.entrails,Entrails,Swamp,Materials,ItemCollected,Entrails,
+item.eyescream,Eyescream,Mountain,Food,ItemCollected,Eyescream,
+item.faderdrop,Fader Relic,Ashlands,Materials,ItemCollected,FaderDrop,
+item.feastashlands,Ashlands Gourmet Bowl,Ashlands,Food,ItemCollected,FeastAshlands,
+item.feastashlands_material,Ashlands Gourmet Bowl,Ashlands,Materials,ItemCollected,FeastAshlands_Material,
+item.feastblackforest,Black Forest Buffet Platter,BlackForest,Food,ItemCollected,FeastBlackforest,
+item.feastblackforest_material,Black Forest Buffet Platter,BlackForest,Materials,ItemCollected,FeastBlackforest_Material,
+item.feaster,Serving Tray,Global,Tools,ItemCollected,Feaster,
+item.feastmeadows,Whole Roasted Meadow Boar,Meadows,Food,ItemCollected,FeastMeadows,
+item.feastmeadows_material,Whole Roasted Meadow Boar,Meadows,Materials,ItemCollected,FeastMeadows_Material,
+item.feastmistlands,Mushrooms Galore  la Mistlands,Mistlands,Food,ItemCollected,FeastMistlands,
+item.feastmistlands_material,Mushrooms Galore  la Mistlands,Mistlands,Materials,ItemCollected,FeastMistlands_Material,
+item.feastmountains,Hearty Mountain Logger's Stew,Mountain,Food,ItemCollected,FeastMountains,
+item.feastmountains_material,Hearty Mountain Logger's Stew,Mountain,Materials,ItemCollected,FeastMountains_Material,
+item.feastoceans,Sailor's Bounty,Ocean,Food,ItemCollected,FeastOceans,
+item.feastoceans_material,Sailor's Bounty,Ocean,Materials,ItemCollected,FeastOceans_Material,
+item.feastplains,Plains Pie Picnic,Plains,Food,ItemCollected,FeastPlains,
+item.feastplains_material,Plains Pie Picnic,Plains,Materials,ItemCollected,FeastPlains_Material,
+item.feastswamps,Swamp Dweller's Delight,Swamp,Food,ItemCollected,FeastSwamps,
+item.feastswamps_material,Swamp Dweller's Delight,Swamp,Materials,ItemCollected,FeastSwamps_Material,
+item.feathers,Feathers,Global,Materials,ItemCollected,Feathers,
+item.fiddleheadfern,Fiddlehead,Mistlands,Food,ItemCollected,Fiddleheadfern,
+item.fierysvinstew,Fiery Svinstew,Ashlands,Food,ItemCollected,FierySvinstew,
+item.finewood,Finewood,BlackForest,Materials,ItemCollected,FineWood,
+item.fircone,Fir Cone,BlackForest,Materials,ItemCollected,FirCone,
+item.fireworksrocket_blue,Blue Fireworks,Global,Materials,ItemCollected,FireworksRocket_Blue,
+item.fireworksrocket_cyan,Cyan Fireworks,Global,Materials,ItemCollected,FireworksRocket_Cyan,
+item.fireworksrocket_green,Green Fireworks,Global,Materials,ItemCollected,FireworksRocket_Green,
+item.fireworksrocket_purple,Purple Fireworks,Global,Materials,ItemCollected,FireworksRocket_Purple,
+item.fireworksrocket_red,Red Fireworks,Global,Materials,ItemCollected,FireworksRocket_Red,
+item.fireworksrocket_white,Basic Fireworks,Global,Materials,ItemCollected,FireworksRocket_White,
+item.fireworksrocket_yellow,Yellow Fireworks,Global,Materials,ItemCollected,FireworksRocket_Yellow,
+item.fish1,Perch,Ocean,Fishing,ItemCollected,Fish1,
+item.fish10,Northern Salmon,Ocean,Fishing,ItemCollected,Fish10,
+item.fish11,Magmafish,Ocean,Fishing,ItemCollected,Fish11,
+item.fish12,Pufferfish,Ocean,Fishing,ItemCollected,Fish12,
+item.fish2,Pike,Ocean,Fishing,ItemCollected,Fish2,
+item.fish3,Tuna,Ocean,Fishing,ItemCollected,Fish3,
+item.fish4_cave,Tetra,Ocean,Fishing,ItemCollected,Fish4_cave,
+item.fish5,Trollfish,Ocean,Fishing,ItemCollected,Fish5,
+item.fish6,Giant Herring,Ocean,Fishing,ItemCollected,Fish6,
+item.fish7,Grouper,Ocean,Fishing,ItemCollected,Fish7,
+item.fish8,Coral Cod,Ocean,Fishing,ItemCollected,Fish8,
+item.fish9,Anglerfish,Ocean,Fishing,ItemCollected,Fish9,
+item.fishandbread,Fish 'n' Bread,Ocean,Food,ItemCollected,FishAndBread,
+item.fishandbreaduncooked,Uncooked Fish 'n' Bread,Ocean,Materials,ItemCollected,FishAndBreadUncooked,
+item.fishanglerraw,Raw Fish,Ocean,Materials,ItemCollected,FishAnglerRaw,
+item.fishcooked,Cooked Fish,Ocean,Food,ItemCollected,FishCooked,
+item.fishingbait,Fishing Bait,Ocean,Materials,ItemCollected,FishingBait,
+item.fishingbaitashlands,Hot Fishing Bait,Ashlands,Materials,ItemCollected,FishingBaitAshlands,
+item.fishingbaitcave,Cold Fishing Bait,Mountain,Materials,ItemCollected,FishingBaitCave,
+item.fishingbaitdeepnorth,Frosty Fishing Bait,Ocean,Materials,ItemCollected,FishingBaitDeepNorth,
+item.fishingbaitforest,Mossy Fishing Bait,Ocean,Materials,ItemCollected,FishingBaitForest,
+item.fishingbaitmistlands,Misty Fishing Bait,Mistlands,Materials,ItemCollected,FishingBaitMistlands,
+item.fishingbaitocean,Heavy Fishing Bait,Ocean,Materials,ItemCollected,FishingBaitOcean,
+item.fishingbaitplains,Stingy Fishing Bait,Plains,Materials,ItemCollected,FishingBaitPlains,
+item.fishingbaitswamp,Sticky Fishing Bait,Swamp,Materials,ItemCollected,FishingBaitSwamp,
+item.fishingrod,Fishing Rod,Ocean,Tools,ItemCollected,FishingRod,
+item.fishraw,Raw Fish,Ocean,Materials,ItemCollected,FishRaw,
+item.fishwraps,Fish Wraps,Ocean,Food,ItemCollected,FishWraps,
+item.fistbjornclaw,Paws of the Bear,BlackForest,Weapons,ItemCollected,FistBjornClaw,
+item.fistbjornundeadclaw,Vilebone Maulclaws,BlackForest,Weapons,ItemCollected,FistBjornUndeadClaw,
+item.fistfenrirclaw,Flesh Rippers,Mountain,Weapons,ItemCollected,FistFenrirClaw,
+item.flametalnew,Flametal,Ashlands,Materials,ItemCollected,FlametalNew,
+item.flametalorenew,Flametal Ore,Ashlands,Materials,ItemCollected,FlametalOreNew,
+item.flax,Flax,Plains,Materials,ItemCollected,Flax,
+item.flint,Flint,Meadows,Materials,ItemCollected,Flint,
+item.fragrantbundle,Fragrant Bundle,Meadows,Materials,ItemCollected,FragrantBundle,
+item.freezegland,Freeze Gland,Mountain,Materials,ItemCollected,FreezeGland,
+item.freshseaweed,Fresh Seaweed,Global,Materials,ItemCollected,FreshSeaweed,
+item.gemstoneblue,Iolite,Ashlands,Materials,ItemCollected,GemstoneBlue,
+item.gemstonegreen,Jade,Ashlands,Materials,ItemCollected,GemstoneGreen,
+item.gemstonered,Bloodstone,Ashlands,Materials,ItemCollected,GemstoneRed,
+item.giantbloodsack,Blood Clot,Mistlands,Materials,ItemCollected,GiantBloodSack,
+item.goblintotem,Fuling Totem,Plains,Items,ItemCollected,GoblinTotem,
+item.grausten,Grausten,Ashlands,Materials,ItemCollected,Grausten,
+item.greydwarfeye,Greydwarf Eye,BlackForest,Materials,ItemCollected,GreydwarfEye,
+item.guck,Guck,Swamp,Materials,ItemCollected,Guck,
+item.hammer,Hammer,Meadows,Tools,ItemCollected,Hammer,
+item.hardantler,Hard Antler,Meadows,Materials,ItemCollected,HardAntler,
+item.haremeat,Hare Meat,Mistlands,Materials,ItemCollected,HareMeat,
+item.helmetashlandsmediumhood,Hood of Ask,Ashlands,Armor,ItemCollected,HelmetAshlandsMediumHood,
+item.helmetberserkerhood,Headdress of the Bear,BlackForest,Armor,ItemCollected,HelmetBerserkerHood,
+item.helmetberserkerundead,Vilebone Visage,BlackForest,Armor,ItemCollected,HelmetBerserkerUndead,
+item.helmetbronze,Bronze Helmet,BlackForest,Armor,ItemCollected,HelmetBronze,
+item.helmetcarapace,Carapace Helmet,Mistlands,Armor,ItemCollected,HelmetCarapace,
+item.helmetcelebration,Celebratory Cap,Global,Armor,ItemCollected,HelmetCelebration,
+item.helmetdrake,Drake Helmet,Mountain,Armor,ItemCollected,HelmetDrake,
+item.helmetdverger,Dverger Circlet,Global,Armor,ItemCollected,HelmetDverger,
+item.helmetfenring,Fenris Hood,Mountain,Armor,ItemCollected,HelmetFenring,
+item.helmetfishinghat,Fishing Hat,Ocean,Armor,ItemCollected,HelmetFishingHat,
+item.helmetflametal,Flametal Helmet,Ashlands,Armor,ItemCollected,HelmetFlametal,
+item.helmethat1,Blue Tied Headscarf,Global,Armor,ItemCollected,HelmetHat1,
+item.helmethat10,Simple Purple Cap,Global,Armor,ItemCollected,HelmetHat10,
+item.helmethat2,Green Twisted Headscarf,Global,Armor,ItemCollected,HelmetHat2,
+item.helmethat3,Brown Fur Cap,Global,Armor,ItemCollected,HelmetHat3,
+item.helmethat4,Extravagant Green Cap,Global,Armor,ItemCollected,HelmetHat4,
+item.helmethat5,Simple Red Cap,Global,Armor,ItemCollected,HelmetHat5,
+item.helmethat6,Yellow Tied Headscarf,Global,Armor,ItemCollected,HelmetHat6,
+item.helmethat7,Red Twisted Headscarf,Global,Armor,ItemCollected,HelmetHat7,
+item.helmethat8,Grey Fur Cap,Global,Armor,ItemCollected,HelmetHat8,
+item.helmethat9,Extravagant Orange Cap,Global,Armor,ItemCollected,HelmetHat9,
+item.helmetiron,Iron Helmet,Swamp,Armor,ItemCollected,HelmetIron,
+item.helmetleather,Leather Helmet,Meadows,Armor,ItemCollected,HelmetLeather,
+item.helmetmage,Eitr-weave Hood,Mistlands,Armor,ItemCollected,HelmetMage,
+item.helmetmage_ashlands,Hood of Embla,Ashlands,Armor,ItemCollected,HelmetMage_Ashlands,
+item.helmetmidsummercrown,Midsummer Crown,Global,Armor,ItemCollected,HelmetMidsummerCrown,
+item.helmetpadded,Padded Helmet,Plains,Armor,ItemCollected,HelmetPadded,
+item.helmetpointyhat,Pointy Hat,Global,Armor,ItemCollected,HelmetPointyHat,
+item.helmetroot,Root Mask,Swamp,Armor,ItemCollected,HelmetRoot,
+item.helmetstrawhat,Straw Hat,Global,Armor,ItemCollected,HelmetStrawHat,
+item.helmetsweatband,Headband,Global,Armor,ItemCollected,HelmetSweatBand,
+item.helmettrollleather,Troll Leather Hood,BlackForest,Armor,ItemCollected,HelmetTrollLeather,
+item.helmetyule,Yule Hat,Global,Armor,ItemCollected,HelmetYule,
+item.hildirkey_forestcrypt,Hildir's Brass Key,BlackForest,Items,ItemCollected,HildirKey_forestcrypt,
+item.hildirkey_mountaincave,Hildir's Silver Key,Mountain,Items,ItemCollected,HildirKey_mountaincave,
+item.hildirkey_plainsfortress,Hildir's Bronze Key,Plains,Items,ItemCollected,HildirKey_plainsfortress,
+item.hoe,Hoe,BlackForest,Tools,ItemCollected,Hoe,
+item.honey,Honey,Meadows,Food,ItemCollected,Honey,
+item.honeyglazedchicken,Honey Glazed Chicken,Mistlands,Food,ItemCollected,HoneyGlazedChicken,
+item.honeyglazedchickenuncooked,Uncooked Honey Glazed Chicken,Mistlands,Materials,ItemCollected,HoneyGlazedChickenUncooked,
+item.iron,Iron,Swamp,Materials,ItemCollected,Iron,
+item.ironnails,Iron Nails,Swamp,Materials,ItemCollected,IronNails,
+item.ironore,Iron Ore,Swamp,Materials,ItemCollected,IronOre,
+item.ironpit,Iron Pit,Swamp,Materials,ItemCollected,Ironpit,
+item.ironscrap,Scrap Iron,Swamp,Materials,ItemCollected,IronScrap,
+item.juteblue,Blue Jute,Mistlands,Materials,ItemCollected,JuteBlue,
+item.jutered,Red Jute,Mountain,Materials,ItemCollected,JuteRed,
+item.knifeblackmetal,Black Metal Knife,Plains,Weapons,ItemCollected,KnifeBlackMetal,
+item.knifebutcher,Butcher Knife,Meadows,Weapons,ItemCollected,KnifeButcher,
+item.knifechitin,Abyssal Razor,BlackForest,Weapons,ItemCollected,KnifeChitin,
+item.knifecopper,Copper Knife,BlackForest,Weapons,ItemCollected,KnifeCopper,
+item.knifeflint,Flint Knife,Meadows,Weapons,ItemCollected,KnifeFlint,
+item.knifesilver,Silver Knife,Mountain,Weapons,ItemCollected,KnifeSilver,
+item.knifeskollandhati,Skoll and Hati,Plains,Weapons,ItemCollected,KnifeSkollAndHati,
+item.knifewood,Wooden Knife,Meadows,Weapons,ItemCollected,KnifeWood,
+item.lantern,Dvergr Lantern,Mistlands,Tools,ItemCollected,Lantern,
+item.larva,[item_larva],Mistlands,Materials,ItemCollected,Larva,
+item.leatherscraps,Leather Scraps,Meadows,Materials,ItemCollected,LeatherScraps,
+item.linenthread,Linen Thread,Plains,Materials,ItemCollected,LinenThread,
+item.loxmeat,Lox Meat,Plains,Materials,ItemCollected,LoxMeat,
+item.loxpelt,Lox Pelt,Plains,Materials,ItemCollected,LoxPelt,
+item.loxpie,Lox Meat Pie,Plains,Food,ItemCollected,LoxPie,
+item.loxpieuncooked,Unbaked Lox Pie,Plains,Materials,ItemCollected,LoxPieUncooked,
+item.macebronze,Bronze Mace,BlackForest,Weapons,ItemCollected,MaceBronze,
+item.maceeldner,Flametal Mace,Ashlands,Weapons,ItemCollected,MaceEldner,
+item.maceeldnerblood,Bloodgeon,Ashlands,Weapons,ItemCollected,MaceEldnerBlood,
+item.maceeldnerlightning,Storm Star,Ashlands,Weapons,ItemCollected,MaceEldnerLightning,
+item.maceeldnernature,Klossen,Ashlands,Weapons,ItemCollected,MaceEldnerNature,
+item.maceiron,Iron Mace,Swamp,Weapons,ItemCollected,MaceIron,
+item.maceneedle,Porcupine,Plains,Weapons,ItemCollected,MaceNeedle,
+item.macesilver,Frostner,Mountain,Weapons,ItemCollected,MaceSilver,
+item.macewood,Wooden Mace,Meadows,Weapons,ItemCollected,MaceWood,
+item.magicallystuffedshroom,Stuffed Mushroom,Mistlands,Food,ItemCollected,MagicallyStuffedShroom,
+item.magicallystuffedshroomuncooked,Uncooked Stuffed Mushroom,Meadows,Materials,ItemCollected,MagicallyStuffedShroomUncooked,
+item.mandible,Mandible,Mistlands,Materials,ItemCollected,Mandible,
+item.marinatedgreens,Marinated Greens,Mistlands,Food,ItemCollected,MarinatedGreens,
+item.mashedmeat,Mashed Meat,Ashlands,Food,ItemCollected,MashedMeat,
+item.meadbasebugrepellent,Mead Base: Anti-Sting,Plains,Materials,ItemCollected,MeadBaseBugRepellent,
+item.meadbasebzerker,Mead base: Berserkir,Plains,Materials,ItemCollected,MeadBaseBzerker,
+item.meadbaseeitrlingering,Mead Base: Lingering Eitr,Mistlands,Materials,ItemCollected,MeadBaseEitrLingering,
+item.meadbaseeitrminor,Mead Base: Minor Eitr,Mistlands,Materials,ItemCollected,MeadBaseEitrMinor,
+item.meadbasefrostresist,Mead Base: Frost Resistance,Mountain,Materials,ItemCollected,MeadBaseFrostResist,
+item.meadbasehasty,Mead base: Ratatosk,Swamp,Materials,ItemCollected,MeadBaseHasty,
+item.meadbasehealthlingering,Mead Base: Lingering Health,Mistlands,Materials,ItemCollected,MeadBaseHealthLingering,
+item.meadbasehealthmajor,Mead Base: Major Healing,Mistlands,Materials,ItemCollected,MeadBaseHealthMajor,
+item.meadbasehealthmedium,Mead Base: Medium Healing,Swamp,Materials,ItemCollected,MeadBaseHealthMedium,
+item.meadbasehealthminor,Mead Base: Minor Healing,BlackForest,Materials,ItemCollected,MeadBaseHealthMinor,
+item.meadbaselightfoot,Mead Base: Lightfoot,Mistlands,Materials,ItemCollected,MeadBaseLightFoot,
+item.meadbasepoisonresist,Mead Base: Poison Resistance,Swamp,Materials,ItemCollected,MeadBasePoisonResist,
+item.meadbasestaminalingering,Mead Base: Lingering Stamina,Mistlands,Materials,ItemCollected,MeadBaseStaminaLingering,
+item.meadbasestaminamedium,Mead Base: Medium Stamina,Plains,Materials,ItemCollected,MeadBaseStaminaMedium,
+item.meadbasestaminaminor,Mead Base: Minor Stamina,BlackForest,Materials,ItemCollected,MeadBaseStaminaMinor,
+item.meadbasestrength,Mead Base: Troll Endurance,Swamp,Materials,ItemCollected,MeadBaseStrength,
+item.meadbaseswimmer,Mead Base: Vananidir,Swamp,Materials,ItemCollected,MeadBaseSwimmer,
+item.meadbasetamer,Mead Base: Animal Whispers,Mountain,Materials,ItemCollected,MeadBaseTamer,
+item.meadbasetasty,Mead Base: Tasty,BlackForest,Materials,ItemCollected,MeadBaseTasty,
+item.meadbugrepellent,Anti-Sting Concoction,Plains,Food,ItemCollected,MeadBugRepellent,
+item.meadbzerker,Berserkir Mead,Plains,Food,ItemCollected,MeadBzerker,
+item.meadeitrlingering,Lingering Eitr Mead,Mistlands,Food,ItemCollected,MeadEitrLingering,
+item.meadeitrminor,Minor Eitr Mead,Mistlands,Food,ItemCollected,MeadEitrMinor,
+item.meadfrostresist,Frost Resistance Mead,Mountain,Food,ItemCollected,MeadFrostResist,
+item.meadhasty,Tonic of Ratatosk,Swamp,Food,ItemCollected,MeadHasty,
+item.meadhealthlingering,Lingering Healing Mead,Mistlands,Food,ItemCollected,MeadHealthLingering,
+item.meadhealthmajor,Major Healing Mead,Mistlands,Food,ItemCollected,MeadHealthMajor,
+item.meadhealthmedium,Medium Healing Mead,Swamp,Food,ItemCollected,MeadHealthMedium,
+item.meadhealthminor,Minor Healing Mead,BlackForest,Food,ItemCollected,MeadHealthMinor,
+item.meadlightfoot,Lightfoot Mead,Mistlands,Food,ItemCollected,MeadLightfoot,
+item.meadpoisonresist,Poison Resistance Mead,Swamp,Food,ItemCollected,MeadPoisonResist,
+item.meadstaminalingering,Lingering Stamina Mead,Mistlands,Food,ItemCollected,MeadStaminaLingering,
+item.meadstaminamedium,Medium Stamina Mead,Plains,Food,ItemCollected,MeadStaminaMedium,
+item.meadstaminaminor,Minor Stamina Mead,BlackForest,Food,ItemCollected,MeadStaminaMinor,
+item.meadstrength,Mead of Troll Endurance,Swamp,Food,ItemCollected,MeadStrength,
+item.meadswimmer,Draught of Vananidir,Swamp,Food,ItemCollected,MeadSwimmer,
+item.meadtamer,Brew of Animal Whispers,Mountain,Food,ItemCollected,MeadTamer,
+item.meadtasty,Tasty Mead,BlackForest,Food,ItemCollected,MeadTasty,
+item.meadtrollpheromones,Love Potion,BlackForest,Food,ItemCollected,MeadTrollPheromones,
+item.meatplatter,Meat Platter,Mistlands,Food,ItemCollected,MeatPlatter,
+item.meatplatteruncooked,Uncooked Meat Platter,Mistlands,Materials,ItemCollected,MeatPlatterUncooked,
+item.mechanicalspring,Mechanical Spring,Mistlands,Materials,ItemCollected,MechanicalSpring,
+item.mincemeatsauce,Minced Meat Sauce,BlackForest,Food,ItemCollected,MinceMeatSauce,
+item.mistharesupreme,Misthare Supreme,Mistlands,Food,ItemCollected,MisthareSupreme,
+item.mistharesupremeuncooked,Uncooked Misthare Supreme,Mistlands,Materials,ItemCollected,MisthareSupremeUncooked,
+item.moltencore,Molten Core,Ashlands,Materials,ItemCollected,MoltenCore,
+item.morgenheart,Morgen Heart,Ashlands,Materials,ItemCollected,MorgenHeart,
+item.morgensinew,Morgen Sinew,Ashlands,Materials,ItemCollected,MorgenSinew,
+item.mushroom,Mushroom,Meadows,Food,ItemCollected,Mushroom,
+item.mushroombzerker,Toadstool,Plains,Food,ItemCollected,MushroomBzerker,
+item.mushroomjotunpuffs,Jotun Puffs,Mistlands,Food,ItemCollected,MushroomJotunPuffs,
+item.mushroommagecap,Magecap,Mistlands,Food,ItemCollected,MushroomMagecap,
+item.mushroomomelette,Mushroom Omelette,Mistlands,Food,ItemCollected,MushroomOmelette,
+item.mushroomsmokepuff,Smoke Puff,Ashlands,Food,ItemCollected,MushroomSmokePuff,
+item.mushroomyellow,Yellow Mushroom,Meadows,Food,ItemCollected,MushroomYellow,
+item.necktail,Neck Tail,Meadows,Materials,ItemCollected,NeckTail,
+item.necktailgrilled,Grilled Neck Tail,Meadows,Food,ItemCollected,NeckTailGrilled,
+item.needle,Needle,Plains,Materials,ItemCollected,Needle,
+item.obsidian,Obsidian,Mountain,Materials,ItemCollected,Obsidian,
+item.onion,Onion,Mountain,Food,ItemCollected,Onion,
+item.onionseeds,Onion Seeds,Mountain,Materials,ItemCollected,OnionSeeds,
+item.onionsoup,Onion Soup,Mountain,Food,ItemCollected,OnionSoup,
+item.ooze,Ooze,Swamp,Materials,ItemCollected,Ooze,
+item.pickaxeantler,Antler Pickaxe,BlackForest,Weapons,ItemCollected,PickaxeAntler,
+item.pickaxeblackmetal,Black Metal Pickaxe,Plains,Weapons,ItemCollected,PickaxeBlackMetal,
+item.pickaxebronze,Bronze Pickaxe,BlackForest,Weapons,ItemCollected,PickaxeBronze,
+item.pickaxeiron,Iron Pickaxe,Swamp,Weapons,ItemCollected,PickaxeIron,
+item.pinecone,Pine Cone,BlackForest,Materials,ItemCollected,PineCone,
+item.piquantpie,Piquant Pie,Ashlands,Food,ItemCollected,PiquantPie,
+item.piquantpieuncooked,Uncooked Piquant Pie,Ashlands,Materials,ItemCollected,PiquantPieUncooked,
+item.pot_shard_green,Pot Shard,Ashlands,Materials,ItemCollected,Pot_Shard_Green,
+item.pot_shard_red,[item_pot_shard_red],Ashlands,Materials,ItemCollected,Pot_Shard_Red,
+item.powdereddragonegg,Powdered Dragon Eggshells,Mountain,Materials,ItemCollected,PowderedDragonEgg,
+item.proustitepowder,Proustite Powder,Ashlands,Materials,ItemCollected,ProustitePowder,
+item.pukeberries,Bukeperries,BlackForest,Food,ItemCollected,Pukeberries,
+item.pungentpebbles,Pungent Pebbles,Global,Materials,ItemCollected,PungentPebbles,
+item.queenbee,Queen Bee,Meadows,Materials,ItemCollected,QueenBee,
+item.queendrop,Majestic Carapace,Mistlands,Materials,ItemCollected,QueenDrop,
+item.queensjam,Queen's Jam,BlackForest,Food,ItemCollected,QueensJam,
+item.raspberry,Raspberries,Meadows,Food,ItemCollected,Raspberry,
+item.rawmeat,Boar Meat,Meadows,Materials,ItemCollected,RawMeat,
+item.resin,Resin,Global,Materials,ItemCollected,Resin,
+item.roastedcrustpie,Roasted Crust Pie,Ashlands,Food,ItemCollected,RoastedCrustPie,
+item.roastedcrustpieuncooked,Uncooked Roasted Crust Pie,Ashlands,Materials,ItemCollected,RoastedCrustPieUncooked,
+item.root,Root,Swamp,Materials,ItemCollected,Root,
+item.rottenmeat,Rotten Meat,Global,Food,ItemCollected,RottenMeat,
+item.roundlog,Corewood,BlackForest,Materials,ItemCollected,RoundLog,
+item.royaljelly,Royal Jelly,Mistlands,Food,ItemCollected,RoyalJelly,
+item.ruby,Ruby,Global,Materials,ItemCollected,Ruby,
+item.saddleasksvin,Asksvin Saddle,Ashlands,Items,ItemCollected,SaddleAsksvin,
+item.saddlelox,Lox Saddle,Plains,Items,ItemCollected,SaddleLox,
+item.salad,Salad,Mistlands,Food,ItemCollected,Salad,
+item.sap,Sap,Mistlands,Materials,ItemCollected,Sap,
+item.sausages,Sausages,Swamp,Food,ItemCollected,Sausages,
+item.scalehide,Scale Hide,Mistlands,Materials,ItemCollected,ScaleHide,
+item.scorchingmedley,Scorching Medley,Ashlands,Food,ItemCollected,ScorchingMedley,
+item.scythe,Scythe,Mountain,Weapons,ItemCollected,Scythe,
+item.scythehandle,Scythe Handle,Global,Items,ItemCollected,ScytheHandle,
+item.seekeraspic,Seeker Aspic,Mistlands,Food,ItemCollected,SeekerAspic,
+item.serpentmeat,Serpent Meat,Ocean,Materials,ItemCollected,SerpentMeat,
+item.serpentmeatcooked,Cooked Serpent Meat,Ocean,Food,ItemCollected,SerpentMeatCooked,
+item.serpentscale,Serpent Scale,Ocean,Materials,ItemCollected,SerpentScale,
+item.serpentstew,Serpent Stew,Ocean,Food,ItemCollected,SerpentStew,
+item.sharpeningstone,Sharpening Stone,Meadows,Materials,ItemCollected,SharpeningStone,
+item.shieldbanded,Banded Shield,Swamp,Weapons,ItemCollected,ShieldBanded,
+item.shieldblackmetal,Black Metal Shield,Plains,Weapons,ItemCollected,ShieldBlackmetal,
+item.shieldblackmetaltower,Black Metal Tower Shield,Plains,Weapons,ItemCollected,ShieldBlackmetalTower,
+item.shieldbonetower,Bone Tower Shield,BlackForest,Weapons,ItemCollected,ShieldBoneTower,
+item.shieldbronzebuckler,Bronze Buckler,BlackForest,Weapons,ItemCollected,ShieldBronzeBuckler,
+item.shieldcarapace,Carapace Shield,Mistlands,Weapons,ItemCollected,ShieldCarapace,
+item.shieldcarapacebuckler,Carapace Buckler,Mistlands,Weapons,ItemCollected,ShieldCarapaceBuckler,
+item.shieldcore,Shield Core,Mistlands,Materials,ItemCollected,ShieldCore,
+item.shieldflametal,Flametal Shield,Ashlands,Weapons,ItemCollected,ShieldFlametal,
+item.shieldflametaltower,Flametal Tower Shield,Ashlands,Weapons,ItemCollected,ShieldFlametalTower,
+item.shieldironbuckler,Iron Buckler,Swamp,Weapons,ItemCollected,ShieldIronBuckler,
+item.shieldironsquare,Iron Shield,Swamp,Weapons,ItemCollected,ShieldIronSquare,
+item.shieldirontower,Iron Tower Shield,Swamp,Weapons,ItemCollected,ShieldIronTower,
+item.shieldserpentscale,Serpent Scale Shield,Ocean,Weapons,ItemCollected,ShieldSerpentscale,
+item.shieldsilver,Silver Shield,Mountain,Weapons,ItemCollected,ShieldSilver,
+item.shieldwood,Wood Shield,Meadows,Weapons,ItemCollected,ShieldWood,
+item.shieldwoodtower,Wood Tower Shield,Meadows,Weapons,ItemCollected,ShieldWoodTower,
+item.muckshake,Muckshake,Swamp,Food,ItemCollected,Muckshake,
+item.silver,Silver,Mountain,Materials,ItemCollected,Silver,
+item.silvernecklace,Silver Necklace,Mountain,Materials,ItemCollected,SilverNecklace,
+item.silverore,Silver Ore,Mountain,Materials,ItemCollected,SilverOre,
+item.sizzlingberrybroth,Sizzling Berry Broth,Ashlands,Food,ItemCollected,SizzlingBerryBroth,
+item.sledgedemolisher,Demolisher,Mistlands,Weapons,ItemCollected,SledgeDemolisher,
+item.sledgeiron,Iron Sledge,Swamp,Weapons,ItemCollected,SledgeIron,
+item.sledgestagbreaker,Stagbreaker,BlackForest,Weapons,ItemCollected,SledgeStagbreaker,
+item.sledgewood,Wooden Sledge,Meadows,Weapons,ItemCollected,SledgeWood,
+item.softtissue,Soft Tissue,Mistlands,Materials,ItemCollected,Softtissue,
+item.sparkler,Sparkler,Global,Tools,ItemCollected,Sparkler,
+item.sparklingshroomshake,Sparkling Shroomshake,Mistlands,Food,ItemCollected,SparklingShroomshake,
+item.spearbronze,Bronze Spear,BlackForest,Weapons,ItemCollected,SpearBronze,
+item.spearcarapace,Carapace Spear,Mistlands,Weapons,ItemCollected,SpearCarapace,
+item.spearchitin,Abyssal Harpoon,BlackForest,Weapons,ItemCollected,SpearChitin,
+item.spearelderbark,Ancient Bark Spear,Swamp,Weapons,ItemCollected,SpearElderbark,
+item.spearflint,Flint Spear,Meadows,Weapons,ItemCollected,SpearFlint,
+item.spearsplitner,Splitnir,Ashlands,Weapons,ItemCollected,SpearSplitner,
+item.spearsplitner_blood,Splitnir the Bleeding,Ashlands,Weapons,ItemCollected,SpearSplitner_Blood,
+item.spearsplitner_lightning,Splitnir the Storming,Ashlands,Weapons,ItemCollected,SpearSplitner_Lightning,
+item.spearsplitner_nature,Splitnir the Primal,Ashlands,Weapons,ItemCollected,SpearSplitner_Nature,
+item.spearwolffang,Fang Spear,Mountain,Weapons,ItemCollected,SpearWolfFang,
+item.spearwood,Wooden Spear,Meadows,Weapons,ItemCollected,SpearWood,
+item.spiceashlands,Fiery Spice Powder,Ashlands,Materials,ItemCollected,SpiceAshlands,
+item.spiceforests,Woodland Herb Blend,Swamp,Materials,ItemCollected,SpiceForests,
+item.spicemistlands,Herbs of the Hidden Hills,Mistlands,Materials,ItemCollected,SpiceMistlands,
+item.spicemountains,Mountain Peak Pepper Powder,Mountain,Materials,ItemCollected,SpiceMountains,
+item.spiceoceans,Seafarer's Herbs,Ocean,Materials,ItemCollected,SpiceOceans,
+item.spiceplains,Grasslands Herbalist Harvest,Plains,Materials,ItemCollected,SpicePlains,
+item.spicymarmalade,Spicy Marmalade,Ashlands,Food,ItemCollected,SpicyMarmalade,
+item.staffclusterbomb,Staff of Fracturing,Mistlands,Weapons,ItemCollected,StaffClusterbomb,
+item.stafffireball,Staff of Embers,Mistlands,Weapons,ItemCollected,StaffFireball,
+item.staffgreenroots,Staff of the Wild,Mistlands,Weapons,ItemCollected,StaffGreenRoots,
+item.stafficeshards,Staff of Frost,Mistlands,Weapons,ItemCollected,StaffIceShards,
+item.stafflightning,Dundr,Mistlands,Weapons,ItemCollected,StaffLightning,
+item.staffredtroll,Trollstav,Mistlands,Weapons,ItemCollected,StaffRedTroll,
+item.staffshield,Staff of Protection,Mistlands,Weapons,ItemCollected,StaffShield,
+item.staffskeleton,Dead Raiser,Mistlands,Weapons,ItemCollected,StaffSkeleton,
+item.stone,Stone,Meadows,Materials,ItemCollected,Stone,
+item.stonerock,Rock,Meadows,Materials,ItemCollected,StoneRock,
+item.sulfurstone,Sulfur,Ashlands,Materials,ItemCollected,SulfurStone,
+item.surtlingcore,Surtling Core,BlackForest,Materials,ItemCollected,SurtlingCore,
+item.swordblackmetal,Black Metal Sword,Plains,Weapons,ItemCollected,SwordBlackmetal,
+item.swordbronze,Bronze Sword,BlackForest,Weapons,ItemCollected,SwordBronze,
+item.sworddyrnwyn,Dyrnwyn,Ashlands,Weapons,ItemCollected,SwordDyrnwyn,
+item.swordiron,Iron Sword,Swamp,Weapons,ItemCollected,SwordIron,
+item.swordmistwalker,Mistwalker,Mistlands,Weapons,ItemCollected,SwordMistwalker,
+item.swordniedhogg,Nidhgg,Ashlands,Weapons,ItemCollected,SwordNiedhogg,
+item.swordniedhoggblood,Nidhgg the Bleeding,Ashlands,Weapons,ItemCollected,SwordNiedhoggBlood,
+item.swordniedhogglightning,Nidhgg the Thundering,Ashlands,Weapons,ItemCollected,SwordNiedhoggLightning,
+item.swordniedhoggnature,Nidhgg the Primal,Ashlands,Weapons,ItemCollected,SwordNiedhoggNature,
+item.swordsilver,Silver Sword,Mountain,Weapons,ItemCollected,SwordSilver,
+item.swordwood,Wooden Sword,Meadows,Weapons,ItemCollected,SwordWood,
+item.tankard,Tankard,Global,Weapons,ItemCollected,Tankard,
+item.tankard_dvergr,Dvergr Tankard,Mistlands,Weapons,ItemCollected,Tankard_dvergr,
+item.tar,Tar,Plains,Materials,ItemCollected,Tar,
+item.thistle,Thistle,Plains,Materials,ItemCollected,Thistle,
+item.krom,Krom,Ashlands,Weapons,ItemCollected,Krom,
+item.slayer,Slayer,Ashlands,Weapons,ItemCollected,Slayer,
+item.slayerblood,Brutal Slayer,Ashlands,Weapons,ItemCollected,SlayerBlood,
+item.slayerlightning,Scourging Slayer,Ashlands,Weapons,ItemCollected,SlayerLightning,
+item.slayernature,Primal Slayer,Ashlands,Weapons,ItemCollected,SlayerNature,
+item.thswordwood,Wooden Greatsword,Meadows,Weapons,ItemCollected,GreatswordWood,
+item.thunderstone,Thunder Stone,Global,Materials,ItemCollected,Thunderstone,
+item.tin,Tin,BlackForest,Materials,ItemCollected,Tin,
+item.tinore,Tin Ore,BlackForest,Materials,ItemCollected,TinOre,
+item.torch,Torch,Global,Tools,ItemCollected,Torch,
+item.torchmist,[item_torchmist],Mistlands,Tools,ItemCollected,TorchMist,
+item.bracelets_of_the_brave,Bracelets of the Brave,Mistlands,Items,ItemCollected,Bracelets of the Brave,
+item.evasion_mantle,Evasion Mantle,Plains,Items,ItemCollected,Evasion Mantle,
+item.heart_of_the_forest,Heart of the Forest,BlackForest,Items,ItemCollected,Heart of the Forest,
+item.bronze_pendent,Bronze Pendant,BlackForest,Items,ItemCollected,Bronze Pendent,
+item.pulsating_earrings,Pulsating Earrings,Mistlands,Items,ItemCollected,Pulsating Earrings,
+item.fins_of_destiny,Fins of Destiny,BlackForest,Items,ItemCollected,Fins of Destiny,
+item.jrmundling,Jrmundling,Ashlands,Items,ItemCollected,Jrmundling,
+item.brimstone,Brimstone,Ashlands,Items,ItemCollected,Brimstone,
+item.iron_brooch,Iron Brooch,Swamp,Items,ItemCollected,Iron Brooch,
+item.nimble_anklet,Nimble Anklet,Swamp,Items,ItemCollected,Nimble Anklet,
+item.resounding_shackle,Resounding Shackle,Mistlands,Items,ItemCollected,Resounding Shackle,
+item.wolf_sight,Wolf Sight,Mistlands,Items,ItemCollected,Wolf Sight,
+item.crystal_heart,Crystal Heart,Mountain,Items,ItemCollected,Crystal Heart,
+item.trollhide,Troll Hide,BlackForest,Materials,ItemCollected,TrollHide,
+item.trophyabomination,Abomination Trophy,Swamp,Trophies,ItemCollected,TrophyAbomination,
+item.trophyasksvin,Asksvin Trophy,Ashlands,Trophies,ItemCollected,TrophyAsksvin,
+item.trophybjorn,Bear Trophy,BlackForest,Trophies,ItemCollected,TrophyBjorn,
+item.trophybjornundead,Vile Trophy,BlackForest,Trophies,ItemCollected,TrophyBjornUndead,
+item.trophyblob,Blob Trophy,Swamp,Trophies,ItemCollected,TrophyBlob,
+item.trophyboar,Boar Trophy,Meadows,Trophies,ItemCollected,TrophyBoar,
+item.trophybonemass,Bonemass Trophy,Swamp,Trophies,ItemCollected,TrophyBonemass,
+item.trophybonemawserpent,Bonemaw Trophy,Ashlands,Trophies,ItemCollected,TrophyBonemawSerpent,
+item.trophycharredarcher,Marksman Trophy,Ashlands,Trophies,ItemCollected,TrophyCharredArcher,
+item.trophycharredmage,Warlock Trophy,Ashlands,Trophies,ItemCollected,TrophyCharredMage,
+item.trophycharredmelee,Warrior Trophy,Ashlands,Trophies,ItemCollected,TrophyCharredMelee,
+item.trophycultist,Cultist Trophy,Mountain,Trophies,ItemCollected,TrophyCultist,
+item.trophycultist_hildir,Geirrhafa Trophy,Mountain,Trophies,ItemCollected,TrophyCultist_Hildir,
+item.trophydeathsquito,Deathsquito Trophy,Plains,Trophies,ItemCollected,TrophyDeathsquito,
+item.trophydeer,Deer Trophy,Meadows,Trophies,ItemCollected,TrophyDeer,
+item.trophydragonqueen,Moder Trophy,Mountain,Trophies,ItemCollected,TrophyDragonQueen,
+item.trophydraugr,Draugr Trophy,Swamp,Trophies,ItemCollected,TrophyDraugr,
+item.trophydraugrelite,Draugr Elite Trophy,Swamp,Trophies,ItemCollected,TrophyDraugrElite,
+item.trophydraugrfem,Draugr Trophy,Swamp,Trophies,ItemCollected,TrophyDraugrFem,
+item.trophydvergr,Dvergr Trophy,Mistlands,Trophies,ItemCollected,TrophyDvergr,
+item.trophyeikthyr,Eikthyr Trophy,Meadows,Trophies,ItemCollected,TrophyEikthyr,
+item.trophyfader,Fader Trophy,Ashlands,Trophies,ItemCollected,TrophyFader,
+item.trophyfallenvalkyrie,Fallen Valkyrie Trophy,Ashlands,Trophies,ItemCollected,TrophyFallenValkyrie,
+item.trophyfenring,Fenring Trophy,Mountain,Trophies,ItemCollected,TrophyFenring,
+item.trophyforesttroll,Troll Trophy,BlackForest,Trophies,ItemCollected,TrophyForestTroll,
+item.trophyfrosttroll,Troll Trophy,Mountain,Trophies,ItemCollected,TrophyFrostTroll,
+item.trophyghost,Ghost Trophy,Global,Trophies,ItemCollected,TrophyGhost,
+item.trophygjall,Gjall Trophy,Mistlands,Trophies,ItemCollected,TrophyGjall,
+item.trophygoblin,Fuling Trophy,Plains,Trophies,ItemCollected,TrophyGoblin,
+item.trophygoblinbrute,Fuling Berserker Trophy,Plains,Trophies,ItemCollected,TrophyGoblinBrute,
+item.trophygoblinbrutebrosbrute,Thungr Trophy,Plains,Trophies,ItemCollected,TrophyGoblinBruteBrosBrute,
+item.trophygoblinbrutebrosshaman,Zil Trophy,Plains,Trophies,ItemCollected,TrophyGoblinBruteBrosShaman,
+item.trophygoblinking,Yagluth Trophy,Plains,Trophies,ItemCollected,TrophyGoblinKing,
+item.trophygoblinshaman,Fuling Shaman Trophy,Plains,Trophies,ItemCollected,TrophyGoblinShaman,
+item.trophygreydwarf,Greydwarf Trophy,BlackForest,Trophies,ItemCollected,TrophyGreydwarf,
+item.trophygreydwarfbrute,Greydwarf Brute Trophy,BlackForest,Trophies,ItemCollected,TrophyGreydwarfBrute,
+item.trophygreydwarfshaman,Greydwarf Shaman Trophy,BlackForest,Trophies,ItemCollected,TrophyGreydwarfShaman,
+item.trophygrowth,Growth Trophy,Plains,Trophies,ItemCollected,TrophyGrowth,
+item.trophyhare,Hare Trophy,Mistlands,Trophies,ItemCollected,TrophyHare,
+item.trophyhatchling,Drake Trophy,Mountain,Trophies,ItemCollected,TrophyHatchling,
+item.trophyleech,Leech Trophy,Swamp,Trophies,ItemCollected,TrophyLeech,
+item.trophylox,Lox Trophy,Plains,Trophies,ItemCollected,TrophyLox,
+item.trophymorgen,Morgen Trophy,Ashlands,Trophies,ItemCollected,TrophyMorgen,
+item.trophyneck,Neck Trophy,Meadows,Trophies,ItemCollected,TrophyNeck,
+item.trophyseeker,Seeker Trophy,Mistlands,Trophies,ItemCollected,TrophySeeker,
+item.trophyseekerbrute,Seeker Soldier Trophy,Mistlands,Trophies,ItemCollected,TrophySeekerBrute,
+item.trophyseekerqueen,The Queen Trophy,Mistlands,Trophies,ItemCollected,TrophySeekerQueen,
+item.trophyserpent,Serpent Trophy,Ocean,Trophies,ItemCollected,TrophySerpent,
+item.trophysgolem,Stone Golem Trophy,Mountain,Trophies,ItemCollected,TrophySGolem,
+item.trophyskeleton,Skeleton Trophy,BlackForest,Trophies,ItemCollected,TrophySkeleton,
+item.trophyskeletonhildir,Brenna Trophy,BlackForest,Trophies,ItemCollected,TrophySkeletonHildir,
+item.trophyskeletonpoison,Rancid Remains Trophy,BlackForest,Trophies,ItemCollected,TrophySkeletonPoison,
+item.trophysurtling,Surtling Trophy,Swamp,Trophies,ItemCollected,TrophySurtling,
+item.trophytheelder,The Elder Trophy,BlackForest,Trophies,ItemCollected,TrophyTheElder,
+item.trophytick,Tick Trophy,Mistlands,Trophies,ItemCollected,TrophyTick,
+item.trophyulv,Ulv Trophy,Mountain,Trophies,ItemCollected,TrophyUlv,
+item.trophyvolture,Volture Trophy,Ashlands,Trophies,ItemCollected,TrophyVolture,
+item.trophywolf,Wolf Trophy,Mountain,Trophies,ItemCollected,TrophyWolf,
+item.trophywraith,Wraith Trophy,Swamp,Trophies,ItemCollected,TrophyWraith,
+item.turnip,Turnip,Swamp,Materials,ItemCollected,Turnip,
+item.turnipseeds,Turnip Seeds,Swamp,Materials,ItemCollected,TurnipSeeds,
+item.turnipstew,Turnip Stew,Swamp,Food,ItemCollected,TurnipStew,
+item.turretbolt,Black Metal Missile,Mistlands,Weapons,ItemCollected,TurretBolt,
+item.turretboltbone,[item_turretboltbone],Mistlands,Weapons,ItemCollected,TurretBoltBone,
+item.turretboltflametal,Flametal Missile,Ashlands,Weapons,ItemCollected,TurretBoltFlametal,
+item.turretboltwood,Wooden Missile,Mistlands,Weapons,ItemCollected,TurretBoltWood,
+item.undeadbjornribcage,Vile Ribcage,BlackForest,Materials,ItemCollected,UndeadBjornRibcage,
+item.frosted_sweetbread,Frosted Sweetbread,Plains,Food,ItemCollected,Frosted Sweetbread,
+item.frosted_sweetbread_uncooked,Unbaked Sweetbread,Plains,Materials,ItemCollected,Frosted Sweetbread Uncooked,
+item.vineberry,Vineberry Cluster,Ashlands,Food,ItemCollected,Vineberry,
+item.vineberryseeds,Vineberry Seeds,Ashlands,Materials,ItemCollected,VineberrySeeds,
+item.vinegreenseeds,Ivy Seeds,Ashlands,Materials,ItemCollected,VineGreenSeeds,
+item.voltureegg,Volture Egg,Ashlands,Items,ItemCollected,VoltureEgg,
+item.volturemeat,Volture Meat,Ashlands,Materials,ItemCollected,VoltureMeat,
+item.wishbone,Wishbone,Swamp,Tools,ItemCollected,Wishbone,
+item.wisp,Wisp,Mistlands,Materials,ItemCollected,Wisp,
+item.witheredbone,Withered Bone,Swamp,Materials,ItemCollected,WitheredBone,
+item.wolfclaw,Fenris Claw,Mountain,Materials,ItemCollected,WolfClaw,
+item.wolffang,Wolf Fang,Mountain,Materials,ItemCollected,WolfFang,
+item.wolfhairbundle,Fenris Hair,Mountain,Materials,ItemCollected,WolfHairBundle,
+item.wolfjerky,Wolf Jerky,Mountain,Food,ItemCollected,WolfJerky,
+item.wolfmeat,Wolf Meat,Mountain,Materials,ItemCollected,WolfMeat,
+item.wolfmeatskewer,Wolf Skewer,Mountain,Food,ItemCollected,WolfMeatSkewer,
+item.wolfpelt,Wolf Pelt,Mountain,Materials,ItemCollected,WolfPelt,
+item.wood,Wood,Meadows,Materials,ItemCollected,Wood,
+item.yagluthdrop,Torn Spirit,Plains,Items,ItemCollected,YagluthDrop,
+item.yggdrasilporridge,Yggdrasil Porridge,Mistlands,Food,ItemCollected,YggdrasilPorridge,
+item.yggdrasilwood,Yggdrasil Wood,Mistlands,Materials,ItemCollected,YggdrasilWood,
+item.ymirremains,Ymir Flesh,Global,Materials,ItemCollected,YmirRemains,

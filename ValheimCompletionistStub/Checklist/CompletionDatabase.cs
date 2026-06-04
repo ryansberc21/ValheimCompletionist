@@ -8,6 +8,8 @@ namespace ValheimCompletionist.Checklist
         public static List<ChecklistEntry> ItemEntries { get; private set; } = new List<ChecklistEntry>();
         public static List<ChecklistEntry> EnemyEntries { get; private set; } = new List<ChecklistEntry>();
 
+        public static List<ChecklistEntry> BossEntries { get; private set; } = new List<ChecklistEntry>();
+
         /// <summary>
         /// Combined list of all checklist entries.
         /// This includes items, enemies, bosses, etc.
@@ -17,13 +19,13 @@ namespace ValheimCompletionist.Checklist
         public static void Load()
         {
             // Load item entries from the item CSV
-            ItemEntries = ChecklistCsvLoader.LoadItemsFromCsv();
+            ItemEntries = ChecklistCsvLoader.LoadFromCsv("items.csv");
 
             // Load enemy entries from the enemy CSV
-            EnemyEntries = ChecklistCsvLoader.LoadEnemiesFromCsv();
+            EnemyEntries = ChecklistCsvLoader.LoadFromCsv("enemies.csv");
 
             // Load boss entries from the boss CSV
-            BossEntries = ChecklistCsvLoader.LoadBossesFromCsv();
+            BossEntries = ChecklistCsvLoader.LoadFromCsv("bosses.csv");
 
             // Combine everything into one master list
             Entries = new List<ChecklistEntry>();

@@ -1,49 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using BepInEx;
+using System.Reflection;
+using Jotunn;
 
 namespace ValheimCompletionist.Checklist
 {
     public static class ChecklistCsvLoader
     {
-        public static List<ChecklistEntry> LoadFromCsv()
+        public static List<ChecklistEntry> LoadFromCsv(string fileName)
         {
-            string folderPath = Path.Combine(Paths.ConfigPath, "ValheimCompletionist");
-            string filePath = Path.Combine(folderPath, "checklist_entries.csv");
+            var entries = new List<ChecklistEntry>();
 
-            if (!File.Exists(filePath))
+            string pluginFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string csvPath = Path.Combine(pluginFolder, "data", fileName);
+
+            Logger.LogInfo($"Trying to load checklist CSV: {csvPath}");
+
+            if (!File.Exists(csvPath))
             {
-                Jotunn.Logger.LogWarning($"Checklist CSV not found at: {filePath}");
-                return new List<ChecklistEntry>();
+                Logger.LogWarning($"Checklist CSV not found: {csvPath}");
+                return entries;
             }
 
-            List<ChecklistEntry> entries = new List<ChecklistEntry>();
+            string[] lines = File.ReadAllLines(csvPath);
 
-            string[] lines = File.ReadAllLines(filePath);
+            Logger.LogInfo($"{fileName} line count: {lines.Length}");
 
             if (lines.Length <= 1)
             {
-                Jotunn.Logger.LogWarning("Checklist CSV is empty or only has a header row.");
+                Logger.LogWarning($"{fileName} has no data rows.");
                 return entries;
             }
 
-            string[] headers = SplitCsvLine(lines[0]);
-
-            int prefabIndex = Array.IndexOf(headers, "PrefabName");
-            int nameTokenIndex = Array.IndexOf(headers, "NameToken");
-            int itemTypeIndex = Array.IndexOf(headers, "ItemType");
-            int biomeIndex = Array.IndexOf(headers, "Biome");
-            int categoryIndex = Array.IndexOf(headers, "ChecklistCategory");
-            int includeIndex = Array.IndexOf(headers, "IncludeInChecklist");
-
-            if (prefabIndex < 0 || nameTokenIndex < 0 || itemTypeIndex < 0 ||
-                biomeIndex < 0 || categoryIndex < 0 || includeIndex < 0)
-            {
-                Jotunn.Logger.LogError("Checklist CSV is missing one or more required columns.");
-                Jotunn.Logger.LogError("Required columns: PrefabName, NameToken, ItemType, Biome, ChecklistCategory, IncludeInChecklist");
-                return entries;
-            }
+            Logger.LogInfo($"{fileName} header: {lines[0]}");
 
             for (int i = 1; i < lines.Length; i++)
             {
@@ -54,176 +44,72 @@ namespace ValheimCompletionist.Checklist
                     continue;
                 }
 
-                string[] values = SplitCsvLine(line);
+                string[] columns = line.Split(',');
 
-                if (values.Length <= includeIndex)
+                if (columns.Length < 5)
                 {
-                    Jotunn.Logger.LogWarning($"Skipping malformed CSV line {i + 1}: {line}");
+                    Logger.LogWarning(
+                        $"Skipping row {i + 1} in {fileName}: expected at least 5 columns, found {columns.Length}. Row: {line}"
+                    );
                     continue;
                 }
 
-                string includeText = values[includeIndex].Trim();
+                // CSV header:
+                // id,displayName,biome,category,completionType,prefabName,globalKey
+                string id = columns[0].Trim();
+                string displayName = columns[1].Trim();
+                string biomeText = columns[2].Trim();
+                string categoryText = columns[3].Trim();
+                string completionTypeText = columns[4].Trim();
+                string prefabName = columns.Length > 5 ? columns[5].Trim() : null;
+                string globalKey = columns.Length > 6 ? columns[6].Trim() : null;
 
-                bool include =
-                    includeText.Equals("true", StringComparison.OrdinalIgnoreCase) ||
-                    includeText.Equals("yes", StringComparison.OrdinalIgnoreCase) ||
-                    includeText.Equals("1");
-
-                if (!include)
+                if (string.IsNullOrWhiteSpace(id))
                 {
+                    Logger.LogWarning($"Skipping row {i + 1} in {fileName}: missing id.");
                     continue;
                 }
 
-                string prefabName = values[prefabIndex].Trim();
-                string nameToken = values[nameTokenIndex].Trim();
-                string itemType = values[itemTypeIndex].Trim();
-                string biomeText = values[biomeIndex].Trim();
-                string categoryText = values[categoryIndex].Trim();
-
-                if (!Enum.TryParse(biomeText, ignoreCase: true, out Biome biome))
+                if (string.IsNullOrWhiteSpace(displayName))
                 {
-                    Jotunn.Logger.LogWarning($"Invalid biome '{biomeText}' on CSV line {i + 1}. Using Global.");
-                    biome = Biome.Global;
+                    Logger.LogWarning($"Skipping row {i + 1} in {fileName}: missing displayName.");
+                    continue;
                 }
 
-                if (!Enum.TryParse(categoryText, ignoreCase: true, out ChecklistCategory category))
+                if (!Enum.TryParse(biomeText, true, out Biome biome))
                 {
-                    Jotunn.Logger.LogWarning($"Invalid category '{categoryText}' on CSV line {i + 1}. Using Misc.");
-                    category = ChecklistCategory.Misc;
+                    Logger.LogWarning($"Skipping row {i + 1} in {fileName}: invalid Biome '{biomeText}'.");
+                    continue;
                 }
 
-                CompletionType completionType = GetCompletionTypeFromItemType(itemType);
+                if (!Enum.TryParse(categoryText, true, out ChecklistCategory category))
+                {
+                    Logger.LogWarning($"Skipping row {i + 1} in {fileName}: invalid Category '{categoryText}'.");
+                    continue;
+                }
 
-                string id = CreateIdFromPrefab(prefabName, completionType);
-
-                string displayName = CreateDisplayName(prefabName, nameToken);
+                if (!Enum.TryParse(completionTypeText, true, out CompletionType completionType))
+                {
+                    Logger.LogWarning($"Skipping row {i + 1} in {fileName}: invalid CompletionType '{completionTypeText}'.");
+                    continue;
+                }
 
                 ChecklistEntry entry = new ChecklistEntry(
-                    id: id,
-                    displayName: displayName,
-                    biome: biome,
-                    category: category,
-                    completionType: completionType,
-                    prefabName: prefabName
+                    id,
+                    displayName,
+                    biome,
+                    category,
+                    completionType,
+                    prefabName,
+                    globalKey
                 );
 
                 entries.Add(entry);
             }
 
-            Jotunn.Logger.LogInfo($"Loaded {entries.Count} checklist entries from CSV.");
+            Logger.LogInfo($"Loaded {entries.Count} entries from {fileName}.");
 
             return entries;
-        }
-
-        private static CompletionType GetCompletionTypeFromItemType(string itemType)
-        {
-            if (itemType.Equals("Trophy", StringComparison.OrdinalIgnoreCase))
-            {
-                return CompletionType.ItemCollected;
-            }
-
-            if (itemType.Equals("Consumable", StringComparison.OrdinalIgnoreCase))
-            {
-                return CompletionType.ItemCollected;
-            }
-
-            if (itemType.Equals("Fish", StringComparison.OrdinalIgnoreCase))
-            {
-                return CompletionType.FishCaught;
-            }
-
-            return CompletionType.ItemCollected;
-        }
-
-        private static string CreateIdFromPrefab(string prefabName, CompletionType completionType)
-        {
-            string prefix = "item";
-
-            if (completionType == CompletionType.FishCaught)
-            {
-                prefix = "fish";
-            }
-
-            string cleanPrefab = prefabName
-                .Trim()
-                .ToLowerInvariant()
-                .Replace(" ", "_");
-
-            return $"{prefix}.{cleanPrefab}";
-        }
-
-        private static string CreateDisplayName(string prefabName, string nameToken)
-        {
-            if (!string.IsNullOrWhiteSpace(nameToken) && nameToken.StartsWith("$item_"))
-            {
-                string cleaned = nameToken
-                    .Replace("$item_", "")
-                    .Replace("_", " ");
-
-                return ToTitleCase(cleaned);
-            }
-
-            return prefabName;
-        }
-
-        private static string ToTitleCase(string input)
-        {
-            if (string.IsNullOrWhiteSpace(input))
-            {
-                return input;
-            }
-
-            string[] words = input.Split(' ');
-
-            for (int i = 0; i < words.Length; i++)
-            {
-                if (words[i].Length == 0)
-                {
-                    continue;
-                }
-
-                words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
-            }
-
-            return string.Join(" ", words);
-        }
-
-        private static string[] SplitCsvLine(string line)
-        {
-            List<string> values = new List<string>();
-            bool insideQuotes = false;
-            string current = "";
-
-            for (int i = 0; i < line.Length; i++)
-            {
-                char c = line[i];
-
-                if (c == '"')
-                {
-                    if (insideQuotes && i + 1 < line.Length && line[i + 1] == '"')
-                    {
-                        current += '"';
-                        i++;
-                    }
-                    else
-                    {
-                        insideQuotes = !insideQuotes;
-                    }
-                }
-                else if (c == ',' && !insideQuotes)
-                {
-                    values.Add(current);
-                    current = "";
-                }
-                else
-                {
-                    current += c;
-                }
-            }
-
-            values.Add(current);
-
-            return values.ToArray();
         }
     }
 }

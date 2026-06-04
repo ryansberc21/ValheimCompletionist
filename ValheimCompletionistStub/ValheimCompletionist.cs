@@ -2,12 +2,11 @@
 using BepInEx.Configuration;
 using Jotunn.Entities;
 using Jotunn.Managers;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
-using UnityEngine.UI;
 using ValheimCompletionist.Checklist;
+using HarmonyLib;
 
 namespace ValheimCompletionist
 {
@@ -15,18 +14,14 @@ namespace ValheimCompletionist
     [BepInDependency(Jotunn.Main.ModGuid)]
     internal class ValheimCompletionist : BaseUnityPlugin
     {
+        private Harmony harmony;
         public const string PluginGUID = "com.ryansberc21.ValheimCompletionist";
         public const string PluginName = "ValheimCompletionist";
-        public const string PluginVersion = "0.1.1";
+        public const string PluginVersion = "0.1.0";
 
         public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 
-        private GameObject checklistPanel;
-
-        private ConfigEntry<KeyboardShortcut> toggleKey;
         private ConfigEntry<bool> enableDebugExport;
-
-        private readonly List<BossRow> bossRows = new List<BossRow>();
 
         private float itemScanTimer = 0f;
         private float bossScanTimer = 0f;
@@ -34,18 +29,24 @@ namespace ValheimCompletionist
         private const float ItemScanInterval = 5f;
         private const float BossScanInterval = 5f;
 
+        private string loadedCharacterName = null;
+
         private void Awake()
         {
-            Jotunn.Logger.LogInfo($"{PluginName} loading...");
+            Jotunn.Logger.LogInfo($"{PluginName} by realberch loading...");
 
             BindConfig();
 
             CompletionDatabase.Load();
-            CompletionProgress.Load();
+
+            harmony = new Harmony(PluginGUID);
+            harmony.PatchAll();
+            Jotunn.Logger.LogInfo("Harmony patches applied.");
 
             if (!GUIManager.IsHeadless())
             {
-                GUIManager.OnCustomGUIAvailable += CreateChecklistGUI;
+                gameObject.AddComponent<CompletionMenu>();
+                Jotunn.Logger.LogInfo("Completion menu registered.");
             }
 
             Jotunn.Logger.LogInfo($"{PluginName} loaded.");
@@ -53,41 +54,38 @@ namespace ValheimCompletionist
 
         private void OnDestroy()
         {
-            GUIManager.OnCustomGUIAvailable -= CreateChecklistGUI;
+            harmony?.UnpatchSelf();
+
+            CompletionProgress.Unload();
+            loadedCharacterName = null;
+
             GUIManager.BlockInput(false);
+
         }
 
         private void Update()
         {
-            HandleToggleInput();
+            HandleCharacterProgressState();
+
             HandleDebugInput();
+
+            if (!CompletionProgress.IsLoadedForCharacter)
+            {
+                return;
+            }
+
             HandlePeriodicItemScan();
             HandlePeriodicBossScan();
         }
 
         private void BindConfig()
         {
-            toggleKey = Config.Bind(
-                "General",
-                "Toggle Checklist Key",
-                new KeyboardShortcut(KeyCode.F8),
-                "Key used to open and close the completion checklist menu."
-            );
-
             enableDebugExport = Config.Bind(
                 "Debug",
                 "Enable ObjectDB Export",
                 false,
                 "If true, pressing F10 exports ObjectDB item data to BepInEx/config/ValheimCompletionist/objectdb_items.csv."
             );
-        }
-
-        private void HandleToggleInput()
-        {
-            if (toggleKey.Value.IsDown())
-            {
-                ToggleChecklistPanel();
-            }
         }
 
         private void HandleDebugInput()
@@ -105,6 +103,11 @@ namespace ValheimCompletionist
 
         private void HandlePeriodicItemScan()
         {
+            if (!CompletionProgress.IsLoadedForCharacter)
+            {
+                return;
+            }
+
             itemScanTimer += Time.deltaTime;
 
             if (itemScanTimer < ItemScanInterval)
@@ -119,6 +122,11 @@ namespace ValheimCompletionist
 
         private void HandlePeriodicBossScan()
         {
+            if (!CompletionProgress.IsLoadedForCharacter)
+            {
+                return;
+            }
+
             bossScanTimer += Time.deltaTime;
 
             if (bossScanTimer < BossScanInterval)
@@ -133,6 +141,11 @@ namespace ValheimCompletionist
 
         private void ScanBossGlobalKeys()
         {
+            if (!CompletionProgress.IsLoadedForCharacter)
+            {
+                return;
+            }
+
             if (ZoneSystem.instance == null)
             {
                 return;
@@ -150,192 +163,73 @@ namespace ValheimCompletionist
                     CompletionProgress.MarkCompleted(bossEntry.Id);
                 }
             }
-
-            RefreshChecklist();
         }
 
-        private void CreateChecklistGUI()
+        private void HandleCharacterProgressLoading()
         {
-            checklistPanel = null;
-            bossRows.Clear();
-
-            if (GUIManager.Instance == null || GUIManager.CustomGUIFront == null)
-            {
-                Jotunn.Logger.LogWarning("GUIManager is not ready.");
-                return;
-            }
-
-            checklistPanel = GUIManager.Instance.CreateWoodpanel(
-                parent: GUIManager.CustomGUIFront.transform,
-                anchorMin: new Vector2(0.5f, 0.5f),
-                anchorMax: new Vector2(0.5f, 0.5f),
-                position: new Vector2(0f, 0f),
-                width: 500f,
-                height: 600f,
-                draggable: true
-            );
-
-            checklistPanel.name = "ValheimCompletionist_ChecklistPanel";
-            checklistPanel.SetActive(false);
-
-            GUIManager.Instance.CreateText(
-                text: "Valheim Completionist",
-                parent: checklistPanel.transform,
-                anchorMin: new Vector2(0.5f, 1f),
-                anchorMax: new Vector2(0.5f, 1f),
-                position: new Vector2(0f, -45f),
-                font: GUIManager.Instance.AveriaSerifBold,
-                fontSize: 30,
-                color: GUIManager.Instance.ValheimOrange,
-                outline: true,
-                outlineColor: Color.black,
-                width: 440f,
-                height: 45f,
-                addContentSizeFitter: false
-            );
-
-            GUIManager.Instance.CreateText(
-                text: "Bosses are auto-detected from world global keys.",
-                parent: checklistPanel.transform,
-                anchorMin: new Vector2(0.5f, 1f),
-                anchorMax: new Vector2(0.5f, 1f),
-                position: new Vector2(0f, -85f),
-                font: GUIManager.Instance.AveriaSerif,
-                fontSize: 16,
-                color: Color.white,
-                outline: true,
-                outlineColor: Color.black,
-                width: 430f,
-                height: 30f,
-                addContentSizeFitter: false
-            );
-
-            CreateBossRows();
-
-            GameObject refreshButtonObject = GUIManager.Instance.CreateButton(
-                text: "Refresh",
-                parent: checklistPanel.transform,
-                anchorMin: new Vector2(0.5f, 0f),
-                anchorMax: new Vector2(0.5f, 0f),
-                position: new Vector2(-95f, 45f),
-                width: 150f,
-                height: 45f
-            );
-
-            refreshButtonObject.GetComponent<Button>().onClick.AddListener(RefreshChecklist);
-
-            GameObject closeButtonObject = GUIManager.Instance.CreateButton(
-                text: "Close",
-                parent: checklistPanel.transform,
-                anchorMin: new Vector2(0.5f, 0f),
-                anchorMax: new Vector2(0.5f, 0f),
-                position: new Vector2(95f, 45f),
-                width: 150f,
-                height: 45f
-            );
-
-            closeButtonObject.GetComponent<Button>().onClick.AddListener(ToggleChecklistPanel);
-
-            RefreshChecklist();
-        }
-
-        private void CreateBossRows()
-        {
-            float startY = -135f;
-            float rowSpacing = 48f;
-            int index = 0;
-
-            foreach (ChecklistEntry bossEntry in CompletionDatabase.GetByCategory(ChecklistCategory.Bosses))
-            {
-                float y = startY - index * rowSpacing;
-                index++;
-
-                GameObject toggleObject = GUIManager.Instance.CreateToggle(
-                    parent: checklistPanel.transform,
-                    width: 32f,
-                    height: 32f
-                );
-
-                RectTransform toggleRect = toggleObject.GetComponent<RectTransform>();
-                toggleRect.anchorMin = new Vector2(0.5f, 1f);
-                toggleRect.anchorMax = new Vector2(0.5f, 1f);
-                toggleRect.anchoredPosition = new Vector2(-175f, y);
-
-                Toggle toggle = toggleObject.GetComponent<Toggle>();
-
-                ChecklistEntry capturedEntry = bossEntry;
-
-                toggle.onValueChanged.AddListener(value =>
-                {
-                    if (value)
-                    {
-                        CompletionProgress.MarkCompleted(capturedEntry.Id);
-                    }
-                });
-
-                GUIManager.Instance.CreateText(
-                    text: bossEntry.DisplayName,
-                    parent: checklistPanel.transform,
-                    anchorMin: new Vector2(0.5f, 1f),
-                    anchorMax: new Vector2(0.5f, 1f),
-                    position: new Vector2(25f, y),
-                    font: GUIManager.Instance.AveriaSerifBold,
-                    fontSize: 22,
-                    color: Color.white,
-                    outline: true,
-                    outlineColor: Color.black,
-                    width: 330f,
-                    height: 35f,
-                    addContentSizeFitter: false
-                );
-
-                bossRows.Add(new BossRow(bossEntry, toggle));
-            }
-        }
-
-        private void ToggleChecklistPanel()
-        {
-            if (checklistPanel == null)
+            if (Player.m_localPlayer == null)
             {
                 return;
             }
 
-            bool newState = !checklistPanel.activeSelf;
-            checklistPanel.SetActive(newState);
+            string characterName = Player.m_localPlayer.GetPlayerName();
 
-            if (newState)
+            if (string.IsNullOrWhiteSpace(characterName))
             {
-                ScanBossGlobalKeys();
-                ItemCompletionTracker.ScanPlayerInventory();
-                RefreshChecklist();
+                return;
             }
 
-            GUIManager.BlockInput(newState);
+            if (loadedCharacterName == characterName)
+            {
+                return;
+            }
+
+            loadedCharacterName = characterName;
+
+            CompletionProgress.LoadForCharacter(characterName);
+
+            Jotunn.Logger.LogInfo($"ValheimCompletionist using progress for character: {characterName}");
         }
 
-        private void RefreshChecklist()
+        private void HandleCharacterProgressState()
         {
-            foreach (BossRow row in bossRows)
+            if (Player.m_localPlayer == null)
             {
-                bool completed = CompletionProgress.IsCompleted(row.Entry.Id);
-
-                if (row.Toggle != null)
+                if (!string.IsNullOrWhiteSpace(loadedCharacterName))
                 {
-                    row.Toggle.SetIsOnWithoutNotify(completed);
+                    Jotunn.Logger.LogInfo($"Unloading completion progress for character: {loadedCharacterName}");
+
+                    CompletionProgress.Unload();
+                    loadedCharacterName = null;
                 }
+
+                return;
             }
-        }
 
-        private class BossRow
-        {
-            public ChecklistEntry Entry { get; }
-            public Toggle Toggle { get; }
+            string characterName = Player.m_localPlayer.GetPlayerName();
 
-            public BossRow(ChecklistEntry entry, Toggle toggle)
+            if (string.IsNullOrWhiteSpace(characterName))
             {
-                Entry = entry;
-                Toggle = toggle;
+                return;
             }
+
+            if (loadedCharacterName == characterName && CompletionProgress.IsLoadedForCharacter)
+            {
+                return;
+            }
+
+            if (!string.IsNullOrWhiteSpace(loadedCharacterName))
+            {
+                Jotunn.Logger.LogInfo($"Switching completion progress from '{loadedCharacterName}' to '{characterName}'.");
+
+                CompletionProgress.Unload();
+            }
+
+            loadedCharacterName = characterName;
+
+            CompletionProgress.LoadForCharacter(characterName);
+
+            Jotunn.Logger.LogInfo($"Loaded completion progress for character: {characterName}");
         }
 
         // DEBUG SECTION - REMOVE OR DISABLE BEFORE RELEASE --------------------
@@ -348,7 +242,7 @@ namespace ValheimCompletionist
                 return;
             }
 
-            string folderPath = Path.Combine(Paths.ConfigPath, "ValheimCompletionist");
+            string folderPath = Path.Combine(Paths.ConfigPath, PluginName);
             Directory.CreateDirectory(folderPath);
 
             string filePath = Path.Combine(folderPath, "objectdb_items.csv");
