@@ -22,10 +22,14 @@ namespace ValheimCompletionist.Checklist
             // Load enemy entries from the enemy CSV
             EnemyEntries = ChecklistCsvLoader.LoadEnemiesFromCsv();
 
+            // Load boss entries from the boss CSV
+            BossEntries = ChecklistCsvLoader.LoadBossesFromCsv();
+
             // Combine everything into one master list
             Entries = new List<ChecklistEntry>();
             Entries.AddRange(ItemEntries);
             Entries.AddRange(EnemyEntries);
+            Entries.AddRange(BossEntries);
 
             if (Entries.Count == 0)
             {
@@ -35,6 +39,7 @@ namespace ValheimCompletionist.Checklist
             Jotunn.Logger.LogInfo($"CompletionDatabase loaded {Entries.Count} total entries.");
             Jotunn.Logger.LogInfo($"Loaded {ItemEntries.Count} item entries.");
             Jotunn.Logger.LogInfo($"Loaded {EnemyEntries.Count} enemy entries.");
+            Jotunn.Logger.LogInfo($"Loaded {BossEntries.Count} boss entries.");
         }
 
         public static IEnumerable<ChecklistEntry> GetAll()
