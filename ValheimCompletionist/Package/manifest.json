@@ -1,7 +1,7 @@
 ﻿{
   "name": "ValheimCompletionist",
   "description": "A completion checklist for Valheim that tracks items, enemies, and bosses by biome.",
-  "version_number": "0.1.0",
+  "version_number": "0.1.1",
   "website_url": "https://github.com/ryansberc21/ValheimCompletionist",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2333",
