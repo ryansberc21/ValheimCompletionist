@@ -103,6 +103,17 @@ The mod uses a CSV-based checklist database to define completion entries. This m
 
 Some checklist entries may still need verification for biome assignment, item category, or tracking behavior.
 
+## Config and Save Data
+
+Progress is kept through a unique save file per user character. The data is found in the 
+```text
+ValheimCompletionist
+  ->config
+    ->progress
+      -> [playername].txt
+```
+It is recommend that the `progress` folder is backed up frequently and before any updates to the mod are pushed.
+
 ## Changelog
 
 ### 0.1.0
