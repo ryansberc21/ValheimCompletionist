@@ -27,6 +27,7 @@ namespace ValheimCompletionist.Checklist
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);
+                    Jotunn.Logger.LogWarning("No progress folder found. Created new folder for completion progress: " + folderPath);
                 }
 
                 return folderPath;

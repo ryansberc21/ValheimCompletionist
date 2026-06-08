@@ -100,6 +100,22 @@ Some checklist entries may still need verification for biome assignment, item ca
 
 ## Changelog
 
+### 0.1.1
+
+## Added
+* Added completion coloring for individual checklist sections.
+* Section tabs now turn green when that specific section reaches 100% completion.
+* Item category sections such as Food, Weapons, Armor, Materials, and other checklist groups now visually indicate completion when finished.
+## Changed
+* Updated checklist item data.
+* Improved visual feedback in the completion menu.
+* Completed biome tabs now display their completion status more clearly.
+* When all biomes are completed, completed biome tabs use a gold completion color.
+## Fixed
+* Fixed several checklist entries with incorrect or missing item data.
+* Fixed section tabs not visually updating when their own completion reached 100%.
+* Improved completion display consistency between biome, item, enemy, boss, and category sections.
+
 ### 0.1.0
 
 * Initial release

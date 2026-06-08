@@ -31,6 +31,7 @@ namespace ValheimCompletionist.Checklist
         private GUIStyle entryBoxStyle;
         private GUIStyle completedBiomeStyle;
         private GUIStyle goldBiomeStyle;
+        private GUIStyle completedSectionStyle;
 
         private const int WindowId = 832710;
 
@@ -190,11 +191,28 @@ namespace ValheimCompletionist.Checklist
 
             GUILayout.BeginVertical(entryBoxStyle);
 
+            Color previousBackgroundColor = GUI.backgroundColor;
+
+            if (biomeComplete && allBiomesComplete)
+            {
+                GUI.backgroundColor = new Color(1f, 0.75f, 0.15f, 1f); // gold
+            }
+            else if (biomeComplete)
+            {
+                GUI.backgroundColor = new Color(0.25f, 0.85f, 0.25f, 1f); // green
+            }
+            else
+            {
+                GUI.backgroundColor = Color.white;
+            }
+
             biomeFoldouts[biome] = GUILayout.Toggle(
                 biomeFoldouts[biome],
                 $"{GetFoldoutSymbol(biomeFoldouts[biome])} {biome}  —  {completed}/{total} ({GetPercent(completed, total):0.0}%)",
                 biomeStyle
             );
+
+            GUI.backgroundColor = previousBackgroundColor;
 
             if (biomeFoldouts[biome])
             {
@@ -351,15 +369,27 @@ namespace ValheimCompletionist.Checklist
             int total = entries.Count;
             int completed = CompletionProgress.CountCompleted(entries);
 
+            bool sectionComplete = total > 0 && completed == total;
+
+            GUIStyle sectionStyle = sectionComplete ? completedSectionStyle : foldoutButtonStyle;
+
             GUILayout.BeginHorizontal();
 
             GUILayout.Space(indent);
 
+            Color previousBackgroundColor = GUI.backgroundColor;
+
+            GUI.backgroundColor = sectionComplete
+                ? new Color(0.25f, 0.85f, 0.25f, 1f)
+                : Color.white;
+
             sectionFoldouts[key] = GUILayout.Toggle(
                 sectionFoldouts[key],
                 $"{GetFoldoutSymbol(sectionFoldouts[key])} {title}  —  {completed}/{total} ({GetPercent(completed, total):0.0}%)",
-                foldoutButtonStyle
+                sectionStyle
             );
+
+            GUI.backgroundColor = previousBackgroundColor;
 
             GUILayout.EndHorizontal();
 
@@ -519,6 +549,14 @@ namespace ValheimCompletionist.Checklist
                 hover = { textColor = new Color(1f, 0.75f, 0.15f) },
                 active = { textColor = new Color(1f, 0.75f, 0.15f) },
                 focused = { textColor = new Color(1f, 0.75f, 0.15f) }
+            };
+
+            completedSectionStyle = new GUIStyle(foldoutButtonStyle)
+            {
+                normal = { textColor = Color.white },
+                hover = { textColor = Color.white },
+                active = { textColor = Color.white },
+                focused = { textColor = Color.white }
             };
 
             entryBoxStyle = new GUIStyle(GUI.skin.box)
