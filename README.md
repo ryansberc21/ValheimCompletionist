@@ -1,4 +1,4 @@
-﻿# ValheimCompletionist
+# ValheimCompletionist
 
 **ValheimCompletionist** is a Valheim mod that adds an in-game completion checklist for tracking progress toward 100% game completion. The mod tracks checklist entries by biome and displays completion percentages so players can see what areas still need work.
 
@@ -18,7 +18,7 @@ This project is built using **BepInEx**, **Jötunn**, and the Valheim modding fr
 ## Current Version
 
 ```text
-0.1.0
+0.1.1
 ```
 
 ## Requirements
@@ -37,11 +37,6 @@ Thunderstore dependencies:
   "ValheimModding-Jotunn-2.26.1"
 ]
 ```
-
-## Download
-
-ValheimCompletionist is available on Thunderstore:
-[Thunderstore - ValheimCompletionist](https://thunderstore.io/c/valheim/p/ryansberc21/ValheimCompletionist/)
 
 ## Installation
 
@@ -103,18 +98,23 @@ The mod uses a CSV-based checklist database to define completion entries. This m
 
 Some checklist entries may still need verification for biome assignment, item category, or tracking behavior.
 
-## Config and Save Data
-
-Progress is kept through a unique save file per user character. The data is found in the 
-```text
-ValheimCompletionist
-  ->config
-    ->progress
-      -> [playername].txt
-```
-It is recommend that the `progress` folder is backed up frequently and before any updates to the mod are pushed.
-
 ## Changelog
+
+### 0.1.1
+
+## Added
+* Added completion coloring for individual checklist sections.
+* Section tabs now turn green when that specific section reaches 100% completion.
+* Item category sections such as Food, Weapons, Armor, Materials, and other checklist groups now visually indicate completion when finished.
+## Changed
+* Updated checklist item data.
+* Improved visual feedback in the completion menu.
+* Completed biome tabs now display their completion status more clearly.
+* When all biomes are completed, completed biome tabs use a gold completion color.
+## Fixed
+* Fixed several checklist entries with incorrect or missing item data.
+* Fixed section tabs not visually updating when their own completion reached 100%.
+* Improved completion display consistency between biome, item, enemy, boss, and category sections.
 
 ### 0.1.0
 
