@@ -21,6 +21,9 @@ namespace ValheimCompletionist.Checklist
         Builds,
         Crafting,
         Fishing,
+        Haldor,
+        Hildir,
+        BogWitch,
         Misc
     }
 }

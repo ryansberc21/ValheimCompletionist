@@ -18,7 +18,7 @@ This project is built using **BepInEx**, **Jötunn**, and the Valheim modding fr
 ## Current Version
 
 ```text
-0.1.0
+0.1.2
 ```
 
 ## Requirements
@@ -99,6 +99,13 @@ The mod uses a CSV-based checklist database to define completion entries. This m
 Some checklist entries may still need verification for biome assignment, item category, or tracking behavior.
 
 ## Changelog
+
+### 0.1.2
+
+## Changed
+* Adjusted entry locations
+* Added previously missing items and enemies
+* Created categories for traded items
 
 ### 0.1.1
 

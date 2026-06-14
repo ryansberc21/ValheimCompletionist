@@ -113,7 +113,7 @@ namespace ValheimCompletionist.Checklist
             int completed = CompletionProgress.CountCompleted(CompletionDatabase.Entries);
 
             GUILayout.Label("Valheim Completionist Mod - by realberch", titleStyle);
-            GUILayout.Label("Version 0.1.1", normalStyle);
+            GUILayout.Label("Version 0.1.2", normalStyle);
             GUILayout.Label($"Total Completion: {completed}/{total} ({GetPercent(completed, total):0.0}%)", headerStyle);
             GUILayout.Label("Checklist for Bosses, Enemies, and all Items.", normalStyle);
             GUILayout.Label("Press F8 or Esc to close this menu.", normalStyle);

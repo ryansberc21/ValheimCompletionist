@@ -18,7 +18,7 @@ This project is built using **BepInEx**, **Jötunn**, and the Valheim modding fr
 ## Current Version
 
 ```text
-0.1.1
+0.1.2
 ```
 
 ## Requirements
